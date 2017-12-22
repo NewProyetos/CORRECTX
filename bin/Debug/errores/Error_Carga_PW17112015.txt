@@ -1,0 +1,5 @@
+476,1002717,00112924,19/08/2015 12:00:00 AM,C,Numero de Documento ya existe en la Base de datos
+
+477,1002754,00112925,19/08/2015 12:00:00 AM,C,Numero de Documento ya existe en la Base de datos
+
+

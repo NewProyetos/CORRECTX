@@ -1,0 +1,1561 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C80CDFF2-1D33-4556-A9D6-F0C5A07E441B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sinconizacion_EXactus</RootNamespace>
+    <AssemblyName>CORRECTX</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ManifestCertificateThumbprint>7ECF858F7959BA0606798177ABE1F71C601DC780</ManifestCertificateThumbprint>
+    <ManifestKeyFile>
+    </ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>true</SignManifests>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <ApplicationIcon>Exico.ico</ApplicationIcon>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <PublishUrl>https://correctx.visualstudio.com/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>4</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>x64</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ClienteFTPPDA">
+      <HintPath>..\CORRECTX\ClienteFTPPDA.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Data.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.ExpressApp.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.Win.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v14.2.Core, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpo.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel.Fakes">
+      <HintPath>FakesAssemblies\Microsoft.Office.Interop.Excel.Fakes.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.OneNote, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\ReportViewerCommon.11.0.0.0\lib\Microsoft.ReportViewer.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Report.Viewer.11.0.0.0\lib\net\Microsoft.ReportViewer.ProcessingObjectModel.DLL</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Report.Viewer.11.0.0.0\lib\net\Microsoft.ReportViewer.WebForms.DLL</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=6.9.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="RDLCReportRunner, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\RDLCReportRunner.1.0.0\lib\RDLCReportRunner.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Security">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Windows\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Controls">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Microsoft SDKs\Silverlight\v3.0\Libraries\Client\System.Windows.Controls.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Windows.Controls.Ribbon" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="WinSCPnet, Version=1.3.5.6958, Culture=neutral, PublicKeyToken=2271ec4a3c56d0bf, processorArchitecture=MSIL">
+      <HintPath>packages\WinSCP.5.9.2\lib\WinSCPnet.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="XamlBuildTask" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="compresor.cs" />
+    <Compile Include="CORECTX APP\BODEGA\costos_articulo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\BODEGA\costos_articulo.Designer.cs">
+      <DependentUpon>costos_articulo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\BODEGA\fillaje_capacidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\BODEGA\fillaje_capacidades.Designer.cs">
+      <DependentUpon>fillaje_capacidades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\BODEGA\join_tablas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\BODEGA\join_tablas.Designer.cs">
+      <DependentUpon>join_tablas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\BODEGA\PRECIOS\importadorListaPrecios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\BODEGA\PRECIOS\importadorListaPrecios.Designer.cs">
+      <DependentUpon>importadorListaPrecios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\BODEGA\PROMOCIONES\Articulos_Bonificar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\BODEGA\PROMOCIONES\Articulos_Bonificar.Designer.cs">
+      <DependentUpon>Articulos_Bonificar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\BODEGA\PROMOCIONES\Promociones_pedidas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\BODEGA\PROMOCIONES\Promociones_pedidas.Designer.cs">
+      <DependentUpon>Promociones_pedidas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\BODEGA\REGALIAS\Regalias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\BODEGA\REGALIAS\Regalias.Designer.cs">
+      <DependentUpon>Regalias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\BODEGA\REGALIAS\Report_Libro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\BODEGA\REGALIAS\Report_Libro.Designer.cs">
+      <DependentUpon>Report_Libro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\BODEGA\REGALIAS\Traspasos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\BODEGA\REGALIAS\Traspasos.Designer.cs">
+      <DependentUpon>Traspasos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\BODEGA\Reporte Regalia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\BODEGA\Reporte Regalia.Designer.cs">
+      <DependentUpon>Reporte Regalia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\BODEGA\REportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\BODEGA\REportes.Designer.cs">
+      <DependentUpon>REportes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\COMPRAS\Solicitud_Compra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\COMPRAS\Solicitud_Compra.Designer.cs">
+      <DependentUpon>Solicitud_Compra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\ConvertDT.cs" />
+    <Compile Include="CORECTX APP\CREDITOS\IMPUESTO_DISTRIB\Pago Impuesto Distribucion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\CREDITOS\IMPUESTO_DISTRIB\Pago Impuesto Distribucion.Designer.cs">
+      <DependentUpon>Pago Impuesto Distribucion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\CREDITOS\IMPUESTO_DISTRIB\Reporte_Impuesto_Distribucion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\CREDITOS\IMPUESTO_DISTRIB\Reporte_Impuesto_Distribucion.Designer.cs">
+      <DependentUpon>Reporte_Impuesto_Distribucion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\CREDITOS\LIQUIDACIONES\LIQUIDACIONES.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\CREDITOS\LIQUIDACIONES\LIQUIDACIONES.Designer.cs">
+      <DependentUpon>LIQUIDACIONES.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\CREDITOS\LIQUIDACIONES\Notas_Credito.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\CREDITOS\LIQUIDACIONES\Notas_Credito.Designer.cs">
+      <DependentUpon>Notas_Credito.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\CREDITOS\REPORTES\descuentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\CREDITOS\REPORTES\descuentos.Designer.cs">
+      <DependentUpon>descuentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\CREDITOS\REPORTES\DescuentoxDocuemtos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\CREDITOS\REPORTES\DescuentoxDocuemtos.Designer.cs">
+      <DependentUpon>DescuentoxDocuemtos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\CREDITOS\REPORTES\Reporte_Lavado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\CREDITOS\REPORTES\Reporte_Lavado.Designer.cs">
+      <DependentUpon>Reporte_Lavado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\Informatica\Administracion_Empresas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\Informatica\Administracion_Empresas.Designer.cs">
+      <DependentUpon>Administracion_Empresas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\Informatica\Control Accesos\Accesos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\Informatica\Control Accesos\Accesos.Designer.cs">
+      <DependentUpon>Accesos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\Informatica\Control Accesos\Usuarios_informacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\Informatica\Control Accesos\Usuarios_informacion.Designer.cs">
+      <DependentUpon>Usuarios_informacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\Informatica\descargaarchivos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\Informatica\descargaarchivos.Designer.cs">
+      <DependentUpon>descargaarchivos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\Informatica\Exportador KC\GenerarArchivos.cs" />
+    <Compile Include="CORECTX APP\Informatica\festivos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\Informatica\festivos.Designer.cs">
+      <DependentUpon>festivos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\Informatica\IT_informacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\Informatica\IT_informacion.Designer.cs">
+      <DependentUpon>IT_informacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\Informatica\Power Street\Facturas_No_procesados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\Informatica\Power Street\Facturas_No_procesados.Designer.cs">
+      <DependentUpon>Facturas_No_procesados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\Informatica\Power Street\filtro_carga.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\Informatica\Power Street\filtro_carga.Designer.cs">
+      <DependentUpon>filtro_carga.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\Informatica\Procesos\Procesos_Exactus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\Informatica\Procesos\Procesos_Exactus.Designer.cs">
+      <DependentUpon>Procesos_Exactus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\Informatica\Proceso_Carga_HH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\Informatica\Proceso_Carga_HH.Designer.cs">
+      <DependentUpon>Proceso_Carga_HH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\Informatica\Unilever\CargaUnileverFTP.cs" />
+    <Compile Include="CORECTX APP\Informatica\Unilever\InterfaceDMS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\Informatica\Unilever\InterfaceDMS.Designer.cs">
+      <DependentUpon>InterfaceDMS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\Reports\GeneralForms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\Reports\GeneralForms.Designer.cs">
+      <DependentUpon>GeneralForms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\RRHH\Actulizacion_Marcacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\RRHH\Actulizacion_Marcacion.Designer.cs">
+      <DependentUpon>Actulizacion_Marcacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\RRHH\Amonestaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\RRHH\Amonestaciones.Designer.cs">
+      <DependentUpon>Amonestaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\RRHH\Boleta_Marcacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\RRHH\Boleta_Marcacion.Designer.cs">
+      <DependentUpon>Boleta_Marcacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\RRHH\Bono.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\RRHH\Bono.Designer.cs">
+      <DependentUpon>Bono.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\RRHH\CARGA_BAC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\RRHH\CARGA_BAC.Designer.cs">
+      <DependentUpon>CARGA_BAC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\RRHH\Constancias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\RRHH\Constancias.Designer.cs">
+      <DependentUpon>Constancias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\RRHH\Evaluaciones_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\RRHH\Evaluaciones_Main.Designer.cs">
+      <DependentUpon>Evaluaciones_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\RRHH\No_evaluados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\RRHH\No_evaluados.Designer.cs">
+      <DependentUpon>No_evaluados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\RRHH\Reportes_Evaluaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\RRHH\Reportes_Evaluaciones.Designer.cs">
+      <DependentUpon>Reportes_Evaluaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\RRHH\Reporte_Ingreso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\RRHH\Reporte_Ingreso.Designer.cs">
+      <DependentUpon>Reporte_Ingreso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\SEGURIDAD\No_Marcados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\SEGURIDAD\No_Marcados.Designer.cs">
+      <DependentUpon>No_Marcados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\SEGURIDAD\Reporte_Accesos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\SEGURIDAD\Reporte_Accesos.Designer.cs">
+      <DependentUpon>Reporte_Accesos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\VENTAS\DISMOAPP\Actualizador_clientes_DismoAPP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\VENTAS\DISMOAPP\Actualizador_clientes_DismoAPP.Designer.cs">
+      <DependentUpon>Actualizador_clientes_DismoAPP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\VENTAS\AutocompleteRuta.cs" />
+    <Compile Include="CORECTX APP\Informatica\Sincronizacion\Cambio_fecha_Pedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\Informatica\Sincronizacion\Cambio_fecha_Pedido.Designer.cs">
+      <DependentUpon>Cambio_fecha_Pedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\BODEGA\Cargas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\BODEGA\Cargas.Designer.cs">
+      <DependentUpon>Cargas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\BODEGA\REGALIAS\Carga_Costos_Regalias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\BODEGA\REGALIAS\Carga_Costos_Regalias.Designer.cs">
+      <DependentUpon>Carga_Costos_Regalias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\FLOTA\Combustible_flota.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\FLOTA\Combustible_flota.Designer.cs">
+      <DependentUpon>Combustible_flota.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\HOME\Encripter.cs" />
+    <Compile Include="CORECTX APP\RRHH\Evaluacion_Desempeño.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\RRHH\Evaluacion_Desempeño.Designer.cs">
+      <DependentUpon>Evaluacion_Desempeño.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\VENTAS\DISMOAPP\Exportador Clientes StreetPDA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\VENTAS\DISMOAPP\Exportador Clientes StreetPDA.Designer.cs">
+      <DependentUpon>Exportador Clientes StreetPDA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\VENTAS\DISMOAPP\Importador_Clientes_Dismoapp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\VENTAS\DISMOAPP\Importador_Clientes_Dismoapp.Designer.cs">
+      <DependentUpon>Importador_Clientes_Dismoapp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\Informatica\Power Street\Importador_Street.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\Informatica\Power Street\Importador_Street.Designer.cs">
+      <DependentUpon>Importador_Street.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\Informatica\Power Street\informacion_import_street.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\Informatica\Power Street\informacion_import_street.Designer.cs">
+      <DependentUpon>informacion_import_street.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\RRHH\ISSS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\RRHH\ISSS.Designer.cs">
+      <DependentUpon>ISSS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\RRHH\Menu_Evaluaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\RRHH\Menu_Evaluaciones.Designer.cs">
+      <DependentUpon>Menu_Evaluaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\VENTAS\FACTURACION\Articulos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\VENTAS\FACTURACION\Articulos.Designer.cs">
+      <DependentUpon>Articulos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\VENTAS\FACTURACION\carga_digicel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\VENTAS\FACTURACION\carga_digicel.Designer.cs">
+      <DependentUpon>carga_digicel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\VENTAS\FACTURACION\Facturacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\VENTAS\FACTURACION\Facturacion.Designer.cs">
+      <DependentUpon>Facturacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\VENTAS\FACTURACION\Ingreso_Facturas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\VENTAS\FACTURACION\Ingreso_Facturas.Designer.cs">
+      <DependentUpon>Ingreso_Facturas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\VENTAS\Muebles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\VENTAS\Muebles.Designer.cs">
+      <DependentUpon>Muebles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\VENTAS\muebles_imagenes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\VENTAS\muebles_imagenes.Designer.cs">
+      <DependentUpon>muebles_imagenes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\VENTAS\RUTERO\Cambio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\VENTAS\RUTERO\Cambio.Designer.cs">
+      <DependentUpon>Cambio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\VENTAS\RUTERO\Informacion_Cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\VENTAS\RUTERO\Informacion_Cliente.Designer.cs">
+      <DependentUpon>Informacion_Cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\VENTAS\RUTERO\Restrura_Ruteros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\VENTAS\RUTERO\Restrura_Ruteros.Designer.cs">
+      <DependentUpon>Restrura_Ruteros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\VENTAS\RUTERO\Update_Saldos_Dismoapp.cs" />
+    <Compile Include="CORECTX APP\VENTAS\Visitas_Comentarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\VENTAS\Visitas_Comentarios.Designer.cs">
+      <DependentUpon>Visitas_Comentarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\VENTAS\wait.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\VENTAS\wait.Designer.cs">
+      <DependentUpon>wait.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm1.Designer.cs">
+      <DependentUpon>MainForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Muebles_merchan.cs">
+      <DependentUpon>Muebles_merchan.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Muebles_merchan.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Muebles_merchan.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Nconexion_master.cs" />
+    <Compile Include="CORECTX APP\HOME\Configuracion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\HOME\Configuracion.Designer.cs">
+      <DependentUpon>Configuracion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\FLOTA\consumibles y prestamos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\FLOTA\consumibles y prestamos.Designer.cs">
+      <DependentUpon>consumibles y prestamos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\FLOTA\Control Vehiculos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\FLOTA\Control Vehiculos.Designer.cs">
+      <DependentUpon>Control Vehiculos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\HOME\ConexionXML.cs" />
+    <Compile Include="CORECTX APP\CREDITOS\CORRELATIVOS\Correlativo_process.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\CREDITOS\CORRELATIVOS\Correlativo_process.Designer.cs">
+      <DependentUpon>Correlativo_process.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\HOME\datagridExcel.cs" />
+    <Compile Include="Reportsdb.cs">
+      <DependentUpon>Reportsdb.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportsdb.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reportsdb.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\CREDITOS\DIRECCIONES UPDATE\Direcciones_UPDATE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\CREDITOS\DIRECCIONES UPDATE\Direcciones_UPDATE.Designer.cs">
+      <DependentUpon>Direcciones_UPDATE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\HOME\email.cs" />
+    <Compile Include="Exportador.cs" />
+    <Compile Include="CORECTX APP\FLOTA\Flota_Compras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\FLOTA\Flota_Compras.Designer.cs">
+      <DependentUpon>Flota_Compras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\FLOTA\Forma_pago_flota.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\FLOTA\Forma_pago_flota.Designer.cs">
+      <DependentUpon>Forma_pago_flota.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formhijodata.cs" />
+    <Compile Include="CORECTX APP\BODEGA\FrmPromociones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\BODEGA\FrmPromociones.Designer.cs">
+      <DependentUpon>FrmPromociones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\Informatica\Tarificador\FrmTarificador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\Informatica\Tarificador\FrmTarificador.Designer.cs">
+      <DependentUpon>FrmTarificador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\Informatica\ftp.cs" />
+    <Compile Include="Nconexion.cs" />
+    <Compile Include="NConexion2.cs" />
+    <Compile Include="Nconexionv3.cs" />
+    <Compile Include="CrystalReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\Informatica\EXCEL TO KML GPS\ExceltoKML.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\Informatica\EXCEL TO KML GPS\ExceltoKML.Designer.cs">
+      <DependentUpon>ExceltoKML.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\CREDITOS\RECIBOS\FrmCC_CargadorRecibos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\CREDITOS\RECIBOS\FrmCC_CargadorRecibos.designer.cs">
+      <DependentUpon>FrmCC_CargadorRecibos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\Informatica\Exportador KC\FrmKC_ExportadorVtaTxT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\Informatica\Exportador KC\FrmKC_ExportadorVtaTxT.Designer.cs">
+      <DependentUpon>FrmKC_ExportadorVtaTxT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\Informatica\FtpAutoCargaKC.cs" />
+    <Compile Include="HyperTerminalAdapter.cs" />
+    <Compile Include="CORECTX APP\FLOTA\import_fac_flota.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\FLOTA\import_fac_flota.Designer.cs">
+      <DependentUpon>import_fac_flota.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\FLOTA\Kilometrajes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\FLOTA\Kilometrajes.Designer.cs">
+      <DependentUpon>Kilometrajes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\CREDITOS\Limites_Creditos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\CREDITOS\Limites_Creditos.Designer.cs">
+      <DependentUpon>Limites_Creditos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\RRHH\Objetivos_Evaluacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\RRHH\Objetivos_Evaluacion.Designer.cs">
+      <DependentUpon>Objetivos_Evaluacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\Informatica\Power Street\OFERTAS_STREET.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\Informatica\Power Street\OFERTAS_STREET.Designer.cs">
+      <DependentUpon>OFERTAS_STREET.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\FLOTA\Proveedores_Flota.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\FLOTA\Proveedores_Flota.Designer.cs">
+      <DependentUpon>Proveedores_Flota.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\CREDITOS\Reporte Carera XLS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\CREDITOS\Reporte Carera XLS.Designer.cs">
+      <DependentUpon>Reporte Carera XLS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\BODEGA\Reporte_Pedidos_facturas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\BODEGA\Reporte_Pedidos_facturas.Designer.cs">
+      <DependentUpon>Reporte_Pedidos_facturas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\VENTAS\DISMOAPP\Reporte_Saldos_Reps.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\VENTAS\DISMOAPP\Reporte_Saldos_Reps.Designer.cs">
+      <DependentUpon>Reporte_Saldos_Reps.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\VENTAS\RUTERO\Rutas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\VENTAS\RUTERO\Rutas.Designer.cs">
+      <DependentUpon>Rutas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\VENTAS\DISMOAPP\Rutas_Trade_Reps.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\VENTAS\DISMOAPP\Rutas_Trade_Reps.Designer.cs">
+      <DependentUpon>Rutas_Trade_Reps.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\VENTAS\RUTERO\Ruteroreporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\VENTAS\RUTERO\Ruteroreporte.Designer.cs">
+      <DependentUpon>Ruteroreporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Recursos_HumanosDB.cs">
+      <DependentUpon>Recursos_HumanosDB.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Recursos_HumanosDB.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Recursos_HumanosDB.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <Compile Include="CORECTX APP\Informatica\Sincronizacion\Sincronizacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\Informatica\Sincronizacion\Sincronizacion.Designer.cs">
+      <DependentUpon>Sincronizacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\Informatica\Casos\Casos_update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\Informatica\Casos\Casos_update.Designer.cs">
+      <DependentUpon>Casos_update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\Informatica\Correlativos\Correlativo_fac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\Informatica\Correlativos\Correlativo_fac.Designer.cs">
+      <DependentUpon>Correlativo_fac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\BODEGA\REGALIAS\ingreso_reg_ven.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\BODEGA\REGALIAS\ingreso_reg_ven.Designer.cs">
+      <DependentUpon>ingreso_reg_ven.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\BODEGA\REGALIAS\Regalias_vencido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\BODEGA\REGALIAS\Regalias_vencido.Designer.cs">
+      <DependentUpon>Regalias_vencido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\Informatica\OC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\Informatica\OC.Designer.cs">
+      <DependentUpon>OC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\CREDITOS\Reporte_venta_cobro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\CREDITOS\Reporte_venta_cobro.Designer.cs">
+      <DependentUpon>Reporte_venta_cobro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\Informatica\Sincronizacion\Procesos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\Informatica\Sincronizacion\Procesos.Designer.cs">
+      <DependentUpon>Procesos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\Informatica\Sincronizacion\log_carga_HH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\Informatica\Sincronizacion\log_carga_HH.Designer.cs">
+      <DependentUpon>log_carga_HH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\Informatica\Sincronizacion\No_Sinc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\Informatica\Sincronizacion\No_Sinc.Designer.cs">
+      <DependentUpon>No_Sinc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\HOME\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\HOME\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\HOME\Main_Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\HOME\Main_Menu.Designer.cs">
+      <DependentUpon>Main_Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\CREDITOS\Reporte_Cartera.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\CREDITOS\Reporte_Cartera.Designer.cs">
+      <DependentUpon>Reporte_Cartera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\Informatica\EXCEL TO KML GPS\GPS_clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\Informatica\EXCEL TO KML GPS\GPS_clientes.Designer.cs">
+      <DependentUpon>GPS_clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\Informatica\Casos\Casos_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\Informatica\Casos\Casos_Main.Designer.cs">
+      <DependentUpon>Casos_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReporteCC.cs">
+      <DependentUpon>ReporteCC.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteCC.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReporteCC.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SMTP.cs" />
+    <Compile Include="CORECTX APP\Informatica\Update_Clientes_FR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\Informatica\Update_Clientes_FR.Designer.cs">
+      <DependentUpon>Update_Clientes_FR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\Informatica\Update_PEDIDOS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\Informatica\Update_PEDIDOS.Designer.cs">
+      <DependentUpon>Update_PEDIDOS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\HOME\Validar_Acceso.cs" />
+    <Compile Include="CORECTX APP\HOME\XMLRW.cs" />
+    <EmbeddedResource Include="CORECTX APP\BODEGA\costos_articulo.resx">
+      <DependentUpon>costos_articulo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\BODEGA\fillaje_capacidades.resx">
+      <DependentUpon>fillaje_capacidades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\BODEGA\join_tablas.resx">
+      <DependentUpon>join_tablas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\BODEGA\PRECIOS\importadorListaPrecios.resx">
+      <DependentUpon>importadorListaPrecios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\BODEGA\PROMOCIONES\Articulos_Bonificar.resx">
+      <DependentUpon>Articulos_Bonificar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\BODEGA\PROMOCIONES\Promociones_pedidas.resx">
+      <DependentUpon>Promociones_pedidas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\BODEGA\REGALIAS\Regalias.resx">
+      <DependentUpon>Regalias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\BODEGA\REGALIAS\Report_Libro.resx">
+      <DependentUpon>Report_Libro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\BODEGA\REGALIAS\Traspasos.resx">
+      <DependentUpon>Traspasos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\BODEGA\Reporte Regalia.resx">
+      <DependentUpon>Reporte Regalia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\BODEGA\REportes.resx">
+      <DependentUpon>REportes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\COMPRAS\Solicitud_Compra.resx">
+      <DependentUpon>Solicitud_Compra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\CREDITOS\IMPUESTO_DISTRIB\Pago Impuesto Distribucion.resx">
+      <DependentUpon>Pago Impuesto Distribucion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\CREDITOS\IMPUESTO_DISTRIB\Reporte_Impuesto_Distribucion.resx">
+      <DependentUpon>Reporte_Impuesto_Distribucion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\CREDITOS\LIQUIDACIONES\Boleta_liquidacion.rdlc" />
+    <EmbeddedResource Include="CORECTX APP\CREDITOS\LIQUIDACIONES\LIQUIDACIONES.resx">
+      <DependentUpon>LIQUIDACIONES.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\CREDITOS\LIQUIDACIONES\Notas_Credito.resx">
+      <DependentUpon>Notas_Credito.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\CREDITOS\REPORTES\descuentos.resx">
+      <DependentUpon>descuentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\CREDITOS\REPORTES\DescuentoxDocuemtos.resx">
+      <DependentUpon>DescuentoxDocuemtos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\CREDITOS\REPORTES\Reporte_Lavado.resx">
+      <DependentUpon>Reporte_Lavado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\Informatica\Administracion_Empresas.resx">
+      <DependentUpon>Administracion_Empresas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\Informatica\Control Accesos\Accesos.resx">
+      <DependentUpon>Accesos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\Informatica\Control Accesos\Usuarios_informacion.resx">
+      <DependentUpon>Usuarios_informacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\Informatica\descargaarchivos.resx">
+      <DependentUpon>descargaarchivos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\Informatica\festivos.resx">
+      <DependentUpon>festivos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\Informatica\IT_informacion.resx">
+      <DependentUpon>IT_informacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\Informatica\Power Street\Facturas_No_procesados.resx">
+      <DependentUpon>Facturas_No_procesados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\Informatica\Power Street\filtro_carga.resx">
+      <DependentUpon>filtro_carga.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\Informatica\Procesos\Procesos_Exactus.resx">
+      <DependentUpon>Procesos_Exactus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\Informatica\Proceso_Carga_HH.resx">
+      <DependentUpon>Proceso_Carga_HH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\Informatica\Unilever\InterfaceDMS.resx">
+      <DependentUpon>InterfaceDMS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\Reports\GeneralForms.resx">
+      <DependentUpon>GeneralForms.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\RRHH\Actulizacion_Marcacion.resx">
+      <DependentUpon>Actulizacion_Marcacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\RRHH\Amonestaciones.resx">
+      <DependentUpon>Amonestaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\RRHH\Boleta_Marcacion.resx">
+      <DependentUpon>Boleta_Marcacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\RRHH\Boleta_Marcacion.rdlc" />
+    <EmbeddedResource Include="CORECTX APP\RRHH\Bono.resx">
+      <DependentUpon>Bono.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\RRHH\CARGA_BAC.resx">
+      <DependentUpon>CARGA_BAC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\RRHH\Constancia.rdlc" />
+    <EmbeddedResource Include="CORECTX APP\RRHH\Constancias.resx">
+      <DependentUpon>Constancias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\RRHH\Evaluaciones_Main.resx">
+      <DependentUpon>Evaluaciones_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\RRHH\Evaluciones.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\RRHH\No_evaluados.resx">
+      <DependentUpon>No_evaluados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\RRHH\Reportes_Evaluaciones.resx">
+      <DependentUpon>Reportes_Evaluaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\RRHH\RRHHR.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\RRHH\Reporte_Ingreso.resx">
+      <DependentUpon>Reporte_Ingreso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\SEGURIDAD\No_Marcados.resx">
+      <DependentUpon>No_Marcados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\SEGURIDAD\Reporte_Accesos.resx">
+      <DependentUpon>Reporte_Accesos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\VENTAS\DISMOAPP\Actualizador_clientes_DismoAPP.resx">
+      <DependentUpon>Actualizador_clientes_DismoAPP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\Informatica\Sincronizacion\Cambio_fecha_Pedido.resx">
+      <DependentUpon>Cambio_fecha_Pedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\BODEGA\Cargas.resx">
+      <DependentUpon>Cargas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\BODEGA\REGALIAS\Carga_Costos_Regalias.resx">
+      <DependentUpon>Carga_Costos_Regalias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\FLOTA\Combustible_flota.resx">
+      <DependentUpon>Combustible_flota.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\HOME\Configuracion.resx">
+      <DependentUpon>Configuracion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\FLOTA\consumibles y prestamos.resx">
+      <DependentUpon>consumibles y prestamos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\FLOTA\Control Vehiculos.resx">
+      <DependentUpon>Control Vehiculos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\CREDITOS\CORRELATIVOS\Correlativo_process.resx">
+      <DependentUpon>Correlativo_process.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\VENTAS\FACTURACION\Articulos.resx">
+      <DependentUpon>Articulos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\VENTAS\FACTURACION\carga_digicel.resx">
+      <DependentUpon>carga_digicel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\VENTAS\FACTURACION\Facturacion.resx">
+      <DependentUpon>Facturacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\VENTAS\FACTURACION\Ingreso_Facturas.resx">
+      <DependentUpon>Ingreso_Facturas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\VENTAS\muebles.rdlc" />
+    <EmbeddedResource Include="CORECTX APP\VENTAS\Muebles.resx">
+      <DependentUpon>Muebles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\VENTAS\muebles_imagenes.resx">
+      <DependentUpon>muebles_imagenes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\VENTAS\RUTERO\Cambio.resx">
+      <DependentUpon>Cambio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\VENTAS\RUTERO\Informacion_Cliente.resx">
+      <DependentUpon>Informacion_Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\VENTAS\RUTERO\Restrura_Ruteros.resx">
+      <DependentUpon>Restrura_Ruteros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\VENTAS\Visitas_Comentarios.resx">
+      <DependentUpon>Visitas_Comentarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\VENTAS\wait.resx">
+      <DependentUpon>wait.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\CREDITOS\DIRECCIONES UPDATE\Direcciones_UPDATE.resx">
+      <DependentUpon>Direcciones_UPDATE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\RRHH\Evaluacion_Desempeño.resx">
+      <DependentUpon>Evaluacion_Desempeño.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\Informatica\EXCEL TO KML GPS\ExceltoKML.resx">
+      <DependentUpon>ExceltoKML.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\VENTAS\DISMOAPP\Exportador Clientes StreetPDA.resx">
+      <DependentUpon>Exportador Clientes StreetPDA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\FLOTA\Flota_Compras.resx">
+      <DependentUpon>Flota_Compras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\FLOTA\Forma_pago_flota.resx">
+      <DependentUpon>Forma_pago_flota.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\CREDITOS\RECIBOS\FrmCC_CargadorRecibos.resx">
+      <DependentUpon>FrmCC_CargadorRecibos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\Informatica\Exportador KC\FrmKC_ExportadorVtaTxT.resx">
+      <DependentUpon>FrmKC_ExportadorVtaTxT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\BODEGA\FrmPromociones.resx">
+      <DependentUpon>FrmPromociones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\Informatica\Tarificador\FrmTarificador.resx">
+      <DependentUpon>FrmTarificador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\VENTAS\DISMOAPP\Importador_Clientes_Dismoapp.resx">
+      <DependentUpon>Importador_Clientes_Dismoapp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\Informatica\Power Street\Importador_Street.resx">
+      <DependentUpon>Importador_Street.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\FLOTA\import_fac_flota.resx">
+      <DependentUpon>import_fac_flota.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\Informatica\Power Street\informacion_import_street.resx">
+      <DependentUpon>informacion_import_street.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\RRHH\ISSS.resx">
+      <DependentUpon>ISSS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\FLOTA\Kilometrajes.resx">
+      <DependentUpon>Kilometrajes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\CREDITOS\Limites_Creditos.resx">
+      <DependentUpon>Limites_Creditos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\RRHH\Menu_Evaluaciones.resx">
+      <DependentUpon>Menu_Evaluaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\RRHH\Objetivos_Evaluacion.resx">
+      <DependentUpon>Objetivos_Evaluacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\Informatica\Power Street\OFERTAS_STREET.resx">
+      <DependentUpon>OFERTAS_STREET.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\FLOTA\Proveedores_Flota.resx">
+      <DependentUpon>Proveedores_Flota.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\BODEGA\Reporte Cargas Bodega.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\CREDITOS\Reporte Carera XLS.resx">
+      <DependentUpon>Reporte Carera XLS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\BODEGA\Reporte_Pedidos_facturas.resx">
+      <DependentUpon>Reporte_Pedidos_facturas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\VENTAS\DISMOAPP\Reporte_Saldos_Reps.resx">
+      <DependentUpon>Reporte_Saldos_Reps.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\VENTAS\RUTERO\Rutas.resx">
+      <DependentUpon>Rutas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\VENTAS\DISMOAPP\Rutas_Trade_Reps.resx">
+      <DependentUpon>Rutas_Trade_Reps.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\VENTAS\RUTERO\Ruteroreporte.resx">
+      <DependentUpon>Ruteroreporte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\Informatica\Sincronizacion\Sincronizacion.resx">
+      <DependentUpon>Sincronizacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\Informatica\Casos\Casos_update.resx">
+      <DependentUpon>Casos_update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\Informatica\Correlativos\Correlativo_fac.resx">
+      <DependentUpon>Correlativo_fac.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\BODEGA\REGALIAS\ingreso_reg_ven.resx">
+      <DependentUpon>ingreso_reg_ven.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\BODEGA\REGALIAS\Regalias_vencido.resx">
+      <DependentUpon>Regalias_vencido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\Informatica\OC.resx">
+      <DependentUpon>OC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\CREDITOS\Reporte_venta_cobro.resx">
+      <DependentUpon>Reporte_venta_cobro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\Informatica\Sincronizacion\Procesos.resx">
+      <DependentUpon>Procesos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\Informatica\Sincronizacion\log_carga_HH.resx">
+      <DependentUpon>log_carga_HH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\Informatica\Sincronizacion\No_Sinc.resx">
+      <DependentUpon>No_Sinc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\HOME\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\HOME\Main_Menu.resx">
+      <DependentUpon>Main_Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\CREDITOS\Reporte_Cartera.resx">
+      <DependentUpon>Reporte_Cartera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\Informatica\EXCEL TO KML GPS\GPS_clientes.resx">
+      <DependentUpon>GPS_clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\Informatica\Casos\Casos_Main.resx">
+      <DependentUpon>Casos_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm1.resx">
+      <DependentUpon>MainForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="CORECTX APP\Informatica\Update_Clientes_FR.resx">
+      <DependentUpon>Update_Clientes_FR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\Informatica\Update_PEDIDOS.resx">
+      <DependentUpon>Update_PEDIDOS.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
+    <None Include="CORRECT_TemporaryKey.pfx" />
+    <None Include="Reportsdb.xsc">
+      <DependentUpon>Reportsdb.xsd</DependentUpon>
+    </None>
+    <None Include="Reportsdb.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Reportsdb.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reportsdb.xss">
+      <DependentUpon>Reportsdb.xsd</DependentUpon>
+    </None>
+    <Fakes Include="Fakes\Microsoft.Office.Interop.Excel.fakes" />
+    <Resource Include="Fakes\System.Windows.Controls.fakes" />
+    <Resource Include="Fakes\RDLCReportRunner.fakes" />
+    <None Include="Muebles_merchan.xsc">
+      <DependentUpon>Muebles_merchan.xsd</DependentUpon>
+    </None>
+    <None Include="Muebles_merchan.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Muebles_merchan.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Muebles_merchan.xss">
+      <DependentUpon>Muebles_merchan.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Recursos_HumanosDB.xsc">
+      <DependentUpon>Recursos_HumanosDB.xsd</DependentUpon>
+    </None>
+    <None Include="Recursos_HumanosDB.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Recursos_HumanosDB.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Recursos_HumanosDB.xss">
+      <DependentUpon>Recursos_HumanosDB.xsd</DependentUpon>
+    </None>
+    <None Include="ReporteCC.xsc">
+      <DependentUpon>ReporteCC.xsd</DependentUpon>
+    </None>
+    <None Include="ReporteCC.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReporteCC.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ReporteCC.xss">
+      <DependentUpon>ReporteCC.xsd</DependentUpon>
+    </None>
+    <None Include="Sinconizacion_EXactus_TemporaryKey.pfx" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.VisualBasic.PowerPacks.10.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft Visual Basic PowerPacks 10.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exactus.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exactus2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exactus21.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exactus3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exactus22.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filtropq.png" />
+    <None Include="Resources\mas.png" />
+    <None Include="Resources\menos.png" />
+    <None Include="Resources\Cargando.gif" />
+    <None Include="Resources\fac_FR.png" />
+    <None Include="Resources\fill_rate.jpg" />
+    <None Include="Resources\Import_Precios.png" />
+    <None Include="Resources\Paso3.png" />
+    <None Include="Resources\filter_32x32.png" />
+    <None Include="Resources\filter_16x16.png" />
+    <None Include="Resources\clearfilter_32x32.png" />
+    <None Include="Resources\clearfilter_16x16.png" />
+    <None Include="Resources\filter_32x321.png" />
+    <None Include="Resources\filter_16x161.png" />
+    <None Include="Resources\BAC.png" />
+    <None Include="Resources\BAC_peque.png" />
+    <None Include="Resources\car.png" />
+    <None Include="Resources\save_32x32.png" />
+    <None Include="Resources\save_16x16.png" />
+    <None Include="Resources\save_16x161.png" />
+    <None Include="Resources\save_32x321.png" />
+    <None Include="Resources\pagemargins_32x32.png" />
+    <None Include="Resources\pagemargins_32x321.png" />
+    <None Include="Resources\pagemargins_16x16.png" />
+    <None Include="Resources\unileverdpq.png" />
+    <None Include="Resources\jira-logo-scaled.png" />
+    <None Include="Resources\Sping.png" />
+    <None Include="Resources\chequerojo.png" />
+    <None Include="Resources\chqeueverde.png" />
+    <None Include="Resources\currency_32x32.png" />
+    <None Include="Resources\currency_32x321.png" />
+    <None Include="Resources\currency_32x322.png" />
+    <None Include="Resources\currency_16x16.png" />
+    <Content Include="WinSCP.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="app.config" />
+    <None Include="Resources\procesospeq.png" />
+    <None Include="Resources\procesospeq1.png" />
+    <None Include="Resources\refreshpeq1.png" />
+    <None Include="Resources\metal.jpg" />
+    <None Include="Resources\sinc.png" />
+    <None Include="Resources\EXACTUS.jpg" />
+    <None Include="Resources\TRFFC09.gif" />
+    <None Include="Resources\informatica1.jpg" />
+    <None Include="Resources\informatica.jpg" />
+    <None Include="Resources\DM.jpg" />
+    <None Include="Resources\lineas gris.jpg" />
+    <None Include="Resources\DMP.png" />
+    <None Include="Resources\cobrospeque.jpg" />
+    <None Include="Resources\Bodegapeque.jpg" />
+    <None Include="Resources\Ventaspeque.png" />
+    <None Include="Resources\informaticapeque.jpg" />
+    <None Include="Resources\creditospeque.jpg" />
+    <None Include="Resources\loguin.jpg" />
+    <None Include="Resources\nuevo.jpg" />
+    <None Include="Resources\regresar.jpg" />
+    <None Include="Resources\nuevo1.jpg" />
+    <None Include="Resources\guardar.jpg" />
+    <None Include="Resources\Editar.jpg" />
+    <None Include="Resources\salir.png" />
+    <None Include="Resources\regalo.jpg" />
+    <None Include="Resources\map.jpg" />
+    <None Include="Resources\nuevo2.jpg" />
+    <None Include="Resources\numeros.jpg" />
+    <None Include="Resources\lupa.jpg" />
+    <None Include="Resources\loguin1.png" />
+    <Content Include="ClienteFTPPDA.dll" />
+    <Content Include="DMP.ico" />
+    <None Include="Resources\vencido.jpg" />
+    <None Include="Resources\cigarro.jpg" />
+    <None Include="Resources\mas.jpg" />
+    <None Include="Resources\eliminarpeq.jpg" />
+    <None Include="Resources\excelpeq.png" />
+    <None Include="Resources\clientepeq.jpg" />
+    <None Include="Resources\pedidopeque.png" />
+    <None Include="Resources\OC+peque.png" />
+    <None Include="Resources\Estructura Excel.png" />
+    <None Include="Resources\cargador.png" />
+    <None Include="Resources\ajaxloaderc.gif" />
+    <None Include="Resources\avanzar.png" />
+    <None Include="Resources\atrazar.png" />
+    <None Include="Resources\cheque.jpg" />
+    <None Include="Resources\herramientas.jpg" />
+    <None Include="Resources\consumibles.bmp" />
+    <None Include="Resources\asiganciones.jpg" />
+    <None Include="Resources\ready.jpg" />
+    <None Include="Resources\no ready.jpg" />
+    <None Include="Resources\flota1.jpg" />
+    <None Include="Resources\flota1peque.jpg" />
+    <None Include="Resources\Gas.gif" />
+    <None Include="Resources\llaves.gif" />
+    <None Include="Resources\Gas1.gif" />
+    <None Include="Resources\Manto.gif" />
+    <None Include="Resources\carro.gif" />
+    <None Include="Resources\engranepeque.jpg" />
+    <None Include="Resources\Dismoapp.png" />
+    <None Include="Resources\playp.jpg" />
+    <None Include="Resources\ejemReps.jpg" />
+    <None Include="Resources\escala.jpg" />
+    <None Include="Resources\escala1.jpg" />
+    <None Include="Resources\franja azul.png" />
+    <None Include="Resources\escala2.jpg" />
+    <None Include="Resources\Estrategia.jpg" />
+    <None Include="Resources\Codigo trabajo.jpg" />
+    <None Include="Resources\check.jpg" />
+    <None Include="Resources\Codigo trabajo1.jpg" />
+    <None Include="Resources\calcular.jpg" />
+    <None Include="Resources\calculadora.jpg" />
+    <None Include="Resources\COSTOS.jpg" />
+    <Content Include="Exico.ico" />
+    <None Include="Resources\Flota.png" />
+    <None Include="Resources\bodegapq.png" />
+    <None Include="Resources\creditospq.png" />
+    <None Include="Resources\empresas.png" />
+    <None Include="Resources\DMtrans.png" />
+    <None Include="Resources\excelbt.jpg" />
+    <None Include="Resources\excelrutero.png" />
+    <None Include="Resources\cancel.png" />
+    <Content Include="Resources\informatica.gif" />
+    <None Include="Resources\informaticaweb.gif" />
+    <None Include="Resources\RRHH.jpg" />
+    <None Include="Resources\RRHHpeqe.png" />
+    <None Include="Resources\salespq.png" />
+    <None Include="Resources\ITpq.png" />
+    <None Include="Resources\power.png" />
+    <None Include="Resources\KC.png" />
+    <None Include="Resources\transparente.png" />
+    <None Include="Resources\nuvebt.png" />
+    <None Include="Resources\merchan peque.png" />
+    <None Include="Resources\loguin2.gif" />
+    <Content Include="Resources\trnasfer.gif" />
+    <None Include="Resources\trnasfer1.gif" />
+    <None Include="Resources\ventas2.png" />
+    <Content Include="sinc.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="MSDAOSP">
+      <Guid>{E0E270C2-C0BE-11D0-8FE4-00A0C90A6341}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>1033</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="MSDASC">
+      <Guid>{2206CEB0-19C1-11D1-89E0-00C04FD7A829}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

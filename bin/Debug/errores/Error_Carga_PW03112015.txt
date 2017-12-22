@@ -1,0 +1,1195 @@
+401,1004008,00103038,10/08/2015 12:00:00 AM,C,No se encontro Articulo  6379 en Exactus
+
+402,1002749,00103039,10/08/2015 12:00:00 AM,C,Numero de Documento ya existe en la Base de datos
+
+403,1002975,00103040,10/08/2015 12:00:00 AM,C,Numero de Documento ya existe en la Base de datos
+
+404,1002756,00103047,10/08/2015 12:00:00 AM,C,Numero de Documento ya existe en la Base de datos
+
+10609,1002977,00103041,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10610,1002976,00103042,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10611,1002714,00103043,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10612,1002745,00103044,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10613,1002731,00103045,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10614,1002740,00103046,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10615,1003122,00103048,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10616,1002738,00103049,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10617,1002974,00103050,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10618,1004223,00103051,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10619,1003480,00103052,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10620,1002716,00103053,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10621,1003939,00103054,10/08/2015 12:00:00 AM,F,No se encontro Articulo  6379 en Exactus
+
+10622,1004281,00103055,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10623,1002692,00103056,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10624,1003265,00103057,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10625,1003203,00103058,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10626,1003785,00103059,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10627,1003242,00103060,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10628,1002513,00103061,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10629,1001617,00103062,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10630,1001636,00103063,10/08/2015 12:00:00 AM,F,No se encontro Articulo  6379 en Exactus
+
+10631,1003762,00103064,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10632,1003953,00103065,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10633,1003763,00103066,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10634,1003224,00103067,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10635,1004106,00103068,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10636,1004241,00103069,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10637,1004423,00103070,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10638,1004230,00103071,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10639,1000235,00103072,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10640,1003955,00103073,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10641,1003220,00103074,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10642,1004231,00103075,10/08/2015 12:00:00 AM,F,No se encontro Articulo  6379 en Exactus
+
+10643,1003759,00103076,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10644,1003758,00103077,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10645,1003757,00103078,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10646,1003755,00103079,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10647,1004420,00103080,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10648,1004421,00103081,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10649,1004235,00103082,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10650,1004233,00103083,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10651,1004419,00103084,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10652,1003523,00103085,10/08/2015 12:00:00 AM,F,No se encontro Articulo  6379 en Exactus
+
+10653,1003526,00103086,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10654,1003241,00103087,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10655,1004230,00103088,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10656,1003537,00103089,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10657,1004475,00103090,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10658,1003969,00103091,10/08/2015 12:00:00 AM,F,No se encontro Articulo  6379 en Exactus
+
+10659,1004468,00103092,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10660,1004469,00103093,10/08/2015 12:00:00 AM,F,No se encontro Articulo  6379 en Exactus
+
+10661,1004470,00103094,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10662,1004471,00103095,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10663,1004472,00103096,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10664,1004473,00103097,10/08/2015 12:00:00 AM,F,No se encontro Articulo  6379 en Exactus
+
+10664,1004473,00103097,10/08/2015 12:00:00 AM,F,No se encontro Articulo  6379 en Exactus
+
+10665,1003970,00103098,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10666,1001403,00103099,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10667,1003248,00103100,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10668,1004117,00103101,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10669,1001408,00103102,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10670,1001400,00103103,10/08/2015 12:00:00 AM,F,No se encontro Articulo  6379 en Exactus
+
+10671,1003249,00103104,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10672,1002885,00103105,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10673,1003244,00103106,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10674,1002882,00103107,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10675,1004474,00103108,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10676,1002883,00103109,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10677,1003535,00103110,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10678,1002121,00103111,10/08/2015 12:00:00 AM,F,No se encontro Articulo  6379 en Exactus
+
+10679,1003204,00103112,10/08/2015 12:00:00 AM,F,No se encontro Articulo  6379 en Exactus
+
+10680,1003202,00103113,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10681,1004113,00103114,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10682,1002122,00103115,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10683,1004227,00103116,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10684,1003237,00103117,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10685,1004416,00103118,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10686,1004238,00103119,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10687,1004236,00103120,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10688,1002877,00103121,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10689,1002876,00103122,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10690,1004242,00103123,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10691,1003256,00103124,10/08/2015 12:00:00 AM,F,No se encontro Articulo  6379 en Exactus
+
+10692,1003530,00103125,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10693,1002875,00103126,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10694,1003537,00103127,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10695,1004239,00103128,10/08/2015 12:00:00 AM,F,No se encontro Articulo  6379 en Exactus
+
+10696,1003217,00103129,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10697,1003238,00103130,10/08/2015 12:00:00 AM,F,No se encontro Articulo  6379 en Exactus
+
+10698,1000719,00103131,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10699,1002553,00103132,10/08/2015 12:00:00 AM,F,No se encontro Articulo  6379 en Exactus
+
+10700,1002891,00103133,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10701,1003768,00103134,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10702,1003232,00103135,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10703,1001159,00103136,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10704,1003231,00103137,10/08/2015 12:00:00 AM,F,No se encontro Articulo  6379 en Exactus
+
+10705,1003252,00103138,10/08/2015 12:00:00 AM,F,No se encontro Articulo  6379 en Exactus
+
+10706,1003263,00103139,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10707,1003967,00103140,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10708,1002580,00103141,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10709,1003786,00103142,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10710,1003781,00103143,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10711,1004112,00103144,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10712,1003783,00103145,10/08/2015 12:00:00 AM,F,No se encontro Articulo  6379 en Exactus
+
+10713,1003257,00103146,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10714,1003295,00103147,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10715,1003297,00103148,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10716,1002906,00103149,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10717,1003981,00103150,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10718,1002904,00103151,10/08/2015 12:00:00 AM,F,No se encontro Articulo  6379 en Exactus
+
+10719,1002903,00103152,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10720,1002886,00103153,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10721,1000158,00103154,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10722,1003944,00103155,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10723,1004335,00103156,10/08/2015 12:00:00 AM,F,No se encontro Articulo  6379 en Exactus
+
+10724,1003769,00103157,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10725,1003555,00103158,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10726,1003770,00103159,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10727,1001145,00103160,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10728,1002648,00103161,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10729,1004101,00103162,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10730,1000297,00103163,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10731,1002634,00103164,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10732,1003540,00103165,10/08/2015 12:00:00 AM,F,No se encontro Articulo  6379 en Exactus
+
+10733,1004109,00103166,10/08/2015 12:00:00 AM,F,No se encontro Articulo  6379 en Exactus
+
+10734,1000293,00103167,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10735,1002630,00103168,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10736,1001237,00103169,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10737,1002628,00103170,10/08/2015 12:00:00 AM,F,No se encontro Articulo  6379 en Exactus
+
+10738,1004108,00103171,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10739,1002640,00103172,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10740,1002631,00103173,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10741,1001115,00103174,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10742,1000262,00103175,10/08/2015 12:00:00 AM,F,No se encontro Articulo  6379 en Exactus
+
+10743,1001242,00103176,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10744,1002635,00103177,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10745,1004110,00103178,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10746,1003965,00103179,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10747,1004118,00103180,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10748,1003968,00103181,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10749,1003971,00103182,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10750,1003943,00103183,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10751,1002417,00103184,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10752,1002415,00103185,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10753,1003211,00103186,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10754,1002414,00103187,10/08/2015 12:00:00 AM,F,No se encontro Articulo  6379 en Exactus
+
+10755,1002894,00103188,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10756,1003206,00103189,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10757,1002892,00103190,10/08/2015 12:00:00 AM,F,No se encontro Articulo  6379 en Exactus
+
+10758,1002413,00103191,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10759,1003212,00103192,10/08/2015 12:00:00 AM,F,No se encontro Articulo  6379 en Exactus
+
+10760,1003548,00103193,10/08/2015 12:00:00 AM,F,No se encontro Articulo  6379 en Exactus
+
+10761,1004104,00103194,10/08/2015 12:00:00 AM,F,No se encontro Articulo  6379 en Exactus
+
+10762,1004353,00103195,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10763,1003213,00103196,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10764,1002412,00103197,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10765,1004336,00103198,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10766,1002408,00103199,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10767,1004107,00103200,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10768,1003221,00103201,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10769,1002424,00103202,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10770,1004343,00103203,10/08/2015 12:00:00 AM,F,No se encontro Articulo  6379 en Exactus
+
+10771,1003973,00103204,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10772,1003979,00103205,10/08/2015 12:00:00 AM,F,No se encontro Articulo  6379 en Exactus
+
+10773,1004340,00103206,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10774,1003547,00103207,10/08/2015 12:00:00 AM,F,No se encontro Articulo  6379 en Exactus
+
+10774,1003547,00103207,10/08/2015 12:00:00 AM,F,No se encontro Articulo  6379 en Exactus
+
+10775,1003225,00103208,10/08/2015 12:00:00 AM,F,No se encontro Articulo  6379 en Exactus
+
+10776,1003980,00103209,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10777,1002421,00103210,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10778,1002938,00103211,10/08/2015 12:00:00 AM,F,No se encontro Articulo  6379 en Exactus
+
+10779,1003226,00103212,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10780,1003229,00103213,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10781,1002913,00103214,10/08/2015 12:00:00 AM,F,No se encontro Articulo  6379 en Exactus
+
+10782,1002438,00103215,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10783,1003545,00103216,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10784,1003243,00103217,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10785,1003240,00103218,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10786,1002420,00103219,10/08/2015 12:00:00 AM,F,No se encontro Articulo  6379 en Exactus
+
+10787,1003550,00103220,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10788,1003561,00103221,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10789,1003254,00103222,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10790,1002428,00103223,10/08/2015 12:00:00 AM,F,No se encontro Articulo  6379 en Exactus
+
+10791,1004476,00103224,10/08/2015 12:00:00 AM,F,No se encontro Articulo  6379 en Exactus
+
+10792,1000009,00103225,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10793,1004341,00103226,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10794,1001274,00103227,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10795,1004245,00103228,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10796,1003264,00103229,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10797,1004477,00103230,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10798,1003255,00103231,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10799,1003957,00103232,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10800,1004342,00103233,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10801,1003963,00103234,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+10802,1002725,00103235,10/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+
+DOCUMENTOclientecorrelativofechaTipoError364,DOCUMENTOclientecorrelativofechaTipoError1004008,DOCUMENTOclientecorrelativofechaTipoError00102115,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorC,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError365,DOCUMENTOclientecorrelativofechaTipoError1002749,DOCUMENTOclientecorrelativofechaTipoError00102116,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorC,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError366,DOCUMENTOclientecorrelativofechaTipoError1003616,DOCUMENTOclientecorrelativofechaTipoError00102117,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorC,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError367,DOCUMENTOclientecorrelativofechaTipoError1002975,DOCUMENTOclientecorrelativofechaTipoError00102118,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorC,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError368,DOCUMENTOclientecorrelativofechaTipoError1003400,DOCUMENTOclientecorrelativofechaTipoError00102184,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorC,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError369,DOCUMENTOclientecorrelativofechaTipoError1002749,DOCUMENTOclientecorrelativofechaTipoError00102308,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorC,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError370,DOCUMENTOclientecorrelativofechaTipoError1003616,DOCUMENTOclientecorrelativofechaTipoError00102309,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorC,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError371,DOCUMENTOclientecorrelativofechaTipoError1002749,DOCUMENTOclientecorrelativofechaTipoError00102310,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorC,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError372,DOCUMENTOclientecorrelativofechaTipoError1003616,DOCUMENTOclientecorrelativofechaTipoError00102311,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorC,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError4,DOCUMENTOclientecorrelativofechaTipoError1003910,DOCUMENTOclientecorrelativofechaTipoError00102306,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9727,DOCUMENTOclientecorrelativofechaTipoError1002977,DOCUMENTOclientecorrelativofechaTipoError00102119,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9728,DOCUMENTOclientecorrelativofechaTipoError1002745,DOCUMENTOclientecorrelativofechaTipoError00102120,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9729,DOCUMENTOclientecorrelativofechaTipoError1002714,DOCUMENTOclientecorrelativofechaTipoError00102121,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9730,DOCUMENTOclientecorrelativofechaTipoError1003324,DOCUMENTOclientecorrelativofechaTipoError00102122,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9731,DOCUMENTOclientecorrelativofechaTipoError1003324,DOCUMENTOclientecorrelativofechaTipoError00102123,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9732,DOCUMENTOclientecorrelativofechaTipoError1002976,DOCUMENTOclientecorrelativofechaTipoError00102124,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9733,DOCUMENTOclientecorrelativofechaTipoError1002768,DOCUMENTOclientecorrelativofechaTipoError00102125,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9734,DOCUMENTOclientecorrelativofechaTipoError1002768,DOCUMENTOclientecorrelativofechaTipoError00102126,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9735,DOCUMENTOclientecorrelativofechaTipoError1002740,DOCUMENTOclientecorrelativofechaTipoError00102127,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9736,DOCUMENTOclientecorrelativofechaTipoError1003520,DOCUMENTOclientecorrelativofechaTipoError00102128,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9737,DOCUMENTOclientecorrelativofechaTipoError1002682,DOCUMENTOclientecorrelativofechaTipoError00102129,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9738,DOCUMENTOclientecorrelativofechaTipoError1004026,DOCUMENTOclientecorrelativofechaTipoError00102130,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9739,DOCUMENTOclientecorrelativofechaTipoError1002679,DOCUMENTOclientecorrelativofechaTipoError00102131,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9740,DOCUMENTOclientecorrelativofechaTipoError1002772,DOCUMENTOclientecorrelativofechaTipoError00102132,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9741,DOCUMENTOclientecorrelativofechaTipoError1002710,DOCUMENTOclientecorrelativofechaTipoError00102133,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9742,DOCUMENTOclientecorrelativofechaTipoError1002710,DOCUMENTOclientecorrelativofechaTipoError00102134,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9743,DOCUMENTOclientecorrelativofechaTipoError1002692,DOCUMENTOclientecorrelativofechaTipoError00102135,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9744,DOCUMENTOclientecorrelativofechaTipoError1002689,DOCUMENTOclientecorrelativofechaTipoError00102136,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9745,DOCUMENTOclientecorrelativofechaTipoError1002689,DOCUMENTOclientecorrelativofechaTipoError00102137,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9746,DOCUMENTOclientecorrelativofechaTipoError1002738,DOCUMENTOclientecorrelativofechaTipoError00102138,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9747,DOCUMENTOclientecorrelativofechaTipoError1002869,DOCUMENTOclientecorrelativofechaTipoError00102139,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9748,DOCUMENTOclientecorrelativofechaTipoError1002734,DOCUMENTOclientecorrelativofechaTipoError00102140,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9749,DOCUMENTOclientecorrelativofechaTipoError1004223,DOCUMENTOclientecorrelativofechaTipoError00102141,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9750,DOCUMENTOclientecorrelativofechaTipoError1003480,DOCUMENTOclientecorrelativofechaTipoError00102142,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9751,DOCUMENTOclientecorrelativofechaTipoError1002716,DOCUMENTOclientecorrelativofechaTipoError00102143,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9752,DOCUMENTOclientecorrelativofechaTipoError1003939,DOCUMENTOclientecorrelativofechaTipoError00102144,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9753,DOCUMENTOclientecorrelativofechaTipoError1004281,DOCUMENTOclientecorrelativofechaTipoError00102145,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9754,DOCUMENTOclientecorrelativofechaTipoError1002732,DOCUMENTOclientecorrelativofechaTipoError00102146,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9755,DOCUMENTOclientecorrelativofechaTipoError1003265,DOCUMENTOclientecorrelativofechaTipoError00102147,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9756,DOCUMENTOclientecorrelativofechaTipoError1003480,DOCUMENTOclientecorrelativofechaTipoError00102148,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9757,DOCUMENTOclientecorrelativofechaTipoError1000417,DOCUMENTOclientecorrelativofechaTipoError00102149,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9758,DOCUMENTOclientecorrelativofechaTipoError1004007,DOCUMENTOclientecorrelativofechaTipoError00102150,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9759,DOCUMENTOclientecorrelativofechaTipoError1004009,DOCUMENTOclientecorrelativofechaTipoError00102151,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9760,DOCUMENTOclientecorrelativofechaTipoError1004272,DOCUMENTOclientecorrelativofechaTipoError00102152,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9761,DOCUMENTOclientecorrelativofechaTipoError1000418,DOCUMENTOclientecorrelativofechaTipoError00102153,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9762,DOCUMENTOclientecorrelativofechaTipoError1003330,DOCUMENTOclientecorrelativofechaTipoError00102154,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9763,DOCUMENTOclientecorrelativofechaTipoError1004021,DOCUMENTOclientecorrelativofechaTipoError00102155,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9764,DOCUMENTOclientecorrelativofechaTipoError1003460,DOCUMENTOclientecorrelativofechaTipoError00102156,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9765,DOCUMENTOclientecorrelativofechaTipoError1003333,DOCUMENTOclientecorrelativofechaTipoError00102157,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9766,DOCUMENTOclientecorrelativofechaTipoError1003332,DOCUMENTOclientecorrelativofechaTipoError00102158,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9767,DOCUMENTOclientecorrelativofechaTipoError1003004,DOCUMENTOclientecorrelativofechaTipoError00102159,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9768,DOCUMENTOclientecorrelativofechaTipoError1003618,DOCUMENTOclientecorrelativofechaTipoError00102160,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9769,DOCUMENTOclientecorrelativofechaTipoError1004276,DOCUMENTOclientecorrelativofechaTipoError00102161,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9770,DOCUMENTOclientecorrelativofechaTipoError1000144,DOCUMENTOclientecorrelativofechaTipoError00102162,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9771,DOCUMENTOclientecorrelativofechaTipoError1004437,DOCUMENTOclientecorrelativofechaTipoError00102163,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9772,DOCUMENTOclientecorrelativofechaTipoError1003008,DOCUMENTOclientecorrelativofechaTipoError00102164,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9773,DOCUMENTOclientecorrelativofechaTipoError1001289,DOCUMENTOclientecorrelativofechaTipoError00102165,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9774,DOCUMENTOclientecorrelativofechaTipoError1003009,DOCUMENTOclientecorrelativofechaTipoError00102166,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9775,DOCUMENTOclientecorrelativofechaTipoError1003605,DOCUMENTOclientecorrelativofechaTipoError00102167,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9776,DOCUMENTOclientecorrelativofechaTipoError1004144,DOCUMENTOclientecorrelativofechaTipoError00102168,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9777,DOCUMENTOclientecorrelativofechaTipoError1004057,DOCUMENTOclientecorrelativofechaTipoError00102169,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9778,DOCUMENTOclientecorrelativofechaTipoError1003326,DOCUMENTOclientecorrelativofechaTipoError00102170,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9779,DOCUMENTOclientecorrelativofechaTipoError1003830,DOCUMENTOclientecorrelativofechaTipoError00102171,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9780,DOCUMENTOclientecorrelativofechaTipoError1003829,DOCUMENTOclientecorrelativofechaTipoError00102172,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9781,DOCUMENTOclientecorrelativofechaTipoError1002944,DOCUMENTOclientecorrelativofechaTipoError00102173,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9782,DOCUMENTOclientecorrelativofechaTipoError1003328,DOCUMENTOclientecorrelativofechaTipoError00102174,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9783,DOCUMENTOclientecorrelativofechaTipoError1002945,DOCUMENTOclientecorrelativofechaTipoError00102175,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9784,DOCUMENTOclientecorrelativofechaTipoError1000164,DOCUMENTOclientecorrelativofechaTipoError00102176,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9785,DOCUMENTOclientecorrelativofechaTipoError1001989,DOCUMENTOclientecorrelativofechaTipoError00102177,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9786,DOCUMENTOclientecorrelativofechaTipoError1004357,DOCUMENTOclientecorrelativofechaTipoError00102178,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9787,DOCUMENTOclientecorrelativofechaTipoError1003987,DOCUMENTOclientecorrelativofechaTipoError00102179,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9788,DOCUMENTOclientecorrelativofechaTipoError1004057,DOCUMENTOclientecorrelativofechaTipoError00102180,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9789,DOCUMENTOclientecorrelativofechaTipoError1003830,DOCUMENTOclientecorrelativofechaTipoError00102181,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9790,DOCUMENTOclientecorrelativofechaTipoError1003326,DOCUMENTOclientecorrelativofechaTipoError00102182,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9791,DOCUMENTOclientecorrelativofechaTipoError1003829,DOCUMENTOclientecorrelativofechaTipoError00102183,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9792,DOCUMENTOclientecorrelativofechaTipoError1002255,DOCUMENTOclientecorrelativofechaTipoError00102185,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9793,DOCUMENTOclientecorrelativofechaTipoError1004070,DOCUMENTOclientecorrelativofechaTipoError00102186,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9794,DOCUMENTOclientecorrelativofechaTipoError1003034,DOCUMENTOclientecorrelativofechaTipoError00102187,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9795,DOCUMENTOclientecorrelativofechaTipoError1004011,DOCUMENTOclientecorrelativofechaTipoError00102188,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9796,DOCUMENTOclientecorrelativofechaTipoError1003357,DOCUMENTOclientecorrelativofechaTipoError00102189,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9797,DOCUMENTOclientecorrelativofechaTipoError1002971,DOCUMENTOclientecorrelativofechaTipoError00102190,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9798,DOCUMENTOclientecorrelativofechaTipoError1002969,DOCUMENTOclientecorrelativofechaTipoError00102191,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9799,DOCUMENTOclientecorrelativofechaTipoError1002972,DOCUMENTOclientecorrelativofechaTipoError00102192,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9800,DOCUMENTOclientecorrelativofechaTipoError1002980,DOCUMENTOclientecorrelativofechaTipoError00102193,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9801,DOCUMENTOclientecorrelativofechaTipoError1004435,DOCUMENTOclientecorrelativofechaTipoError00102194,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9802,DOCUMENTOclientecorrelativofechaTipoError1004368,DOCUMENTOclientecorrelativofechaTipoError00102195,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9803,DOCUMENTOclientecorrelativofechaTipoError1003622,DOCUMENTOclientecorrelativofechaTipoError00102196,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9804,DOCUMENTOclientecorrelativofechaTipoError1002978,DOCUMENTOclientecorrelativofechaTipoError00102197,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9805,DOCUMENTOclientecorrelativofechaTipoError1000645,DOCUMENTOclientecorrelativofechaTipoError00102198,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9806,DOCUMENTOclientecorrelativofechaTipoError1003609,DOCUMENTOclientecorrelativofechaTipoError00102199,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9807,DOCUMENTOclientecorrelativofechaTipoError1001214,DOCUMENTOclientecorrelativofechaTipoError00102200,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9808,DOCUMENTOclientecorrelativofechaTipoError1002981,DOCUMENTOclientecorrelativofechaTipoError00102201,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9809,DOCUMENTOclientecorrelativofechaTipoError1002593,DOCUMENTOclientecorrelativofechaTipoError00102202,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9810,DOCUMENTOclientecorrelativofechaTipoError1003023,DOCUMENTOclientecorrelativofechaTipoError00102203,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9811,DOCUMENTOclientecorrelativofechaTipoError1000299,DOCUMENTOclientecorrelativofechaTipoError00102204,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9812,DOCUMENTOclientecorrelativofechaTipoError1000635,DOCUMENTOclientecorrelativofechaTipoError00102205,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9813,DOCUMENTOclientecorrelativofechaTipoError1003630,DOCUMENTOclientecorrelativofechaTipoError00102206,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9814,DOCUMENTOclientecorrelativofechaTipoError1003022,DOCUMENTOclientecorrelativofechaTipoError00102207,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9815,DOCUMENTOclientecorrelativofechaTipoError1000179,DOCUMENTOclientecorrelativofechaTipoError00102208,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9816,DOCUMENTOclientecorrelativofechaTipoError1004436,DOCUMENTOclientecorrelativofechaTipoError00102209,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9817,DOCUMENTOclientecorrelativofechaTipoError1003629,DOCUMENTOclientecorrelativofechaTipoError00102210,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9818,DOCUMENTOclientecorrelativofechaTipoError1003834,DOCUMENTOclientecorrelativofechaTipoError00102211,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9819,DOCUMENTOclientecorrelativofechaTipoError1003841,DOCUMENTOclientecorrelativofechaTipoError00102212,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9820,DOCUMENTOclientecorrelativofechaTipoError1003840,DOCUMENTOclientecorrelativofechaTipoError00102213,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9821,DOCUMENTOclientecorrelativofechaTipoError1003621,DOCUMENTOclientecorrelativofechaTipoError00102214,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9822,DOCUMENTOclientecorrelativofechaTipoError1003361,DOCUMENTOclientecorrelativofechaTipoError00102215,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9823,DOCUMENTOclientecorrelativofechaTipoError1003633,DOCUMENTOclientecorrelativofechaTipoError00102216,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9824,DOCUMENTOclientecorrelativofechaTipoError1003362,DOCUMENTOclientecorrelativofechaTipoError00102217,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9825,DOCUMENTOclientecorrelativofechaTipoError1004141,DOCUMENTOclientecorrelativofechaTipoError00102218,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9826,DOCUMENTOclientecorrelativofechaTipoError1002445,DOCUMENTOclientecorrelativofechaTipoError00102219,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9827,DOCUMENTOclientecorrelativofechaTipoError1003842,DOCUMENTOclientecorrelativofechaTipoError00102220,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9828,DOCUMENTOclientecorrelativofechaTipoError1003842,DOCUMENTOclientecorrelativofechaTipoError00102221,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9829,DOCUMENTOclientecorrelativofechaTipoError1003363,DOCUMENTOclientecorrelativofechaTipoError00102222,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9830,DOCUMENTOclientecorrelativofechaTipoError1001212,DOCUMENTOclientecorrelativofechaTipoError00102223,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9831,DOCUMENTOclientecorrelativofechaTipoError1003479,DOCUMENTOclientecorrelativofechaTipoError00102224,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9832,DOCUMENTOclientecorrelativofechaTipoError1002772,DOCUMENTOclientecorrelativofechaTipoError00102225,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9833,DOCUMENTOclientecorrelativofechaTipoError1003347,DOCUMENTOclientecorrelativofechaTipoError00102226,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9834,DOCUMENTOclientecorrelativofechaTipoError1004146,DOCUMENTOclientecorrelativofechaTipoError00102227,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9835,DOCUMENTOclientecorrelativofechaTipoError1004278,DOCUMENTOclientecorrelativofechaTipoError00102228,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9836,DOCUMENTOclientecorrelativofechaTipoError1004280,DOCUMENTOclientecorrelativofechaTipoError00102229,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9837,DOCUMENTOclientecorrelativofechaTipoError1004361,DOCUMENTOclientecorrelativofechaTipoError00102230,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9838,DOCUMENTOclientecorrelativofechaTipoError1003348,DOCUMENTOclientecorrelativofechaTipoError00102231,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9839,DOCUMENTOclientecorrelativofechaTipoError1003839,DOCUMENTOclientecorrelativofechaTipoError00102232,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9840,DOCUMENTOclientecorrelativofechaTipoError1003027,DOCUMENTOclientecorrelativofechaTipoError00102233,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9841,DOCUMENTOclientecorrelativofechaTipoError1003029,DOCUMENTOclientecorrelativofechaTipoError00102234,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9842,DOCUMENTOclientecorrelativofechaTipoError1003025,DOCUMENTOclientecorrelativofechaTipoError00102235,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9843,DOCUMENTOclientecorrelativofechaTipoError1002533,DOCUMENTOclientecorrelativofechaTipoError00102236,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9844,DOCUMENTOclientecorrelativofechaTipoError1003028,DOCUMENTOclientecorrelativofechaTipoError00102237,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9845,DOCUMENTOclientecorrelativofechaTipoError1004277,DOCUMENTOclientecorrelativofechaTipoError00102238,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9846,DOCUMENTOclientecorrelativofechaTipoError1000229,DOCUMENTOclientecorrelativofechaTipoError00102239,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9847,DOCUMENTOclientecorrelativofechaTipoError1004149,DOCUMENTOclientecorrelativofechaTipoError00102240,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9848,DOCUMENTOclientecorrelativofechaTipoError1004434,DOCUMENTOclientecorrelativofechaTipoError00102241,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9849,DOCUMENTOclientecorrelativofechaTipoError1003020,DOCUMENTOclientecorrelativofechaTipoError00102242,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9850,DOCUMENTOclientecorrelativofechaTipoError1003338,DOCUMENTOclientecorrelativofechaTipoError00102243,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9851,DOCUMENTOclientecorrelativofechaTipoError1003335,DOCUMENTOclientecorrelativofechaTipoError00102244,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9852,DOCUMENTOclientecorrelativofechaTipoError1003620,DOCUMENTOclientecorrelativofechaTipoError00102245,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9853,DOCUMENTOclientecorrelativofechaTipoError1003016,DOCUMENTOclientecorrelativofechaTipoError00102246,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9854,DOCUMENTOclientecorrelativofechaTipoError1003017,DOCUMENTOclientecorrelativofechaTipoError00102247,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9855,DOCUMENTOclientecorrelativofechaTipoError1000205,DOCUMENTOclientecorrelativofechaTipoError00102248,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9856,DOCUMENTOclientecorrelativofechaTipoError1002548,DOCUMENTOclientecorrelativofechaTipoError00102249,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9857,DOCUMENTOclientecorrelativofechaTipoError1000242,DOCUMENTOclientecorrelativofechaTipoError00102250,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9858,DOCUMENTOclientecorrelativofechaTipoError1003012,DOCUMENTOclientecorrelativofechaTipoError00102251,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9859,DOCUMENTOclientecorrelativofechaTipoError1003341,DOCUMENTOclientecorrelativofechaTipoError00102252,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9860,DOCUMENTOclientecorrelativofechaTipoError1003342,DOCUMENTOclientecorrelativofechaTipoError00102253,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9861,DOCUMENTOclientecorrelativofechaTipoError1003824,DOCUMENTOclientecorrelativofechaTipoError00102254,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9862,DOCUMENTOclientecorrelativofechaTipoError1003016,DOCUMENTOclientecorrelativofechaTipoError00102255,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9863,DOCUMENTOclientecorrelativofechaTipoError1002542,DOCUMENTOclientecorrelativofechaTipoError00102256,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9864,DOCUMENTOclientecorrelativofechaTipoError1001434,DOCUMENTOclientecorrelativofechaTipoError00102257,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9865,DOCUMENTOclientecorrelativofechaTipoError1000151,DOCUMENTOclientecorrelativofechaTipoError00102258,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9866,DOCUMENTOclientecorrelativofechaTipoError1003604,DOCUMENTOclientecorrelativofechaTipoError00102259,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9867,DOCUMENTOclientecorrelativofechaTipoError1001148,DOCUMENTOclientecorrelativofechaTipoError00102260,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9868,DOCUMENTOclientecorrelativofechaTipoError1000199,DOCUMENTOclientecorrelativofechaTipoError00102261,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9869,DOCUMENTOclientecorrelativofechaTipoError1003349,DOCUMENTOclientecorrelativofechaTipoError00102262,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9870,DOCUMENTOclientecorrelativofechaTipoError1002993,DOCUMENTOclientecorrelativofechaTipoError00102263,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9871,DOCUMENTOclientecorrelativofechaTipoError1002968,DOCUMENTOclientecorrelativofechaTipoError00102264,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9872,DOCUMENTOclientecorrelativofechaTipoError1002987,DOCUMENTOclientecorrelativofechaTipoError00102265,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9873,DOCUMENTOclientecorrelativofechaTipoError1003350,DOCUMENTOclientecorrelativofechaTipoError00102266,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9874,DOCUMENTOclientecorrelativofechaTipoError1002985,DOCUMENTOclientecorrelativofechaTipoError00102267,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9875,DOCUMENTOclientecorrelativofechaTipoError1002986,DOCUMENTOclientecorrelativofechaTipoError00102268,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9876,DOCUMENTOclientecorrelativofechaTipoError1002988,DOCUMENTOclientecorrelativofechaTipoError00102269,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9877,DOCUMENTOclientecorrelativofechaTipoError1002398,DOCUMENTOclientecorrelativofechaTipoError00102270,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9878,DOCUMENTOclientecorrelativofechaTipoError1002992,DOCUMENTOclientecorrelativofechaTipoError00102271,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9879,DOCUMENTOclientecorrelativofechaTipoError1000816,DOCUMENTOclientecorrelativofechaTipoError00102272,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9880,DOCUMENTOclientecorrelativofechaTipoError1002402,DOCUMENTOclientecorrelativofechaTipoError00102273,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9881,DOCUMENTOclientecorrelativofechaTipoError1003835,DOCUMENTOclientecorrelativofechaTipoError00102274,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9882,DOCUMENTOclientecorrelativofechaTipoError1003614,DOCUMENTOclientecorrelativofechaTipoError00102275,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9883,DOCUMENTOclientecorrelativofechaTipoError1002995,DOCUMENTOclientecorrelativofechaTipoError00102276,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9884,DOCUMENTOclientecorrelativofechaTipoError1004023,DOCUMENTOclientecorrelativofechaTipoError00102277,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9885,DOCUMENTOclientecorrelativofechaTipoError1004018,DOCUMENTOclientecorrelativofechaTipoError00102278,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9886,DOCUMENTOclientecorrelativofechaTipoError1004363,DOCUMENTOclientecorrelativofechaTipoError00102279,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9887,DOCUMENTOclientecorrelativofechaTipoError1004358,DOCUMENTOclientecorrelativofechaTipoError00102280,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9888,DOCUMENTOclientecorrelativofechaTipoError1004019,DOCUMENTOclientecorrelativofechaTipoError00102281,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9889,DOCUMENTOclientecorrelativofechaTipoError1004140,DOCUMENTOclientecorrelativofechaTipoError00102282,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9890,DOCUMENTOclientecorrelativofechaTipoError1002403,DOCUMENTOclientecorrelativofechaTipoError00102283,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9891,DOCUMENTOclientecorrelativofechaTipoError1004270,DOCUMENTOclientecorrelativofechaTipoError00102284,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9892,DOCUMENTOclientecorrelativofechaTipoError1002965,DOCUMENTOclientecorrelativofechaTipoError00102285,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9893,DOCUMENTOclientecorrelativofechaTipoError1000848,DOCUMENTOclientecorrelativofechaTipoError00102286,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9894,DOCUMENTOclientecorrelativofechaTipoError1003352,DOCUMENTOclientecorrelativofechaTipoError00102287,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9895,DOCUMENTOclientecorrelativofechaTipoError1002967,DOCUMENTOclientecorrelativofechaTipoError00102288,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9896,DOCUMENTOclientecorrelativofechaTipoError1003603,DOCUMENTOclientecorrelativofechaTipoError00102289,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9897,DOCUMENTOclientecorrelativofechaTipoError1004014,DOCUMENTOclientecorrelativofechaTipoError00102290,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9898,DOCUMENTOclientecorrelativofechaTipoError1004359,DOCUMENTOclientecorrelativofechaTipoError00102291,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9899,DOCUMENTOclientecorrelativofechaTipoError1004275,DOCUMENTOclientecorrelativofechaTipoError00102292,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9900,DOCUMENTOclientecorrelativofechaTipoError1003838,DOCUMENTOclientecorrelativofechaTipoError00102293,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9901,DOCUMENTOclientecorrelativofechaTipoError1004150,DOCUMENTOclientecorrelativofechaTipoError00102294,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9902,DOCUMENTOclientecorrelativofechaTipoError1003355,DOCUMENTOclientecorrelativofechaTipoError00102295,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9903,DOCUMENTOclientecorrelativofechaTipoError1004151,DOCUMENTOclientecorrelativofechaTipoError00102296,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9904,DOCUMENTOclientecorrelativofechaTipoError1003356,DOCUMENTOclientecorrelativofechaTipoError00102297,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9905,DOCUMENTOclientecorrelativofechaTipoError1004015,DOCUMENTOclientecorrelativofechaTipoError00102298,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9906,DOCUMENTOclientecorrelativofechaTipoError1003625,DOCUMENTOclientecorrelativofechaTipoError00102299,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9907,DOCUMENTOclientecorrelativofechaTipoError1003354,DOCUMENTOclientecorrelativofechaTipoError00102300,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9908,DOCUMENTOclientecorrelativofechaTipoError1000834,DOCUMENTOclientecorrelativofechaTipoError00102301,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9909,DOCUMENTOclientecorrelativofechaTipoError1001050,DOCUMENTOclientecorrelativofechaTipoError00102302,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9910,DOCUMENTOclientecorrelativofechaTipoError1002983,DOCUMENTOclientecorrelativofechaTipoError00102303,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9911,DOCUMENTOclientecorrelativofechaTipoError1003000,DOCUMENTOclientecorrelativofechaTipoError00102304,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9912,DOCUMENTOclientecorrelativofechaTipoError1003608,DOCUMENTOclientecorrelativofechaTipoError00102305,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9913,DOCUMENTOclientecorrelativofechaTipoError1003324,DOCUMENTOclientecorrelativofechaTipoError00102307,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+DOCUMENTOclientecorrelativofechaTipoError9914,DOCUMENTOclientecorrelativofechaTipoError1003324,DOCUMENTOclientecorrelativofechaTipoError00102312,DOCUMENTOclientecorrelativofechaTipoError03/08/2015 12:00:00 AM,DOCUMENTOclientecorrelativofechaTipoErrorF,DOCUMENTOclientecorrelativofechaTipoErrorNumero de Documento ya existe en la Base de datos
+
+
+DOCUMENTOclientecorrelativofechaTipoError364,1004008,00102115,03/08/2015 12:00:00 AM,C,Numero de Documento ya existe en la Base de datos
+
+365,1002749,00102116,03/08/2015 12:00:00 AM,C,Numero de Documento ya existe en la Base de datos
+
+366,1003616,00102117,03/08/2015 12:00:00 AM,C,Numero de Documento ya existe en la Base de datos
+
+367,1002975,00102118,03/08/2015 12:00:00 AM,C,Numero de Documento ya existe en la Base de datos
+
+368,1003400,00102184,03/08/2015 12:00:00 AM,C,Numero de Documento ya existe en la Base de datos
+
+369,1002749,00102308,03/08/2015 12:00:00 AM,C,Numero de Documento ya existe en la Base de datos
+
+370,1003616,00102309,03/08/2015 12:00:00 AM,C,Numero de Documento ya existe en la Base de datos
+
+371,1002749,00102310,03/08/2015 12:00:00 AM,C,Numero de Documento ya existe en la Base de datos
+
+372,1003616,00102311,03/08/2015 12:00:00 AM,C,Numero de Documento ya existe en la Base de datos
+
+4,1003910,00102306,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9727,1002977,00102119,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9728,1002745,00102120,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9729,1002714,00102121,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9730,1003324,00102122,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9731,1003324,00102123,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9732,1002976,00102124,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9733,1002768,00102125,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9734,1002768,00102126,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9735,1002740,00102127,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9736,1003520,00102128,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9737,1002682,00102129,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9738,1004026,00102130,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9739,1002679,00102131,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9740,1002772,00102132,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9741,1002710,00102133,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9742,1002710,00102134,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9743,1002692,00102135,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9744,1002689,00102136,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9745,1002689,00102137,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9746,1002738,00102138,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9747,1002869,00102139,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9748,1002734,00102140,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9749,1004223,00102141,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9750,1003480,00102142,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9751,1002716,00102143,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9752,1003939,00102144,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9753,1004281,00102145,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9754,1002732,00102146,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9755,1003265,00102147,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9756,1003480,00102148,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9757,1000417,00102149,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9758,1004007,00102150,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9759,1004009,00102151,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9760,1004272,00102152,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9761,1000418,00102153,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9762,1003330,00102154,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9763,1004021,00102155,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9764,1003460,00102156,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9765,1003333,00102157,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9766,1003332,00102158,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9767,1003004,00102159,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9768,1003618,00102160,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9769,1004276,00102161,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9770,1000144,00102162,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9771,1004437,00102163,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9772,1003008,00102164,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9773,1001289,00102165,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9774,1003009,00102166,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9775,1003605,00102167,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9776,1004144,00102168,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9777,1004057,00102169,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9778,1003326,00102170,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9779,1003830,00102171,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9780,1003829,00102172,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9781,1002944,00102173,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9782,1003328,00102174,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9783,1002945,00102175,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9784,1000164,00102176,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9785,1001989,00102177,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9786,1004357,00102178,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9787,1003987,00102179,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9788,1004057,00102180,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9789,1003830,00102181,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9790,1003326,00102182,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9791,1003829,00102183,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9792,1002255,00102185,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9793,1004070,00102186,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9794,1003034,00102187,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9795,1004011,00102188,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9796,1003357,00102189,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9797,1002971,00102190,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9798,1002969,00102191,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9799,1002972,00102192,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9800,1002980,00102193,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9801,1004435,00102194,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9802,1004368,00102195,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9803,1003622,00102196,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9804,1002978,00102197,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9805,1000645,00102198,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9806,1003609,00102199,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9807,1001214,00102200,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9808,1002981,00102201,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9809,1002593,00102202,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9810,1003023,00102203,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9811,1000299,00102204,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9812,1000635,00102205,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9813,1003630,00102206,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9814,1003022,00102207,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9815,1000179,00102208,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9816,1004436,00102209,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9817,1003629,00102210,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9818,1003834,00102211,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9819,1003841,00102212,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9820,1003840,00102213,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9821,1003621,00102214,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9822,1003361,00102215,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9823,1003633,00102216,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9824,1003362,00102217,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9825,1004141,00102218,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9826,1002445,00102219,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9827,1003842,00102220,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9828,1003842,00102221,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9829,1003363,00102222,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9830,1001212,00102223,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9831,1003479,00102224,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9832,1002772,00102225,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9833,1003347,00102226,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9834,1004146,00102227,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9835,1004278,00102228,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9836,1004280,00102229,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9837,1004361,00102230,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9838,1003348,00102231,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9839,1003839,00102232,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9840,1003027,00102233,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9841,1003029,00102234,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9842,1003025,00102235,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9843,1002533,00102236,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9844,1003028,00102237,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9845,1004277,00102238,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9846,1000229,00102239,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9847,1004149,00102240,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9848,1004434,00102241,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9849,1003020,00102242,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9850,1003338,00102243,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9851,1003335,00102244,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9852,1003620,00102245,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9853,1003016,00102246,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9854,1003017,00102247,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9855,1000205,00102248,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9856,1002548,00102249,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9857,1000242,00102250,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9858,1003012,00102251,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9859,1003341,00102252,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9860,1003342,00102253,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9861,1003824,00102254,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9862,1003016,00102255,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9863,1002542,00102256,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9864,1001434,00102257,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9865,1000151,00102258,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9866,1003604,00102259,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9867,1001148,00102260,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9868,1000199,00102261,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9869,1003349,00102262,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9870,1002993,00102263,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9871,1002968,00102264,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9872,1002987,00102265,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9873,1003350,00102266,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9874,1002985,00102267,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9875,1002986,00102268,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9876,1002988,00102269,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9877,1002398,00102270,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9878,1002992,00102271,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9879,1000816,00102272,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9880,1002402,00102273,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9881,1003835,00102274,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9882,1003614,00102275,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9883,1002995,00102276,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9884,1004023,00102277,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9885,1004018,00102278,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9886,1004363,00102279,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9887,1004358,00102280,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9888,1004019,00102281,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9889,1004140,00102282,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9890,1002403,00102283,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9891,1004270,00102284,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9892,1002965,00102285,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9893,1000848,00102286,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9894,1003352,00102287,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9895,1002967,00102288,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9896,1003603,00102289,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9897,1004014,00102290,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9898,1004359,00102291,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9899,1004275,00102292,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9900,1003838,00102293,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9901,1004150,00102294,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9902,1003355,00102295,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9903,1004151,00102296,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9904,1003356,00102297,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9905,1004015,00102298,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9906,1003625,00102299,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9907,1003354,00102300,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9908,1000834,00102301,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9909,1001050,00102302,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9910,1002983,00102303,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9911,1003000,00102304,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9912,1003608,00102305,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9913,1003324,00102307,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+9914,1003324,00102312,03/08/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+

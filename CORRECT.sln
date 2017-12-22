@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CORRECT", "CORRECT.csproj", "{C80CDFF2-1D33-4556-A9D6-F0C5A07E441B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".build", ".build", "{A8CFB524-5700-4436-A68F-BB62BA3D0658}"
+	ProjectSection(SolutionItems) = preProject
+		Build.proj = Build.proj
+		.build\MSBuild.Community.Tasks.dll = .build\MSBuild.Community.Tasks.dll
+		.build\MSBuild.Community.Tasks.targets = .build\MSBuild.Community.Tasks.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Regalias", "..\Solicitud Regalia\Regalias.csproj", "{45876890-2C17-4965-A579-1A7A2A1D0721}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flota", "..\..\..\..\..\Visual Studio 2015\Projects\dos\dos\Flota.csproj", "{6AA5AFF9-73D3-475B-9C96-12C35E2FBE17}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C80CDFF2-1D33-4556-A9D6-F0C5A07E441B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C80CDFF2-1D33-4556-A9D6-F0C5A07E441B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C80CDFF2-1D33-4556-A9D6-F0C5A07E441B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C80CDFF2-1D33-4556-A9D6-F0C5A07E441B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45876890-2C17-4965-A579-1A7A2A1D0721}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45876890-2C17-4965-A579-1A7A2A1D0721}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45876890-2C17-4965-A579-1A7A2A1D0721}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45876890-2C17-4965-A579-1A7A2A1D0721}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AA5AFF9-73D3-475B-9C96-12C35E2FBE17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AA5AFF9-73D3-475B-9C96-12C35E2FBE17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AA5AFF9-73D3-475B-9C96-12C35E2FBE17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AA5AFF9-73D3-475B-9C96-12C35E2FBE17}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://correctx.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = CORRECT.csproj
+		SccLocalPath1 = .
+		SccProjectUniqueName2 = ..\\Solicitud\u0020Regalia\\Regalias.csproj
+		SccProjectName2 = ../Solicitud\u0020Regalia
+		SccLocalPath2 = ..\\Solicitud\u0020Regalia
+		SccProjectUniqueName3 = ..\\..\\..\\..\\..\\Visual\u0020Studio\u00202015\\Projects\\dos\\dos\\Flota.csproj
+		SccProjectName3 = ../../FLota/dos
+		SccLocalPath3 = ..\\..\\..\\..\\..\\Visual\u0020Studio\u00202015\\Projects\\dos\\dos
+	EndGlobalSection
+EndGlobal

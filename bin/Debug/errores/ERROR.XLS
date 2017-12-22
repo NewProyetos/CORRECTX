@@ -1,0 +1,17 @@
+Cuentas por Cobrar - Exactus Business Software
+Sumario del Proceso de Carga Automática de Recibos
+
+Cuenta: 34000168
+Fecha / Hora: 23/09/2014  6:31:23 PM
+Usuario: SA
+
+El proceso de Carga Automática reporta lo siguiente:
+
+1- Error: Tipo de documento incorrecto. Set nArregloAsociacion[1] = 1ÇSet nArregloAsociacion[2] = 2ÇSet nArregloAsociacion[3] = 3ÇSet nArregloAsociacion[4] = 4ÇSet nArregloAsociacion[5] = 5ÇSet nArregloAsociacion[6] = 6ÇSet nArregloAsociac  
+2- Error: Tipo de documento incorrecto. ion[7] = 7ÇSet nArregloAsociacion[8] = 8ÇSet nArregloAsociacion[9] = 9ÇSet nArregloAsociacion[10] = 10ÇSet nArregloAsociacion[11] = 11ÇSet nArregloAsociacion[12] = 12ÇSet nArregloAsociacion[13] = 13Ç  
+3- Error: Tipo de documento incorrecto. Set nArregloAsociacion[14] = 14ÇSet clsdlgCargaAscii.dfArchivoEntrada = 'C:\\CORRECT\\MI.CFG'ÇSet clsdlgCargaAscii.dfArchivoBitacora = 'C:\\CORRECT\\ERRORES\\ERROR.XLS'ÇSet clsdlgCargaAscii.cmbFuncio  
+4- Error: Tipo de documento incorrecto. nDefinida = 'FuncionEstandarHook'ÇSet clsdlgCargaAscii.dfOtroCaracter = ''ÇSet clsdlgCargaAscii.sAsistente = 'S'ÇSet clsdlgCargaAscii.sDefinida = 'N'ÇSet clsdlgCargaAscii.sDelimitados = 'S'ÇSet clsdl  
+5- Error: Tipo de documento incorrecto. gCargaAscii.sEncabezado = 'S'ÇSet clsdlgCargaAscii.sAnchoFijo = 'N'ÇSet clsdlgCargaAscii.sTabulacion = 'N'ÇSet clsdlgCargaAscii.sComa = 'S'ÇSet clsdlgCargaAscii.sPuntoyComa = 'N'ÇSet clsdlgCargaAscii  
+6- Error: Tipo de documento incorrecto. .sOtroCaracter = 'N'ÇSet clsdlgCargaAscii.dfConfiguracionFin = 'C:\\CORRECT\\MI.CFG'ÇSet dlgCargaMasivaRecAuto.dfCuentaDoc = '34000168'  
+
+Se encontraron 6 errores en la lectura del archivo de entrada.

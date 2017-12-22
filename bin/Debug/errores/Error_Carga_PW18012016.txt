@@ -1,0 +1,1190 @@
+1025,1002767,00217683,06/11/2015 12:00:00 AM,C,Numero de Documento ya existe en la Base de datos
+
+1026,1003898,00217684,06/11/2015 12:00:00 AM,C,Numero de Documento ya existe en la Base de datos
+
+1027,1002762,00217685,06/11/2015 12:00:00 AM,C,Numero de Documento ya existe en la Base de datos
+
+1028,1004803,00217692,06/11/2015 12:00:00 AM,C,Numero de Documento ya existe en la Base de datos
+
+1029,1002756,00217693,06/11/2015 12:00:00 AM,C,Numero de Documento ya existe en la Base de datos
+
+1030,1003093,00217694,06/11/2015 12:00:00 AM,C,Numero de Documento ya existe en la Base de datos
+
+1031,1000096,00217711,06/11/2015 12:00:00 AM,C,Numero de Documento ya existe en la Base de datos
+
+1032,1000691,00217847,06/11/2015 12:00:00 AM,C,Numero de Documento ya existe en la Base de datos
+
+1033,1003400,00217952,06/11/2015 12:00:00 AM,C,Numero de Documento ya existe en la Base de datos
+
+28617,1002750,00217686,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28618,1002729,00217687,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28619,1002752,00217688,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28620,1004323,00217689,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28621,1003744,00217690,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28622,1002725,00217691,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28623,1002732,00217695,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28624,1002728,00217696,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28625,1004805,00217697,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28626,1002738,00217698,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28627,1002718,00217699,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28628,1002734,00217700,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28629,1004807,00217701,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28630,1004693,00217702,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28631,1003121,00217703,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28632,1002724,00217704,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28633,1002655,00217705,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28634,1004828,00217706,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28635,1002716,00217707,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28636,1004281,00217708,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28637,1003939,00217709,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28638,1003480,00217710,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28639,1004207,00217712,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28640,1003927,00217713,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28641,1003131,00217714,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28642,1003192,00217715,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28643,1004830,00217716,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28644,1004831,00217717,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28645,1004763,00217718,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28646,1001398,00217719,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28647,1004764,00217720,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28648,1001916,00217721,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28649,1000379,00217722,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28650,1004402,00217723,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28651,1004403,00217724,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28652,1004625,00217725,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28653,1004626,00217726,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28654,1004765,00217727,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28655,1000408,00217728,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28657,1001375,00217730,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28658,1003489,00217731,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28659,1001932,00217732,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28660,1004833,00217733,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28661,1003488,00217734,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28662,1004512,00217735,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28663,1004322,00217736,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28664,1001899,00217737,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28665,1004813,00217738,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28666,1003134,00217739,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28667,1003713,00217740,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28668,1003913,00217741,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28669,1003471,00217742,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28670,1003712,00217743,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28672,1004405,00217745,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28673,1004576,00217746,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28674,1004411,00217747,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28675,1004500,00217748,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28676,1004499,00217749,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28677,1004413,00217750,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28678,1004414,00217751,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28679,1004689,00217752,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28680,1004578,00217753,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28681,1004691,00217754,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28682,1003128,00217755,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28683,1000027,00217756,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28684,1003127,00217757,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28685,1003484,00217758,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28686,1003909,00217759,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28687,1004769,00217760,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28688,1003485,00217761,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28689,1004212,00217762,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28690,1004214,00217763,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28691,1003482,00217764,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28692,1003724,00217765,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28693,1003483,00217766,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28694,1003907,00217767,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28695,1004690,00217768,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28696,1003193,00217769,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28697,1003195,00217770,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28698,1003725,00217771,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28699,1003486,00217772,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28700,1003200,00217773,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28701,1003487,00217774,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28702,1003196,00217775,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28703,1004325,00217776,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28704,1003124,00217777,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28705,1003726,00217778,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28706,1004581,00217779,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28707,1004409,00217780,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28708,1004324,00217781,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28709,1004467,00217782,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28710,1004094,00217783,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28711,1004326,00217784,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28712,1003936,00217785,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28713,1003935,00217786,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28714,1004010,00217787,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28715,1004499,00217788,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28716,1003499,00217789,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28717,1004464,00217790,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28718,1003497,00217791,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28719,1004460,00217792,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28720,1001448,00217793,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28721,1003149,00217794,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28722,1004466,00217795,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28723,1004462,00217796,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28724,1003498,00217797,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28725,1003150,00217798,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28726,1001449,00217799,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28727,1001450,00217800,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28728,1003251,00217801,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28729,1001444,00217802,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28730,1003918,00217803,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28731,1003919,00217804,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28732,1004098,00217805,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28733,1004834,00217806,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28734,1004585,00217807,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28735,1003920,00217808,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28736,1002098,00217809,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28737,1004771,00217810,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28738,1001585,00217811,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28739,1003681,00217812,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28740,1004051,00217813,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28741,1003692,00217814,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28742,1003433,00217815,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28743,1004819,00217816,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28744,1004914,00217817,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28745,1004672,00217818,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28746,1003667,00217819,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28747,1001519,00217820,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28749,1001687,00217822,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28750,1003430,00217823,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28751,1004052,00217824,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28752,1004615,00217825,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28753,1002836,00217826,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28754,1000416,00217827,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28755,1003694,00217828,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28756,1003878,00217829,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28757,1001072,00217830,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28758,1001594,00217831,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28759,1004961,00217832,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28760,1004075,00217833,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28761,1003714,00217834,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28762,1003142,00217835,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28763,1003143,00217836,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28764,1004962,00217837,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28765,1004963,00217838,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28766,1004509,00217839,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28767,1004964,00217840,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28768,1002105,00217841,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28769,1003135,00217842,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28770,1003208,00217843,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28771,1003141,00217844,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28772,1003138,00217845,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28774,1004079,00217848,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28775,1004219,00217849,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28776,1004220,00217850,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28777,1004218,00217851,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28778,1004081,00217852,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28779,1002589,00217853,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28780,1004400,00217854,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28781,1000630,00217855,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28782,1003156,00217856,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28783,1003155,00217857,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28784,1002602,00217858,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28785,1002598,00217859,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28786,1000709,00217860,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28787,1002583,00217861,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28788,1003162,00217862,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28789,1003159,00217863,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28790,1003160,00217864,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28791,1000638,00217865,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28792,1002604,00217866,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28793,1003500,00217867,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28794,1003163,00217868,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28795,1003161,00217869,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28796,1003164,00217870,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28797,1002596,00217871,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28798,1003157,00217872,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28799,1002584,00217873,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28800,1003899,00217874,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28801,1002910,00217875,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28802,1002911,00217876,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28803,1001665,00217877,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28804,1002921,00217878,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28805,1001679,00217879,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28806,1004210,00217880,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28807,1001677,00217881,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28808,1003473,00217882,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28809,1004330,00217883,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28810,1004208,00217884,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28811,1003937,00217885,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28812,1003938,00217886,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28813,1003715,00217887,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28814,1001425,00217888,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28815,1004071,00217889,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28816,1001205,00217890,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28817,1001418,00217891,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28818,1003189,00217892,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28819,1001415,00217893,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28820,1003504,00217894,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28821,1000680,00217895,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28822,1005228,00217896,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28823,1001427,00217897,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28824,1001416,00217898,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28825,1001420,00217899,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28826,1004321,00217900,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28827,1001426,00217901,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28828,1003502,00217902,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28829,1004072,00217903,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28830,1003717,00217904,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28831,1003716,00217905,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28832,1004222,00217906,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28833,1000654,00217907,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28834,1003503,00217908,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28835,1001419,00217909,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28836,1004213,00217910,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28837,1003171,00217911,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28838,1000609,00217912,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28839,1000627,00217913,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28840,1003165,00217914,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28841,1003501,00217915,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28842,1001432,00217916,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28843,1003169,00217917,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28845,1003507,00217919,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28846,1003506,00217920,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28847,1003167,00217921,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28848,1001670,00217922,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28849,1001675,00217923,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28850,1002909,00217924,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28851,1004452,00217925,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28852,1005227,00217926,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28853,1004068,00217927,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28854,1004203,00217928,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28855,1000999,00217929,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28856,1004093,00217930,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28857,1001278,00217931,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28858,1001715,00217932,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28859,1001259,00217933,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28860,1000982,00217934,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28861,1001284,00217935,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28862,1003902,00217936,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28863,1004824,00217937,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28864,1003728,00217938,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28865,1003513,00217939,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28866,1003512,00217940,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28867,1003509,00217941,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28868,1003179,00217942,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28869,1003187,00217943,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28870,1003184,00217944,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28871,1003904,00217945,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28872,1003479,00217946,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28873,1004092,00217947,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28874,1004100,00217948,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28875,1004090,00217949,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28876,1004091,00217950,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28877,1003457,00217951,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28878,1003034,00217953,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28879,1003197,00217954,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28880,1005226,00217955,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28881,1003911,00217956,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28882,1002376,00217957,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28883,1004457,00217958,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28884,1003178,00217959,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28885,1004205,00217960,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28886,1004503,00217961,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28888,1004668,00217963,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28889,1004900,00217964,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28890,1003173,00217965,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28891,1004868,00217966,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28892,1003476,00217967,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28893,1004867,00217968,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28895,1002132,00217970,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28896,1004558,00217971,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28897,1004559,00217972,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28898,1004294,00217973,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28899,1003941,00217974,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28900,1004443,00217975,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28901,1003753,00217976,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28902,1004041,00217977,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28903,1004256,00217978,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28904,1004560,00217979,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28905,1003709,00217980,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28907,1002800,00217982,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28909,1005017,00217984,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28910,1004507,00217985,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28911,1002860,00217986,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28912,1004329,00217987,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28914,1002770,00217989,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+
+1025,1002767,00217683,06/11/2015 12:00:00 AM,C,Numero de Documento ya existe en la Base de datos
+
+1026,1003898,00217684,06/11/2015 12:00:00 AM,C,Numero de Documento ya existe en la Base de datos
+
+1027,1002762,00217685,06/11/2015 12:00:00 AM,C,Numero de Documento ya existe en la Base de datos
+
+1028,1004803,00217692,06/11/2015 12:00:00 AM,C,Numero de Documento ya existe en la Base de datos
+
+1029,1002756,00217693,06/11/2015 12:00:00 AM,C,Numero de Documento ya existe en la Base de datos
+
+1030,1003093,00217694,06/11/2015 12:00:00 AM,C,Numero de Documento ya existe en la Base de datos
+
+1031,1000096,00217711,06/11/2015 12:00:00 AM,C,Numero de Documento ya existe en la Base de datos
+
+1032,1000691,00217847,06/11/2015 12:00:00 AM,C,Numero de Documento ya existe en la Base de datos
+
+1033,1003400,00217952,06/11/2015 12:00:00 AM,C,Numero de Documento ya existe en la Base de datos
+
+28617,1002750,00217686,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28618,1002729,00217687,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28619,1002752,00217688,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28620,1004323,00217689,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28621,1003744,00217690,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28622,1002725,00217691,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28623,1002732,00217695,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28624,1002728,00217696,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28625,1004805,00217697,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28626,1002738,00217698,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28627,1002718,00217699,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28628,1002734,00217700,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28629,1004807,00217701,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28630,1004693,00217702,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28631,1003121,00217703,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28632,1002724,00217704,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28633,1002655,00217705,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28634,1004828,00217706,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28635,1002716,00217707,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28636,1004281,00217708,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28637,1003939,00217709,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28638,1003480,00217710,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28639,1004207,00217712,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28640,1003927,00217713,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28641,1003131,00217714,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28642,1003192,00217715,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28643,1004830,00217716,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28644,1004831,00217717,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28645,1004763,00217718,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28646,1001398,00217719,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28647,1004764,00217720,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28648,1001916,00217721,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28649,1000379,00217722,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28650,1004402,00217723,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28651,1004403,00217724,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28652,1004625,00217725,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28653,1004626,00217726,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28654,1004765,00217727,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28655,1000408,00217728,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28657,1001375,00217730,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28658,1003489,00217731,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28659,1001932,00217732,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28660,1004833,00217733,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28661,1003488,00217734,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28662,1004512,00217735,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28663,1004322,00217736,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28664,1001899,00217737,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28665,1004813,00217738,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28666,1003134,00217739,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28667,1003713,00217740,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28668,1003913,00217741,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28669,1003471,00217742,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28670,1003712,00217743,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28672,1004405,00217745,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28673,1004576,00217746,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28674,1004411,00217747,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28675,1004500,00217748,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28676,1004499,00217749,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28677,1004413,00217750,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28678,1004414,00217751,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28679,1004689,00217752,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28680,1004578,00217753,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28681,1004691,00217754,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28682,1003128,00217755,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28683,1000027,00217756,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28684,1003127,00217757,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28685,1003484,00217758,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28686,1003909,00217759,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28687,1004769,00217760,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28688,1003485,00217761,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28689,1004212,00217762,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28690,1004214,00217763,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28691,1003482,00217764,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28692,1003724,00217765,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28693,1003483,00217766,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28694,1003907,00217767,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28695,1004690,00217768,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28696,1003193,00217769,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28697,1003195,00217770,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28698,1003725,00217771,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28699,1003486,00217772,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28700,1003200,00217773,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28701,1003487,00217774,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28702,1003196,00217775,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28703,1004325,00217776,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28704,1003124,00217777,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28705,1003726,00217778,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28706,1004581,00217779,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28707,1004409,00217780,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28708,1004324,00217781,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28709,1004467,00217782,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28710,1004094,00217783,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28711,1004326,00217784,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28712,1003936,00217785,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28713,1003935,00217786,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28714,1004010,00217787,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28715,1004499,00217788,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28716,1003499,00217789,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28717,1004464,00217790,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28718,1003497,00217791,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28719,1004460,00217792,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28720,1001448,00217793,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28721,1003149,00217794,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28722,1004466,00217795,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28723,1004462,00217796,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28724,1003498,00217797,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28725,1003150,00217798,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28726,1001449,00217799,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28727,1001450,00217800,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28728,1003251,00217801,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28729,1001444,00217802,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28730,1003918,00217803,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28731,1003919,00217804,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28732,1004098,00217805,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28733,1004834,00217806,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28734,1004585,00217807,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28735,1003920,00217808,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28736,1002098,00217809,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28737,1004771,00217810,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28738,1001585,00217811,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28739,1003681,00217812,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28740,1004051,00217813,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28741,1003692,00217814,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28742,1003433,00217815,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28743,1004819,00217816,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28744,1004914,00217817,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28745,1004672,00217818,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28746,1003667,00217819,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28747,1001519,00217820,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28749,1001687,00217822,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28750,1003430,00217823,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28751,1004052,00217824,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28752,1004615,00217825,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28753,1002836,00217826,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28754,1000416,00217827,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28755,1003694,00217828,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28756,1003878,00217829,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28757,1001072,00217830,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28758,1001594,00217831,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28759,1004961,00217832,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28760,1004075,00217833,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28761,1003714,00217834,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28762,1003142,00217835,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28763,1003143,00217836,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28764,1004962,00217837,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28765,1004963,00217838,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28766,1004509,00217839,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28767,1004964,00217840,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28768,1002105,00217841,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28769,1003135,00217842,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28770,1003208,00217843,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28771,1003141,00217844,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28772,1003138,00217845,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28774,1004079,00217848,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28775,1004219,00217849,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28776,1004220,00217850,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28777,1004218,00217851,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28778,1004081,00217852,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28779,1002589,00217853,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28780,1004400,00217854,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28781,1000630,00217855,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28782,1003156,00217856,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28783,1003155,00217857,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28784,1002602,00217858,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28785,1002598,00217859,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28786,1000709,00217860,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28787,1002583,00217861,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28788,1003162,00217862,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28789,1003159,00217863,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28790,1003160,00217864,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28791,1000638,00217865,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28792,1002604,00217866,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28793,1003500,00217867,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28794,1003163,00217868,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28795,1003161,00217869,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28796,1003164,00217870,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28797,1002596,00217871,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28798,1003157,00217872,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28799,1002584,00217873,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28800,1003899,00217874,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28801,1002910,00217875,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28802,1002911,00217876,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28803,1001665,00217877,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28804,1002921,00217878,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28805,1001679,00217879,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28806,1004210,00217880,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28807,1001677,00217881,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28808,1003473,00217882,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28809,1004330,00217883,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28810,1004208,00217884,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28811,1003937,00217885,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28812,1003938,00217886,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28813,1003715,00217887,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28814,1001425,00217888,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28815,1004071,00217889,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28816,1001205,00217890,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28817,1001418,00217891,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28818,1003189,00217892,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28819,1001415,00217893,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28820,1003504,00217894,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28821,1000680,00217895,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28822,1005228,00217896,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28823,1001427,00217897,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28824,1001416,00217898,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28825,1001420,00217899,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28826,1004321,00217900,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28827,1001426,00217901,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28828,1003502,00217902,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28829,1004072,00217903,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28830,1003717,00217904,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28831,1003716,00217905,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28832,1004222,00217906,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28833,1000654,00217907,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28834,1003503,00217908,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28835,1001419,00217909,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28836,1004213,00217910,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28837,1003171,00217911,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28838,1000609,00217912,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28839,1000627,00217913,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28840,1003165,00217914,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28841,1003501,00217915,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28842,1001432,00217916,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28843,1003169,00217917,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28845,1003507,00217919,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28846,1003506,00217920,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28847,1003167,00217921,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28848,1001670,00217922,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28849,1001675,00217923,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28850,1002909,00217924,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28851,1004452,00217925,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28852,1005227,00217926,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28853,1004068,00217927,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28854,1004203,00217928,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28855,1000999,00217929,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28856,1004093,00217930,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28857,1001278,00217931,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28858,1001715,00217932,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28859,1001259,00217933,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28860,1000982,00217934,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28861,1001284,00217935,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28862,1003902,00217936,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28863,1004824,00217937,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28864,1003728,00217938,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28865,1003513,00217939,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28866,1003512,00217940,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28867,1003509,00217941,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28868,1003179,00217942,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28869,1003187,00217943,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28870,1003184,00217944,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28871,1003904,00217945,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28872,1003479,00217946,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28873,1004092,00217947,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28874,1004100,00217948,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28875,1004090,00217949,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28876,1004091,00217950,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28877,1003457,00217951,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28878,1003034,00217953,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28879,1003197,00217954,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28880,1005226,00217955,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28881,1003911,00217956,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28882,1002376,00217957,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28883,1004457,00217958,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28884,1003178,00217959,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28885,1004205,00217960,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28886,1004503,00217961,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28888,1004668,00217963,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28889,1004900,00217964,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28890,1003173,00217965,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28891,1004868,00217966,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28892,1003476,00217967,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28893,1004867,00217968,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28895,1002132,00217970,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28896,1004558,00217971,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28897,1004559,00217972,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28898,1004294,00217973,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28899,1003941,00217974,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28900,1004443,00217975,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28901,1003753,00217976,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28902,1004041,00217977,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28903,1004256,00217978,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28904,1004560,00217979,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28905,1003709,00217980,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28907,1002800,00217982,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28909,1005017,00217984,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28910,1004507,00217985,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28911,1002860,00217986,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28912,1004329,00217987,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+28914,1002770,00217989,06/11/2015 12:00:00 AM,F,Numero de Documento ya existe en la Base de datos
+
+
