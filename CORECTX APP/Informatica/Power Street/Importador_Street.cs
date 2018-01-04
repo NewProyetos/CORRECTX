@@ -2744,6 +2744,11 @@ namespace Sinconizacion_EXactus
                 SqlCommand cmd2 = new SqlCommand("[STREET].[DETALLE_FACTURA_PARA_EXACTUSFR]", con.condm);
                 cmd2.CommandType = CommandType.StoredProcedure;
                 cmd2.Parameters.AddWithValue("@NUM_DOC", NUM_PED);
+                cmd2.Parameters.AddWithValue("@TIPO_DOC", TIPO_DOC);
+               
+              
+
+
                 SqlDataAdapter da2 = new SqlDataAdapter(cmd2);
                 da2.Fill(Detalle_PED_Ex);
                 con.Desconectar("DM");
@@ -3013,8 +3018,9 @@ namespace Sinconizacion_EXactus
                                                     con.conectar("DM");
                                                     SqlCommand cmd8 = new SqlCommand();
                                                     cmd8.Connection = con.condm;
-                                                    cmd8.CommandText = "UPDATE [DM].[STREET].[ENC_PED_STREET]SET PROCESADO = 'S' WHERE NUM_DOC_PREIMP = @DOC_PREIM";
+                                                    cmd8.CommandText = "UPDATE [DM].[STREET].[ENC_PED_STREET]SET PROCESADO = 'S' WHERE NUM_DOC_PREIMP = @DOC_PREIM and TIPO_DOC = @TIPO_DOC";
                                                     cmd8.Parameters.Add("@DOC_PREIM", SqlDbType.VarChar).Value = NUM_PED;
+                                                    cmd8.Parameters.Add("@TIPO_DOC", SqlDbType.VarChar).Value = "N";
 
                                                     cmd8.ExecuteNonQuery();
 
