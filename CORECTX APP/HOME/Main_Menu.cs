@@ -28,6 +28,7 @@ namespace Sinconizacion_EXactus
         String APP_id;
         String SUBAPP_id;
         public static String Agencia;
+        public static String Multi_cliente_app;
         public static String multisucursal;
         public static String Puesto;
         public static String Principal_ID;
@@ -38,10 +39,16 @@ namespace Sinconizacion_EXactus
         public static String TIPO_RRHH;
         public static String EMPRESA;
         public static Int32 logo;
+        public static string GeneraKMLcliente;
+        public static string guardarKMLcliente;
         public static String autoev;
+        public static String solosnGPS;
         public static String usuario_devol;
+        public static String carga_detallefac;
         public DataTable DTpedidos = new DataTable();
         DataTable config = new DataTable();
+        DataTable amon = new DataTable();
+
         private void Form6_Load(object sender, EventArgs e)
         {
             // Validamos si se esta ejecutando un proceso CARGA DE FACTURAS AL FR ------------------------------
@@ -56,7 +63,7 @@ namespace Sinconizacion_EXactus
             
             Carga_ERP_FR = 0;
             
-            MaximumSize = new Size(945, 131);
+            MaximumSize = new Size(1029, 131);
              ControlBox = false;
 
             //------------ obtenemos la vercion actual del Assembly -------------------------------
@@ -148,6 +155,12 @@ namespace Sinconizacion_EXactus
                         case 8:
                             MaximumSize = new Size(945, 131);
                             break;
+                        case 9:
+                            MaximumSize = new Size(945, 131);
+                            break;
+                        case 10:
+                            MaximumSize = new Size(1029, 131);
+                            break;
                     }
 
 //---------------- se muestra el menu segun acceso ------------------------------------
@@ -178,7 +191,13 @@ namespace Sinconizacion_EXactus
                         case "8": //SEGURIDAD
                             toolStripButton7.Visible = true;
                             break;
+                        case "9": //REGALIAS
+                            break;
+                        case "10": //CONTABILIDAD
+                            toolStripButton8.Visible = true;
+                            break;
 
+                            
 
 
 
@@ -297,7 +316,7 @@ namespace Sinconizacion_EXactus
                             competenciaToolStripMenuItem.Visible = true;
                             break;
                         case "31":
-                            importadorStreetToolStripMenuItem.Visible= true;
+                            unileverToolStripMenuItem.Visible= true;
                             break;
                         case "32":
                             empresasToolStripMenuItem.Visible = true;
@@ -371,6 +390,34 @@ namespace Sinconizacion_EXactus
                         case "61":
 
                             multisucursal = "S";
+                            break;
+
+                           
+                        case "63":
+
+                            analyticsToolStripMenuItem.Visible = true;
+                            break;
+
+                        case "64":
+
+                            objetivosToolStripMenuItem.Visible = true;
+                            break;
+                        case "65":
+                            reportesToolStripMenuItem2.Visible = true;
+                            break;
+                        case "69":
+                            carga_detallefac = "S";
+                            break;
+                            
+                        case "74":
+                            reportesToolStripMenuItem3.Visible = true;
+                            break;
+                        case "76":
+                            recibosToolStripMenuItem.Visible = true;
+                            break;
+ 
+                        case "78":
+                            importOdooToolStripMenuItem.Visible = true;
                             break;
                     }
 
@@ -465,25 +512,57 @@ namespace Sinconizacion_EXactus
                     case "33":
                         constanciasToolStripMenuItem.Visible = true;
                         break;
+                        
+                    case "34":
+                        ReportregaliasVentasToolStripMenuItem1.Visible = true;
+                        break;
+                    case "36":
+                        pedidosVentaObjetosToolStripMenuItem.Visible = true;
+                        break;
+                        
+                    case "37":
+                        existenciasToolStripMenuItem.Visible = true;
+                        break;
+
+                    case "38":
+                        amonestacionesToolStripMenuItem.Visible = true;
+                        break;
+
+                        
+                    case "39":
+                        saldoProveedorToolStripMenuItem.Visible = true;
+                        break;
+
+
+                    case "42":
+                        GeneraKMLcliente = "S";
+                        break;
+
+                    case "43":
+                        solosnGPS = "S";
+                        break;
+
+                    case "45":
+                        guardarKMLcliente = "S";
+                        break;
+
+                    case "46":
+                        Multi_cliente_app = "S";
+                        break;
+                    case "47":
+                        reporteSTSToolStripMenuItem.Visible = true;                        
+                        break;
+                    case "48":
+                        importadorPowerStreetToolStripMenuItem.Visible = true;
+                        break;
+                    case "49":
+                        exportadorDMSToolStripMenuItem.Visible = true;
+                        break;
+
                 }
 
-
-
+              
             }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -964,6 +1043,7 @@ namespace Sinconizacion_EXactus
             facturacionToolStripMenuItem.Visible = false;
             facturacionToolStripMenuItem1.Visible = false;
             regaliasVentasToolStripMenuItem.Visible = false;
+            ReportregaliasVentasToolStripMenuItem1.Visible = false;
             regaliasToolStripMenuItem.Visible = false;
             reporteDescuentosToolStripMenuItem.Visible = false;
             fillrateToolStripMenuItem.Visible = false;
@@ -976,7 +1056,25 @@ namespace Sinconizacion_EXactus
             procesosExactusToolStripMenuItem.Visible = false;
             reporteLiqidacionesToolStripMenuItem.Visible = false;
             constanciasToolStripMenuItem.Visible = false;
-
+            analyticsToolStripMenuItem.Visible = false;
+            objetivosToolStripMenuItem.Visible = false;
+            reportesToolStripMenuItem2.Visible = false;
+            pedidosVentaObjetosToolStripMenuItem.Visible = false;
+            existenciasToolStripMenuItem.Visible = false;
+            amonestacionesToolStripMenuItem.Visible = false;
+            reportesToolStripMenuItem3.Visible = false;
+            saldoProveedorToolStripMenuItem.Visible = false;
+            toolStripButton8.Visible = false;
+            GeneraKMLcliente = "N";
+            solosnGPS = "N";
+            guardarKMLcliente = "N";
+            recibosToolStripMenuItem.Visible = false;
+            Multi_cliente_app = "N";
+            importOdooToolStripMenuItem.Visible = false;
+            reporteSTSToolStripMenuItem.Visible = false;
+            unileverToolStripMenuItem.Visible = false;
+            importadorPowerStreetToolStripMenuItem.Visible = false;
+            exportadorDMSToolStripMenuItem.Visible = false;
         }
 
         private void rutasToolStripMenuItem_Click(object sender, EventArgs e)
@@ -1107,7 +1205,7 @@ namespace Sinconizacion_EXactus
             try
             {
                 System.Diagnostics.Process p = new System.Diagnostics.Process();
-                p.StartInfo.FileName = @"C:\CORRECT\Regalias\Solicitud Regalia.exe";
+                p.StartInfo.FileName = @"C:\CORRECT\Solicitud Regalia.exe";
                // p.StartInfo.Arguments = "login.dbf";
                 p.Start();
             }
@@ -1150,7 +1248,7 @@ namespace Sinconizacion_EXactus
         private void controlFlotaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process f = new System.Diagnostics.Process();
-            f.StartInfo.FileName = @"C:\CORRECT\CORECTX APP\FLOTA\FLOTA.exe";          
+            f.StartInfo.FileName = @"C:\CORRECT\FLOTA.exe";          
             f.Start();
         }
 
@@ -1237,6 +1335,113 @@ namespace Sinconizacion_EXactus
         {
             CORECTX_APP.RRHH.Constancias cons = new CORECTX_APP.RRHH.Constancias();
             cons.Show();
+        }
+
+        private void analyticsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CORECTX_APP.Reports.Analytics AnalitycFr = new CORECTX_APP.Reports.Analytics();
+            AnalitycFr.Show();
+        }
+
+        private void ofertasAplicadasREPToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void toolStripDropDownButton5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void objetivosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CORECTX_APP.VENTAS.OBJETIVOS obj = new CORECTX_APP.VENTAS.OBJETIVOS();
+            obj.Show();
+        }
+
+        private void toolStripDropDownButton3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pedidosVentaObjetosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CORECTX_APP.VENTAS.REPORTES.ReporteVenta reven = new CORECTX_APP.VENTAS.REPORTES.ReporteVenta();
+            reven.Show();
+        }
+
+        private void existenciasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CORECTX_APP.BODEGA.REPORTES.existencias ex = new CORECTX_APP.BODEGA.REPORTES.existencias();
+            ex.Show();
+        }
+
+        private void rEgaliasToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void amonestacionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            amon.Clear();
+            con.conectar("EX");
+
+            SqlCommand cm = new SqlCommand("SELECT AC.EMPLEADO,emp.NOMBRE, TIPO_ACCION as  TIPO,NOTAS,FECHA_RIGE as 'FECHA APLICACION' FROM [EXACTUS].[dismo].[EMPLEADO_ACC_PER] as AC LEFT JOIN  [EXACTUS].[dismo].[EMPLEADO] as EMP on AC.EMPLEADO = EMP.EMPLEADO where   (TIPO_ACCION like 'AGRA' OR  TIPO_ACCION like 'ALEV') and ESTADO_ACCION = 'S'", con.conex);
+            SqlDataAdapter da = new SqlDataAdapter(cm);
+
+            da.Fill(amon);
+
+            con.Desconectar("EX");
+
+            CORECTX_APP.RRHH.Amonestaciones amones = new CORECTX_APP.RRHH.Amonestaciones(amon);
+            amones.Show();
+        }
+
+        private void reportesToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void saldoProveedorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CORECTX_APP.COMPRAS.Reportes.Reporte_Form rep = new CORECTX_APP.COMPRAS.Reportes.Reporte_Form();
+            rep.Show(); 
+        }
+
+        private void partidasDeDiarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CORECTX_APP.CONTABILIDAD.Reporte_Diario rd = new CORECTX_APP.CONTABILIDAD.Reporte_Diario();
+            rd.Show();
+        }
+
+        private void toolStripContainer1_TopToolStripPanel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void recibosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Cobro_bod rec = new Cobro_bod();
+            rec.Show();
+        }
+
+        private void bonificacionesPromocionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CORECTX_APP.BODEGA.PROMOCIONES.Promociones promo = new CORECTX_APP.BODEGA.PROMOCIONES.Promociones();
+            promo.Show();
+        }
+
+        private void importOdooToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CORECTX_APP.COMPRAS.Importador.odoo odo = new CORECTX_APP.COMPRAS.Importador.odoo();
+                odo.Show();
+               
+        }
+
+        private void reporteSTSToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CORECTX_APP.CREDITOS.REPORTES.DescuentoxDocuemtos stcs = new CORECTX_APP.CREDITOS.REPORTES.DescuentoxDocuemtos(3, reporteLiqidacionesToolStripMenuItem.Text);
+            stcs.Show();
         }
     }
  

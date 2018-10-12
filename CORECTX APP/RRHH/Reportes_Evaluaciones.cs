@@ -50,13 +50,13 @@ namespace Sinconizacion_EXactus.CORECTX_APP.RRHH
                 textBox2.Enabled =false;
                 
                 button3.Enabled = false;
-                textBox2.AutoCompleteCustomSource = AutocompleteRuta.AutocompleteEMPLEADOCOD();
-                textBox2.AutoCompleteMode = AutoCompleteMode.Suggest;
-                textBox2.AutoCompleteSource = AutoCompleteSource.CustomSource;
+                //textBox2.AutoCompleteCustomSource = AutocompleteRuta.AutocompleteEMPLEADOCOD();
+                //textBox2.AutoCompleteMode = AutoCompleteMode.Suggest;
+                //textBox2.AutoCompleteSource = AutoCompleteSource.CustomSource;
 
-                textBox1.AutoCompleteCustomSource = AutocompleteRuta.AutocompleteEMPLEADONOMBRE();
-                textBox1.AutoCompleteMode = AutoCompleteMode.Suggest;
-                textBox1.AutoCompleteSource = AutoCompleteSource.CustomSource;
+                //textBox1.AutoCompleteCustomSource = AutocompleteRuta.AutocompleteEMPLEADONOMBRE();
+                //textBox1.AutoCompleteMode = AutoCompleteMode.Suggest;
+                //textBox1.AutoCompleteSource = AutoCompleteSource.CustomSource;
            
 
                 for (int i = 2015; i <= DateTime.UtcNow.Year; i++)

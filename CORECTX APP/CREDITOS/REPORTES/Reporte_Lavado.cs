@@ -33,7 +33,7 @@ namespace Sinconizacion_EXactus.CORECTX_APP.CREDITOS.REPORTES
             dataGridView1.AllowUserToAddRows = false;
 
             DateTime fechaini = new DateTime(DateTime.Now.Year, DateTime.Now.Month, 1);
-            DateTime fechafin = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day - 1);
+            DateTime fechafin = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day );
             dateTimePicker1.Value = fechaini;
             dateTimePicker2.Value = fechafin;
 

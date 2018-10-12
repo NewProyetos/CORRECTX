@@ -241,11 +241,10 @@ namespace Sinconizacion_EXactus
                       
 
 
+                        
 
 
-
-
-                        if (Exite_cliente(CODIGO, SUPERVISOR))
+                        if (Exite_cliente(CODIGO, SUPERVISOR) && Main_Menu.Multi_cliente_app != "S")
                         {
                             MessageBoxButtons bt1 = MessageBoxButtons.YesNo;
                             DialogResult result = MessageBox.Show("CLIENTE " + CODIGO + " YA EXISTE EN OTRA RUTA NO SE AGREGARA A RUTA \n ¿DESEA FINALIZAR LA IMPORTACION?", "CARGA CLIENTES DISMOAPP", bt1, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1);

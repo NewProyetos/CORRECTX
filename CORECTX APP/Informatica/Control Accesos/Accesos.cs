@@ -53,6 +53,11 @@ namespace Sinconizacion_EXactus
         TreeNode node14;
         TreeNode node15;
         TreeNode node16;
+        TreeNode node17;
+        TreeNode node18;
+        TreeNode node19;
+        TreeNode node20;
+
         public static int info;
         int existinfo;
         String nodoanterio;
@@ -880,6 +885,161 @@ namespace Sinconizacion_EXactus
 
                         }
                         break;
+
+                    // NODO REGALIAS --------------------------------------------------------------------------------------
+                    case "9":
+                        for (int o = 0; o < app.Rows.Count; o++)
+                        {
+                            string menuapp_id;
+
+                            menuapp_id = app.Rows[o]["MENU_ID"].ToString();
+                            app_id = app.Rows[o]["APP_ID"].ToString();
+                            if (menuapp_id == "9")
+                            {
+                                node16 = new TreeNode(app.Rows[o]["NOMBRE"].ToString());
+
+
+                                string app_nombre = app.Rows[o]["NOMBRE"].ToString();
+
+                                for (int j = 0; j < vacc.APP_acces.Rows.Count; j++)
+                                {
+                                    string nombre_app_acc = vacc.APP_acces.Rows[j]["NOMBRE"].ToString();
+                                    if (app_nombre == nombre_app_acc)
+                                    {
+                                        node16.ForeColor = Color.Black;
+
+
+                                    }
+
+                                }
+
+
+                                node16.Name = "APP";
+
+
+
+                                if (Exist_subapp(app_id))
+                                {
+                                    for (int p = 0; p < subapp.Rows.Count; p++)
+                                    {
+                                        string sub_app;
+                                        sub_app = subapp.Rows[p]["APP_ID"].ToString();
+                                        if (app_id == sub_app)
+                                        {
+                                            node17 = new TreeNode(subapp.Rows[p]["NOMBRE"].ToString());
+
+
+
+
+                                            node17.Name = "SUBAPP";
+
+                                            string sub_app_nombre = subapp.Rows[p]["NOMBRE"].ToString();
+                                            for (int k = 0; k < vacc.SUBAPP_acces.Rows.Count; k++)
+                                            {
+                                                string sub_nombre_app_acc = vacc.SUBAPP_acces.Rows[k]["NOMBRE"].ToString();
+                                                if (sub_app_nombre == sub_nombre_app_acc)
+                                                {
+                                                    node17.ForeColor = Color.Black;
+
+
+                                                }
+
+                                            }
+                                            node16.Nodes.Add(node17);
+
+                                        }
+                                    }
+
+
+                                }
+                                node.Nodes.Add(node16);
+                            }
+
+                        }
+                        break;
+
+
+
+
+           // CONTABILIDAD -------------------------------------------------------------
+
+
+                    case "10":
+                        for (int o = 0; o < app.Rows.Count; o++)
+                        {
+                            string menuapp_id;
+
+                            menuapp_id = app.Rows[o]["MENU_ID"].ToString();
+                            app_id = app.Rows[o]["APP_ID"].ToString();
+                            if (menuapp_id == "10")
+                            {
+                                node18 = new TreeNode(app.Rows[o]["NOMBRE"].ToString());
+
+
+                                string app_nombre = app.Rows[o]["NOMBRE"].ToString();
+
+                                for (int j = 0; j < vacc.APP_acces.Rows.Count; j++)
+                                {
+                                    string nombre_app_acc = vacc.APP_acces.Rows[j]["NOMBRE"].ToString();
+                                    if (app_nombre == nombre_app_acc)
+                                    {
+                                        node18.ForeColor = Color.Black;
+
+
+                                    }
+
+                                }
+
+
+                                node18.Name = "APP";
+
+
+
+                                if (Exist_subapp(app_id))
+                                {
+                                    for (int p = 0; p < subapp.Rows.Count; p++)
+                                    {
+                                        string sub_app;
+                                        sub_app = subapp.Rows[p]["APP_ID"].ToString();
+                                        if (app_id == sub_app)
+                                        {
+                                            node19 = new TreeNode(subapp.Rows[p]["NOMBRE"].ToString());
+
+
+
+
+                                            node19.Name = "SUBAPP";
+
+                                            string sub_app_nombre = subapp.Rows[p]["NOMBRE"].ToString();
+                                            for (int k = 0; k < vacc.SUBAPP_acces.Rows.Count; k++)
+                                            {
+                                                string sub_nombre_app_acc = vacc.SUBAPP_acces.Rows[k]["NOMBRE"].ToString();
+                                                if (sub_app_nombre == sub_nombre_app_acc)
+                                                {
+                                                    node19.ForeColor = Color.Black;
+
+
+                                                }
+
+                                            }
+                                            node18.Nodes.Add(node19);
+
+                                        }
+                                    }
+
+
+                                }
+                                node.Nodes.Add(node18);
+                            }
+
+                        }
+                        break;
+
+
+
+
+
+
 
 
                 }

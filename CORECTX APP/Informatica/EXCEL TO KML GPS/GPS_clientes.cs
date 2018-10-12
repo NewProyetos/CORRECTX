@@ -9,6 +9,10 @@ using System.Windows.Forms;
 using System.Xml;
 using System.Data.SqlClient;
 using System.IO;
+using DevExpress.XtraGrid.Views.Grid;
+using System.Web.UI.WebControls;
+using DevExpress.XtraExport.Helpers;
+using DevExpress.Data.Filtering;
 
 namespace Sinconizacion_EXactus
 {
@@ -20,98 +24,247 @@ namespace Sinconizacion_EXactus
         }
 
         public static DataTable dt = new DataTable();
-        Conexion2 conet = new Conexion2();
+        conexionXML con = new conexionXML();
       
         public static string fecha_actual;
         public static string dia;
         public static string semana;
+        string RUTA;
+        int tip_rep;
+        string name_file;
+
 
         private void Form8_Load(object sender, EventArgs e)
         {
-              this.comboBox3.Text = "TODOS";
-              this.comboBox2.Text = "SEMANA(A)";
-              this.button2.Enabled = false;
+            groupBox3.Hide();
+            
+            radioButton1.Checked = true;
+            tip_rep = 0;
+            dia = "Todos";
+            semana = "AB";
+            RUTA = "TODAS";
+            this.button2.Enabled = false;
+            this.button4.Enabled = false;
+            this.button3.Enabled = false;
 
-         
-
-
-
-            fecha_actual = DateTime.Now.ToString("ddMMyyyy", new System.Globalization.CultureInfo("es-ES"));
-
-            conet.con.Open();
-
-            SqlCommand cm2 = new SqlCommand("SELECT [RUTA]FROM [DM].[dbo].[RUTERO] GROUP BY RUTA ORDER BY RUTA  ", conet.con);
-            SqlDataReader dr2 = cm2.ExecuteReader();
-            while (dr2.Read())
+            if (Main_Menu.GeneraKMLcliente == "S")
             {
-                comboBox1.Items.Add(dr2["RUTA"]);
+                button2.Show();
+                label6.Show();
+               
             }
-            dr2.Close();
-            conet.con.Close();
+            else
+            {
+                button2.Hide();
+                label6.Hide();
+               
+            }
+
+            if (Main_Menu.guardarKMLcliente == "S")
+            {
+                button4.Show();
+                label4.Show();
+            }
+            else
+            {
+                button4.Hide();
+                label4.Hide();
+            }
+
+
+
+            if (Main_Menu.solosnGPS == "S")
+            {
+                checkBox3.Checked = true;
+                checkBox3.Enabled = false;
+            }
+            
+
+            //dataGridView1.Enabled = true;
+            //dataGridView1.RowHeadersVisible = false;
+            ////dataGridView1.AutoResizeColumns();
+            //dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+            //dataGridView1.ReadOnly = true;
+
+
+
+
+            //  this.comboBox3.Text = "TODOS";
+            //  this.comboBox2.Text = "SEMANA(A)";
+            //  this.button2.Enabled = false;
+
+
+
+
+
+            fecha_actual = DateTime.Now.ToString("ddMMyyyy_hhmmss", new System.Globalization.CultureInfo("es-ES"));
+
+            //con.conectar("DM");
+
+            //SqlCommand cm2 = new SqlCommand("SELECT [RUTA]FROM [DM].[dbo].[RUTERO] GROUP BY RUTA ORDER BY RUTA  ", con.condm);
+            //SqlDataReader dr2 = cm2.ExecuteReader();
+            //while (dr2.Read())
+            //{
+            //    comboBox1.Items.Add(dr2["RUTA"]);
+            //}
+            //dr2.Close();
+            //con.Desconectar("DM");
+
+
         }
 
-      
+        public void combo(DataTable dts1,string valor,ComboBox cbx)
+        {
+            cbx.Items.Clear();
 
-      
+
+            var result = from row in dts1.AsEnumerable()
+                         group row by row.Field<string>(valor) into grp
+                         select new
+                         {
+                             Vendedor = grp.Key,
+
+                         };
+            foreach (var t in result)
+            {
+                if (t.Vendedor == null || t.Vendedor == "")
+                {
+
+                }
+                else
+                {
+                    cbx.Items.Add(t.Vendedor);
+                }
+            }
+
+        }
+
+
 
         private void button1_Click_1(object sender, EventArgs e)
         {
             dt.Clear();
-            dataGridView1.RowHeadersVisible = false;
-            dataGridView1.AutoResizeColumns();
-            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
-            dataGridView1.Refresh();
-            conet.con.Open();
 
-
-
-
-            SqlCommand cmd = new SqlCommand("[CORRECT].[RUTEROGPS]", conet.con);
-            cmd.CommandType = CommandType.StoredProcedure;
-            if (this.comboBox1.Text == "")
+            if (dt.Columns.Count >= 1)
+                
             {
-
-                cmd.Parameters.AddWithValue("@Ruta", null);
-
+                dt.Columns.Clear();
             }
-            else if (this.comboBox2.Text == "")
+            if (gridView1.Columns.Count >= 1)
             {
-                cmd.Parameters.AddWithValue("@Semana", null);
-            }
-            else if (this.comboBox3.Text == "")
-            {
-                cmd.Parameters.AddWithValue("@Dia", null);
-            }
-            else
-            {
-                cmd.Parameters.AddWithValue("@Ruta", comboBox1.Text);
-                cmd.Parameters.AddWithValue("@Semana", semana);
-                cmd.Parameters.AddWithValue("@Dia", dia);
+                gridView1.Columns.Clear();
             }
 
 
-            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            gridControl1.DataSource = null;
 
-            da.Fill(dt);
-
-
-            conet.con.Close();
+          
+         //  gridControl1.Refresh();
 
 
-            dataGridView1.DataSource = dt;
-            dataGridView1.Refresh();
+            if (tip_rep == 2)
+            {
+                string fechaini = dateTimePicker1.Value.ToString("yyyy-MM-dd");
+                string fechafin = dateTimePicker2.Value.ToString("yyyy-MM-dd");
 
-            int numRows = dataGridView1.Rows.Count;
+                con.conectar("DM");
+                SqlCommand cmd = new SqlCommand("[CORRECT].[VISITA_DISTANCIA]", con.condm);
+                cmd.CommandType = CommandType.StoredProcedure;
 
-            label3.Text = Convert.ToString(numRows - 1);
-            this.button2.Enabled = true;
+                cmd.Parameters.AddWithValue("@empresa", Login.empresa);
+                cmd.Parameters.AddWithValue("@fecha_ini", fechaini+" 00:00:00.000");
+                cmd.Parameters.AddWithValue("@fecha_fin", fechafin+" 23:59:59.000");
 
 
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+
+                da.Fill(dt);
+
+
+                con.Desconectar("DM");
+
+                gridControl1.DataSource = dt;
+
+                int numRows = gridView1.RowCount;
+
+
+                label3.Text = Convert.ToString(numRows - 1);
+                if (numRows - 1 > 0)
+                {
+                    button3.Enabled = true;
+                }
+
+
+              }
+          else
+            {
+                con.conectar("DM");
+                SqlCommand cmd = new SqlCommand("[CORRECT].[RUTEROGPS]", con.condm);
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                cmd.Parameters.AddWithValue("@empresa", Login.empresa);
+
+                if (checkBox3.Checked)
+                {
+                    cmd.Parameters.AddWithValue("@geo", 0);
+                }
+                else
+
+                {
+                    cmd.Parameters.AddWithValue("@geo", 1);
+
+                }
+                cmd.Parameters.AddWithValue("@tipo_rep", tip_rep);
+
+
+
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+
+                da.Fill(dt);
+
+
+                con.Desconectar("DM");
+
+                gridControl1.DataSource = dt;
+
+
+
+                int numRows = gridView1.RowCount;
+
+
+                label3.Text = Convert.ToString(numRows - 1);
+                if (numRows - 1 > 0)
+                {
+
+                    if (checkBox3.Checked)
+                    {
+                        this.button2.Enabled = false;
+                        this.button4.Enabled = false;
+                    }
+                    else
+                    {
+                        this.button2.Enabled = true;
+                        this.button4.Enabled = true;
+                    }
+                    this.button3.Enabled = true;
+
+
+                }
+                else
+                {
+
+                    this.button2.Enabled = false;
+                    this.button4.Enabled = false;
+                    this.button3.Enabled = false;
+                }
+
+
+            }
         }
+        
 
         private void button2_Click_1(object sender, EventArgs e)
         {
-
             if (Directory.Exists(@"C:\CORRECT\GPS\"))
             {
 
@@ -120,9 +273,174 @@ namespace Sinconizacion_EXactus
             {
                 Directory.CreateDirectory(@"C:\CORRECT\GPS\");
             }
+
+
+           string nombrefiles = @"C:\CORRECT\GPS\puntos_" + fecha_actual + ".kml";
+            createkml(nombrefiles,"ver");
+
+
+        }
+
+        private void comboBox2_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            //semana = comboBox2.Text;
+
+            //dt.DefaultView.RowFilter = "SEMANA = '" + semana + "'";
+            //dataGridView1.DataSource = dt;
+        }
+
+        private void comboBox3_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            //dia = comboBox3.Text;
+
+            //dt.DefaultView.RowFilter = "DIAVISITA = '" + dia + "'";
+            //dataGridView1.DataSource = dt;
+
+        }
+
+        private void comboBox3_MouseClick(object sender, MouseEventArgs e)
+        {
+          //  this.button2.Enabled = false;
+        }
+
+        private void comboBox1_MouseClick(object sender, MouseEventArgs e)
+        {
+          //  this.button2.Enabled = false;
+        }
+
+        private void comboBox2_MouseClick(object sender, MouseEventArgs e)
+        {
+        //    this.button2.Enabled = false;
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            //if (checkBox1.Checked)
+            //{
+            //    //dt.DefaultView.RowFilter = "ACTIVO = 'N'";
+            //    //dataGridView1.DataSource = dt;
+            //}
+            //else
+            //{
+            //    //dt.DefaultView.RowFilter = "ACTIVO = 'S'";
+            //    //dataGridView1.DataSource = dt;
+            //}
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //RUTA = comboBox1.Text;
+
+            //dt.DefaultView.RowFilter = "RUTA = '" + RUTA + "'";
+            //dataGridView1.DataSource = dt;
+
+
+        }
+
+        private void checkBox4_CheckedChanged(object sender, EventArgs e)
+        {
+            //dt.DefaultView.RowFilter = "RUTA = ''";
+            //dataGridView1.DataSource = dt;
+        }
+
+        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        {
+            //if (checkBox2.Checked)
+            //{
+                
+            //}
+            //else
+            //{
+            //    dt.DefaultView.RowFilter = "NOMBRE <> 'DISPONIBLE'";
+            //}
+
+            //dataGridView1.DataSource = dt;
+        }
+
+        private void checkBox3_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox3.Checked)
+            {
+                button2.Enabled = false;
+
+            }
+            else
+            {
+                button2.Enabled = true;
+            }
+
+            button1_Click_1(null, null);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
             
 
-            string nombrefile = @"C:\CORRECT\GPS\" + this.comboBox1.Text + "." + this.comboBox2.Text + "." + this.comboBox3.Text + ".kml";
+            string FileName = "C:\\CORRECT\\XLS\\ "+ name_file + "_" + fecha_actual + ".xlsx";
+            gridView1.ExportToXlsx(FileName);
+
+
+
+            Microsoft.Office.Interop.Excel.Application excell;
+            Microsoft.Office.Interop.Excel.Workbook workbook;
+            excell = new Microsoft.Office.Interop.Excel.Application();
+            excell.Visible = true;
+            workbook = excell.Workbooks.Open(FileName);
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton1.Checked)
+            {
+                tip_rep = 0;
+                name_file = "GPS_RUTERO";
+            }
+            else
+            {
+                tip_rep = 1;
+            }
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton2.Checked)
+            {
+                tip_rep = 1;
+                name_file = "GPS_CLIENTES";
+            }
+            else
+            {
+                tip_rep = 0;
+
+            }
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            saveFileDialog1.InitialDirectory = @"C:\CORRECT";
+            saveFileDialog1.Title = "Guardar KML";
+            saveFileDialog1.DefaultExt = "kml";
+            saveFileDialog1.Filter = "kml files (*.kml)|*.kml";
+            saveFileDialog1.FilterIndex = 2;
+            saveFileDialog1.RestoreDirectory = true;
+
+            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+               string  nombrefiles = saveFileDialog1.FileName;
+                createkml(nombrefiles,"guardar");
+            }
+        }
+
+      
+
+        private void createkml(string nombrefile,string tipo_eje)
+        {
+             
+
+            string ad = "RUTERO COMPLETO";        
+               
+            
 
             //Definimos el archivo XML
             XmlTextWriter writer = new
@@ -135,29 +453,62 @@ namespace Sinconizacion_EXactus
             writer.WriteStartElement("Folder");
             writer.WriteStartElement("description");
 
+
+            CriteriaOperator op = gridView1.ActiveFilterCriteria;
+            string filterStnring = DevExpress.Data.Filtering.CriteriaToWhereClauseHelper.GetDataSetWhere(op);
+            //  string filterStnring2 = DevExpress.Data.Filtering.Crite;
+
+            if (filterStnring == "")
+            { }
+            else
+            {
+                ad = op.LegacyToString();
+            }
+
+
+
+
+
             //Descripcion del Conjunto de Datos,puede ser texto o HTML
-            writer.WriteCData("Puntos de Rutas" + this.comboBox1.Text + "_" + this.comboBox2.Text + "_" + this.comboBox3.Text);
+            writer.WriteCData("Puntos" + ad + "");
             writer.WriteEndElement();
-            writer.WriteElementString("name", this.comboBox1.Text + "." + this.comboBox3.Text);
+            writer.WriteElementString("name", ad);
             writer.WriteElementString("visibility", "0");
             writer.WriteElementString("open", "1");
             writer.WriteStartElement("Folder");
 
-            for (int i = 0; i < dt.Rows.Count; i++)
+
+            //   for (int i = 0; i < gridView1.DataRowCount; i++)
+            //   {
+            //       string v = "";
+
+            //       v = gridView1.GetRowCellValue(i, "LATITUD").ToString();
+
+            ////do something
+            //     }
+
+
+
+            for (int i = 0; i < gridView1.DataRowCount; i++)
             {
-                string lat = dt.Rows[i][1].ToString();
-                string lon = dt.Rows[i][2].ToString();
+                // DataRow dtr = dt.Rows[i];
+
+
+                string lat = gridView1.GetRowCellValue(i, "LATITUD").ToString();
+                string lon = gridView1.GetRowCellValue(i, "LONGITUD").ToString();
                 writer.WriteStartElement("Placemark");
                 writer.WriteStartElement("description");
-                writer.WriteCData("" + " " + dt.Rows[i][6].ToString() + "<br />" + ": " + dt.Rows[i][5].ToString() + "  <br />  " + dt.Rows[i][3].ToString() + " <br />" + dt.Rows[i][4].ToString());
+
+                writer.WriteCData("" + "RUTA:" + gridView1.GetRowCellValue(i, "RUTA").ToString() + "<br />" + "SEMANA: " + gridView1.GetRowCellValue(i, "SEMANA").ToString() + "  <br />  " + "DIA: " + gridView1.GetRowCellValue(i, "DIAVISITA").ToString() + " <br />" + "NOMBRE: " + gridView1.GetRowCellValue(i, "NOMBRE").ToString() + " <br />" + "DIRECCION: " + gridView1.GetRowCellValue(i, "DIRECCION").ToString());
+
                 writer.WriteEndElement();
-                writer.WriteElementString("name", dt.Rows[i][0].ToString());
+                writer.WriteElementString("name", gridView1.GetRowCellValue(i, "CLIENTE").ToString());
                 writer.WriteElementString("visibility", "1");
 
                 writer.WriteStartElement("Style");
                 writer.WriteStartElement("IconStyle");
                 writer.WriteStartElement("Icon");
-                switch (dt.Rows[i][5].ToString())
+                switch (gridView1.GetRowCellValue(i, "DIAVISITA").ToString())
                 {
                     case "LUNES":
                         writer.WriteElementString("href", "http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png");
@@ -179,6 +530,9 @@ namespace Sinconizacion_EXactus
                         break;
                     case "ESPECIAL":
                         writer.WriteElementString("href", "http://maps.google.com/mapfiles/kml/pushpin/ltblu-pushpin.png");
+                        break;
+                    default:
+                        writer.WriteElementString("href", "http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png");
                         break;
                 }
                 writer.WriteEndElement();
@@ -207,113 +561,69 @@ namespace Sinconizacion_EXactus
             writer.Close();
 
 
-            MessageBoxButtons bt1 = MessageBoxButtons.YesNo;
-            DialogResult result = MessageBox.Show("Desea ver los puntos en GoogleEarth", "PUNTEO", bt1, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1);
-            if (result == DialogResult.Yes)
-            {
-                try
-                {
-                    try
-                    {
-                        System.Diagnostics.Process.Start(@"%programfiles%\Google\Google Earth\client\googleearth.exe", nombrefile);
-                        
-                    }
-                    catch
-                    {
-                        System.Diagnostics.Process.Start(@"C:\Program Files (x86)\Google\Google Earth\client\googleearth.exe", nombrefile);
-                    }
-                }
-                catch
-                {
-                    MessageBox.Show("ERROR GOOGLE EARTH NO ESTA INSTALADO", "ERROR");
-                }
-            }
-            else 
-            {
 
-                MessageBox.Show(nombrefile,"Archivo Guardado Corectamente"  );
+
+            if (tipo_eje == "ver")
+            {
+                System.Diagnostics.Process.Start(nombrefile);
+            }
+            else
+            {
+                MessageBox.Show(nombrefile, "Archivo Guardado Corectamente");
             }
 
+            //MessageBoxButtons bt1 = MessageBoxButtons.YesNo;
+            //DialogResult result = MessageBox.Show("Desea ver los puntos en GoogleEarth", "PUNTEO", bt1, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1);
+            //if (result == DialogResult.Yes)
+            //{
+            //    try
+            //    {
+            //        try
+            //        {
+            //            System.Diagnostics.Process.Start(nombrefile);
+
+            //        }
+            //        catch
+            //        {
+
+            //        }
+            //    }
+            //    catch
+            //    {
+            //        MessageBox.Show("ERROR GOOGLE EARTH NO ESTA INSTALADO", "ERROR");
+            //    }
+            //}
+            //else
+            //{
+
+            //    MessageBox.Show(nombrefile, "Archivo Guardado Corectamente");
+            //}
+
+
+
+
+
+
         }
 
-        private void comboBox2_SelectedIndexChanged_1(object sender, EventArgs e)
+        private void radioButton3_CheckedChanged(object sender, EventArgs e)
         {
-            switch (this.comboBox2.Text)
+            if (radioButton3.Checked)
             {
-                case "SEMANA(A)":
-                    semana = "A";
-                    break;
-                case "SEMANA(B)":
-                    semana = "B";
-                    break;
-                case "SEMANA(AB)":
-                    semana = null;
-                    break;
+                tip_rep = 2;
+                groupBox3.Show();
+                groupBox4.Hide();
+                checkBox3.Enabled = false;
+                name_file = "VISITAS";
+            }
 
-                default:
-                    semana = null;
-                    break;
+            else
+            {
+                groupBox3.Hide();
+                groupBox4.Show();
+                checkBox3.Enabled = true;
             }
 
         }
-
-        private void comboBox3_SelectedIndexChanged_1(object sender, EventArgs e)
-        {
-            switch (this.comboBox3.Text)
-            {
-                case "Lunes":
-                    dia = "0";
-                    break;
-                case "Martes":
-                    dia = "1";
-                    break;
-                case "Miercoles":
-                    dia = "2";
-                    break;
-                case "Jueves":
-                    dia = "3";
-                    break;
-                case "Viernes":
-                    dia = "4";
-                    break;
-                case "Sabado":
-                    dia = "5";
-                    break;
-
-                case "Especial":
-                    dia = "6";
-                    break;
-
-                case "TODOS":
-                    dia = null;
-                    break;
-
-                default:
-                    dia = null;
-                    break;
-
-
-            }
-
-
-        }
-
-        private void comboBox3_MouseClick(object sender, MouseEventArgs e)
-        {
-            this.button2.Enabled = false;
-        }
-
-        private void comboBox1_MouseClick(object sender, MouseEventArgs e)
-        {
-            this.button2.Enabled = false;
-        }
-
-        private void comboBox2_MouseClick(object sender, MouseEventArgs e)
-        {
-            this.button2.Enabled = false;
-        }
-
-
-        
     }
 }

@@ -14,17 +14,17 @@ namespace Sinconizacion_EXactus
         static void Main()
         {
             Application.EnableVisualStyles();
-        Application.SetCompatibleTextRenderingDefault(false);
-       Application.Run(new  Login());
-     //   Application.Run(new CORECTX_APP.Informatica.Unilever.InterfaceDMS());
-            
-         
-                 // Application.Run(new FrmPromociones());
+            Application.SetCompatibleTextRenderingDefault(false);
+             Application.Run(new  Login());
+            //  Application.Run(new CORECTX_APP.COMPRAS.Importador.odoo());
+           //  Application.Run(new CORECTX_APP.BODEGA.PROMOCIONES.Promociones());
+
+            // Application.Run(new FrmPromociones());
 
             //      Habilitar estas lineas si se desea compilar Ejectutable de Cargador FTP KC
             //      FtpAutoCargaKC KC = new FtpAutoCargaKC();
             //      KC.Ejecutar();
-          
+
         }
     }
 }

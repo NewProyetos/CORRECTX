@@ -23,6 +23,7 @@ namespace Sinconizacion_EXactus.CORECTX_APP.Informatica.Procesos
         string Ruta;
         string Bodega;
         DataTable dtfull = new DataTable();
+        string tipo_proces;
         private void Procesos_Exactus_Load(object sender, EventArgs e)
         {
 
@@ -102,51 +103,41 @@ namespace Sinconizacion_EXactus.CORECTX_APP.Informatica.Procesos
 
 
 
-        } 
+        }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (comboBox2.Text == "" || comboBox2.Text == string.Empty || comboBox2.Text == null)
+            if (radioButton1.Checked)
             {
-                MessageBox.Show("seleccione una EMPRESA");
-                comboBox1.Focus();
 
+             
             }
             else
-
-
-            if (comboBox1.Text == "" || comboBox1.Text == string.Empty || comboBox1.Text == null)
             {
-                MessageBoxButtons bt1 = MessageBoxButtons.YesNo;
-                DialogResult result = MessageBox.Show("No se ha seleccionado una Ruta para la Empresa " + comboBox2.Text + " Ejecutar el proceso para todas las Rutas?: " + this.comboBox1.Text + "", "PROCESO CARGA FR", bt1, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1);
-                if (result == DialogResult.Yes)
+
+                if (comboBox2.Text == "" || comboBox2.Text == string.Empty || comboBox2.Text == null)
                 {
+                    MessageBox.Show("seleccione una EMPRESA");
+                    comboBox1.Focus();
+
+                }
+                else
+
+
+                if (comboBox1.Text == "" || comboBox1.Text == string.Empty || comboBox1.Text == null)
+                {
+                    MessageBox.Show("seleccione una RUTA");
+                    comboBox2.Focus();
 
                 }
                 else
                 {
-                   // MessageBox.Show("seleccione una Ruta");
-                    comboBox1.Focus();
+                    validachek();
                 }
-                  
                 
 
             }
-            else
-
-                validachek();
-
-            //    if (checkBox1.Checked)
-            //    {
-            //        Clientes_Worker.RunWorkerAsync();
-            //    }
-            //if (checkBox2.Checked)
-            //{
-
-            //    Invetario_Worker.RunWorkerAsync();
-            //}
         }
-
         private void Clientes_Worker_ProgressChanged(object sender, ProgressChangedEventArgs e)
         {
           //  progressBar1.Value = e.ProgressPercentage;
@@ -179,7 +170,7 @@ namespace Sinconizacion_EXactus.CORECTX_APP.Informatica.Procesos
             if (retunvalue == "OK")
             {
                 e.Result = "OK";
-            }
+            }  
 
             else
             {
@@ -220,7 +211,7 @@ namespace Sinconizacion_EXactus.CORECTX_APP.Informatica.Procesos
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
             groupBox1.Enabled = false;
-            groupBox3.Enabled = true;
+            groupBox3.Enabled = false;
             checkBox1.Enabled = true;
             checkBox2.Enabled = true;
             checkBox3.Enabled = true;
@@ -313,21 +304,24 @@ namespace Sinconizacion_EXactus.CORECTX_APP.Informatica.Procesos
                 Clientes_Worker.RunWorkerAsync();
                 
             }
-            else
-                if (checkBox2.Checked)
+            else if (checkBox4.Checked)
+            {
+                backgroundArticulos.RunWorkerAsync();
+            }
+
+            else if (checkBox2.Checked)
             {
                 Invetario_Worker.RunWorkerAsync();
 
             }
             else if (checkBox3.Checked)
             {
-             
+                Precios_Worker.RunWorkerAsync();
             }
-            else if (checkBox4.Checked)
-            {
-            }
+           
             else if (checkBox5.Checked)
             {
+
             }
             else if (checkBox6.Checked)
             {
@@ -502,5 +496,9 @@ namespace Sinconizacion_EXactus.CORECTX_APP.Informatica.Procesos
 
         }
 
+        private void backgroundArticulos_DoWork(object sender, DoWorkEventArgs e)
+        {
+
+        }
     }
 }

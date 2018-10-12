@@ -28,5 +28,17 @@ namespace Sinconizacion_EXactus.CORECTX_APP.RRHH
             gridControl1.DataSource = amon;
             gridControl1.Refresh();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string FileName = "C:\\CORRECT\\Amonestaciones.xls";
+            gridView1.ExportToXls(FileName);
+
+            Microsoft.Office.Interop.Excel.Application excell;
+            Microsoft.Office.Interop.Excel.Workbook workbook;
+            excell = new Microsoft.Office.Interop.Excel.Application();
+            excell.Visible = true;
+            workbook = excell.Workbooks.Open(FileName);
+        }
     }
 }

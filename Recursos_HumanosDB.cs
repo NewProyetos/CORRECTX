@@ -4,6 +4,10 @@
 
     public partial class Recursos_Humanos
     {
+        partial class RESULTADO_PASO1DataTable
+        {
+        }
+
         partial class EVALUACION_DESEMPEÑODataTable
         {
         }

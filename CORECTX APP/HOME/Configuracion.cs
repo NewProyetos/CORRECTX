@@ -8,6 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using MySql.Data.MySqlClient;
+using Npgsql;
 
 namespace Sinconizacion_EXactus
 {
@@ -22,15 +23,19 @@ namespace Sinconizacion_EXactus
 
         String SSQLserver;
         String SSQLserverseg;
+        String PGSQLserver;
         String SWeb;
         String SDMdatabase;
         String SDBExactus;
         String SDBWeb;
+        String pgdb;
         String SSQLogin;
         String SMyqlogin;
+        String pglogin;
         String SSqlID;
         String SSqlIDsg;
         String SMsqlID;
+        String pgID;
         String SDBSeguridad;
         String SSQLoginsg;
 
@@ -157,6 +162,31 @@ namespace Sinconizacion_EXactus
 
 
                 }
+            else if (comboBox1.Text == "18.216.38.163 [ODOO]")
+            {
+
+                NpgsqlConnection pgcon = new NpgsqlConnection("Server="+textBox1.Text+";User Id="+textBox2.Text+"; " + "Password="+textBox3.Text+";Database="+textBox4.Text+";");
+
+               
+
+                try
+                {
+                    pgcon.Open();
+                    MessageBox.Show("Conexion Exitosa");
+                    button2.Enabled = true;
+                    pgcon.Close();
+                }
+                catch
+                {
+
+                    MessageBox.Show("Error de Conexion");
+                    button2.Enabled = false;
+
+                }
+
+
+            }
+            
         }
 
         private void Configuracion_Load(object sender, EventArgs e)
@@ -220,7 +250,16 @@ namespace Sinconizacion_EXactus
                             textBox4.Text = Convert.ToString(row["DBSQLSG"]);
 
                         }
-            
+
+                        else if (comboBox1.Text == "18.216.38.163 [ODOO]")
+                        {
+
+                            textBox1.Text = Convert.ToString(row["SERVIDORPGSQL"]);
+                            textBox2.Text = Convert.ToString(row["LOGINPG"]);
+                            textBox4.Text = Convert.ToString(row["DBPG"]);
+
+                        }
+
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -242,8 +281,12 @@ namespace Sinconizacion_EXactus
                 SDBSeguridad = Convert.ToString(row["DBSQLSG"]);
                 SSQLoginsg = Convert.ToString(row["LOGINSG"]);
                 SSqlIDsg = Convert.ToString(row["KEYIDSG"]);
+                PGSQLserver = Convert.ToString(row["SERVIDORPGSQL"]);
+                pgdb = Convert.ToString(row["DBPG"]);
+                pglogin = Convert.ToString(row["LOGINPG"]);
+                pgID = Convert.ToString(row["KEYIDPG"]);
 
-                XMLRW.write("CONFIGURACION", SSQLserver, SWeb, SSQLserverseg, SDMdatabase, SDBExactus, SDBSeguridad, SDBWeb, SSQLogin, SSQLoginsg, SMyqlogin, SSqlID, SSqlIDsg, SMsqlID,"","","","","");
+                XMLRW.write("CONFIGURACION", SSQLserver, SWeb, SSQLserverseg,PGSQLserver, SDMdatabase, SDBExactus, SDBSeguridad, pgdb,SDBWeb, SSQLogin, SSQLoginsg, SMyqlogin,pglogin, SSqlID, SSqlIDsg, SMsqlID,pgID,"","","","","");
                 
             }
             else
@@ -262,10 +305,14 @@ namespace Sinconizacion_EXactus
                     SDBSeguridad = Convert.ToString(row["DBSQLSG"]);
                     SSQLoginsg = Convert.ToString(row["LOGINSG"]);
                     SSqlIDsg = Convert.ToString(row["KEYIDSG"]);
+                PGSQLserver = Convert.ToString(row["SERVIDORPGSQL"]);
+                pgdb = Convert.ToString(row["DBPG"]);
+                pglogin = Convert.ToString(row["LOGINPG"]);
+                pgID = Convert.ToString(row["KEYIDPG"]);
 
-                    XMLRW.write("CONFIGURACION",SSQLserver, SWeb, SSQLserverseg, SDMdatabase, SDBExactus, SDBSeguridad, SDBWeb, SSQLogin, SSQLoginsg, SMyqlogin, SSqlID, SSqlIDsg, SMsqlID, "", "", "", "", "");
-                   
-                }
+                XMLRW.write("CONFIGURACION", SSQLserver, SWeb, SSQLserverseg, PGSQLserver, SDMdatabase, SDBExactus, SDBSeguridad, pgdb, SDBWeb, SSQLogin, SSQLoginsg, SMyqlogin, pglogin, SSqlID, SSqlIDsg, SMsqlID, pgID, "", "", "", "", "");
+
+            }
                 else if (comboBox1.Text == "192.168.1.25 [DM]")
                 {
                     SSQLserver = textBox1.Text;
@@ -281,10 +328,14 @@ namespace Sinconizacion_EXactus
                     SDBSeguridad = Convert.ToString(row["DBSQLSG"]);
                     SSQLoginsg = Convert.ToString(row["LOGINSG"]);
                     SSqlIDsg = Convert.ToString(row["KEYIDSG"]);
+                PGSQLserver = Convert.ToString(row["SERVIDORPGSQL"]);
+                pgdb = Convert.ToString(row["DBPG"]);
+                pglogin = Convert.ToString(row["LOGINPG"]);
+                pgID = Convert.ToString(row["KEYIDPG"]);
 
-                    XMLRW.write("CONFIGURACION",SSQLserver, SWeb, SSQLserverseg, SDMdatabase, SDBExactus, SDBSeguridad, SDBWeb, SSQLogin, SSQLoginsg, SMyqlogin, SSqlID, SSqlIDsg, SMsqlID, "", "", "", "", "");
+                XMLRW.write("CONFIGURACION", SSQLserver, SWeb, SSQLserverseg, PGSQLserver, SDMdatabase, SDBExactus, SDBSeguridad, pgdb, SDBWeb, SSQLogin, SSQLoginsg, SMyqlogin, pglogin, SSqlID, SSqlIDsg, SMsqlID, pgID, "", "", "", "", "");
 
-                }
+            }
                 else if (comboBox1.Text == "192.168.1.11 [ACCESSCONTROL]")
                 {
                     SSQLserver = Convert.ToString(row["SERVIDORSQL"]);
@@ -300,15 +351,44 @@ namespace Sinconizacion_EXactus
                     SSqlID = Convert.ToString(row["KEYID"]); 
                     SSqlIDsg = Encripter.Encriptar(textBox3.Text);
                     SMsqlID = Convert.ToString(row["KEYIDWEB"]);
-                   
 
 
-                    XMLRW.write("CONFIGURACION",SSQLserver, SWeb,SSQLserverseg, SDMdatabase, SDBExactus,SDBSeguridad, SDBWeb, SSQLogin,SSQLoginsg, SMyqlogin, SSqlID,SSqlIDsg, SMsqlID, "", "", "", "", "");
+                PGSQLserver = Convert.ToString(row["SERVIDORPGSQL"]);
+                pgdb = Convert.ToString(row["DBPG"]);
+                pglogin = Convert.ToString(row["LOGINPG"]);
+                pgID = Convert.ToString(row["KEYIDPG"]);
 
-                }
+                XMLRW.write("CONFIGURACION", SSQLserver, SWeb, SSQLserverseg, PGSQLserver, SDMdatabase, SDBExactus, SDBSeguridad, pgdb, SDBWeb, SSQLogin, SSQLoginsg, SMyqlogin, pglogin, SSqlID, SSqlIDsg, SMsqlID, pgID, "", "", "", "", "");
+
+                  }
+
+            else if (comboBox1.Text == "18.216.38.163 [ODOO]")
+            {
+                SSQLserver = Convert.ToString(row["SERVIDORSQL"]);               
+                SWeb = Convert.ToString(row["SERVIDORWEB"]);
+                SDMdatabase = Convert.ToString(row["DBSQLDM"]);               
+                SDBExactus = Convert.ToString(row["DBSQLEX"]);
+                SDBWeb = Convert.ToString(row["DBWEB"]);              
+                SSQLogin = Convert.ToString(row["LOGIN"]);
+                SMyqlogin = Convert.ToString(row["LOGINWEB"]);
+                SSqlID = Convert.ToString(row["KEYID"]);               
+                SMsqlID = Convert.ToString(row["KEYIDWEB"]);
+
+                SSQLserverseg = Convert.ToString(row["SERVIDORSQLSEG"]);
+                SDBSeguridad = Convert.ToString(row["DBSQLSG"]);
+                SSQLoginsg = Convert.ToString(row["LOGINSG"]);
+                SSqlIDsg = Convert.ToString(row["KEYIDSG"]);
+
+                PGSQLserver = textBox1.Text;
+                pgdb = textBox4.Text;
+                pglogin = textBox2.Text;
+                pgID = Encripter.Encriptar(textBox3.Text);
 
 
-          
+                XMLRW.write("CONFIGURACION", SSQLserver, SWeb, SSQLserverseg, PGSQLserver, SDMdatabase, SDBExactus, SDBSeguridad, pgdb, SDBWeb, SSQLogin, SSQLoginsg, SMyqlogin, pglogin, SSqlID, SSqlIDsg, SMsqlID, pgID, "", "", "", "", "");
+
+            }
+
 
 
 
@@ -362,7 +442,7 @@ namespace Sinconizacion_EXactus
                 AUTOMATICO = "NO";
             }
 
-            XMLRW.write("SFTP", "", "", "","", "","", "", "", "", "", "", "", "", HOST, USER, SFTPKEY, PUERTO, AUTOMATICO);
+            XMLRW.write("SFTP", "", "", "","", "","", "", "", "", "", "", "", "","","","","", HOST, USER, SFTPKEY, PUERTO, AUTOMATICO);
         }
     }
 }

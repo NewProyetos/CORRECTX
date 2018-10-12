@@ -9,6 +9,8 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.IO;
 using Excel = Microsoft.Office.Interop.Excel;
+using System.Diagnostics;
+using DevExpress.Spreadsheet;
 
 namespace Sinconizacion_EXactus.CORECTX_APP.CREDITOS.REPORTES
 {
@@ -55,15 +57,20 @@ namespace Sinconizacion_EXactus.CORECTX_APP.CREDITOS.REPORTES
 
         }
 
+
         private void btupdate_click(object sender, EventArgs e)
         {
             if (id_rep == 1)
             {
                 carga_dato_descuentos();
             }
-            else
+            else if (id_rep == 2)
             {
                 carga_dato_liquidaciones();
+            }
+            else if (id_rep == 3)
+            {
+                carga_datos_STICS();
             }
         }
 
@@ -97,6 +104,32 @@ namespace Sinconizacion_EXactus.CORECTX_APP.CREDITOS.REPORTES
             excell = new Excel.Application();
             excell.Visible = true;
             workbook = excell.Workbooks.Open(FileName);
+
+
+            //this.gridView1.ExportToXlsx(FileName);
+            //DevExpress.Spreadsheet.Workbook workbook = new  Workbook();
+            //// Load a workbook from the stream. 
+            //using (FileStream stream = new FileStream(FileName, FileMode.Open))
+            //{
+            //    workbook.LoadDocument(stream, DocumentFormat.OpenXml);
+            //}
+            //WorksheetHeaderFooterOptions options = workbook.Worksheets[0].HeaderFooterOptions;
+            //// Specify that the first page of the worksheet has unique headers and footers.  
+            //options.DifferentFirst = true;
+            //// Set headers and footers for the first page. 
+            //// Insert the workbook name into the header left section. 
+            //options.FirstHeader.Left = "&F";
+
+            //// Insert the current date into the footer left section. 
+            //options.FirstFooter.Left = "&D";
+            //// Insert the current page number into the footer right section. 
+            //options.FirstFooter.Right = string.Format("Page {0} of {1}", "&P", "&N");
+            //using (FileStream stream = new FileStream("TEST.xlsx",
+            //FileMode.Create, FileAccess.ReadWrite))
+            //{
+            //    workbook.SaveDocument(stream, DocumentFormat.Xlsx);
+            //}
+            //Process.Start("TEST.xlsx");
 
         }
 
@@ -205,7 +238,8 @@ namespace Sinconizacion_EXactus.CORECTX_APP.CREDITOS.REPORTES
 
             cmd2.Parameters.AddWithValue("@fechaini", datePickerini.Value.ToString("yyyy/MM/dd"));
             cmd2.Parameters.AddWithValue("@fechafin", datePickerfin.Value.ToString("yyyy/MM/dd"));
-            
+            cmd2.Parameters.AddWithValue("@empresa", Login.empresa);
+
 
             SqlDataAdapter da1 = new SqlDataAdapter(cmd2);
             da1.Fill(dtfull);
@@ -228,7 +262,7 @@ namespace Sinconizacion_EXactus.CORECTX_APP.CREDITOS.REPORTES
             dtfull.Clear();
             con.conectar("DM");
             SqlCommand cmd2 = new SqlCommand();
-            cmd2 = new SqlCommand("[CORRECT].[LIQUIDACION_ENTREGA]", con.condm);
+            cmd2 = new SqlCommand("[CORRECT].[LIQUIDACION_ENTREGA_REPORT]", con.condm);
             cmd2.CommandType = CommandType.StoredProcedure;
 
             cmd2.Parameters.AddWithValue("@fecha_ini", datePickerini.Value.ToString("yyyy/MM/dd"));
@@ -255,7 +289,31 @@ namespace Sinconizacion_EXactus.CORECTX_APP.CREDITOS.REPORTES
             groupControl1.Text = "LIQUIDACIONES";
         }
         
+        private void carga_datos_STICS()
+        {
+            dtfull.Clear();
+            con.conectar("DM");
+            SqlCommand cmd2 = new SqlCommand();
 
+            cmd2 = new SqlCommand("[CORRECT].[REPORTE_STCS]", con.condm);
+            cmd2.CommandType = CommandType.StoredProcedure;
+
+            cmd2.Parameters.AddWithValue("@FINI", datePickerini.Value.ToString("yyyy/MM/dd"));
+            cmd2.Parameters.AddWithValue("@FFIN", datePickerfin.Value.ToString("yyyy/MM/dd"));
+            
+
+
+            SqlDataAdapter da1 = new SqlDataAdapter(cmd2);
+            da1.Fill(dtfull);
+            con.Desconectar("DM");
+
+            gridControl1.Refresh();
+            gridControl1.DataSource = dtfull;
+
+
+
+            groupControl1.Text = "STCS";
+        }
 
 
         private void clear_datagrid()

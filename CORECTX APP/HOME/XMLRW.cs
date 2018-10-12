@@ -35,7 +35,7 @@ namespace Sinconizacion_EXactus
          
         
         }
-        public static void write(String campo, String SQLserver,String Web,String SQLserversg,String DMdatabase,String DBExactus,String DBSeguridad,String DBWeb, String SQLogin,String SQLoginseg, String Myqlogin ,String SqlID ,String SqlIDseg, String MsqlID,String HOST ,String USER, String SFTPKEY, String PUERTO,String AUTOMATICO)
+        public static void write(String campo, String SQLserver,String Web,String SQLserversg, String SQLserverpg, String DMdatabase,String DBExactus,String DBSeguridad, String DBPGSQL, String DBWeb, String SQLogin,String SQLoginseg, String Myqlogin, String pglogin, String SqlID ,String SqlIDseg, String MsqlID, String pgID, String HOST ,String USER, String SFTPKEY, String PUERTO,String AUTOMATICO)
     {
 
 
@@ -52,16 +52,20 @@ namespace Sinconizacion_EXactus
                 DISMOXML.SelectSingleNode("//CONFIGURACION/SERVIDORSQL").InnerText = SQLserver;
                 DISMOXML.SelectSingleNode("//CONFIGURACION/SERVIDORWEB").InnerText = Web;
                 DISMOXML.SelectSingleNode("//CONFIGURACION/SERVIDORSQLSEG").InnerText = SQLserversg;
+                DISMOXML.SelectSingleNode("//CONFIGURACION/SERVIDORPGSQL").InnerText = SQLserverpg;
                 DISMOXML.SelectSingleNode("//CONFIGURACION/DBSQLDM").InnerText = DMdatabase;
                 DISMOXML.SelectSingleNode("//CONFIGURACION/DBSQLEX").InnerText = DBExactus;
                 DISMOXML.SelectSingleNode("//CONFIGURACION/DBSQLSG").InnerText = DBSeguridad;
                 DISMOXML.SelectSingleNode("//CONFIGURACION/DBWEB").InnerText = DBWeb;
+                DISMOXML.SelectSingleNode("//CONFIGURACION/DBPG").InnerText = DBPGSQL;
                 DISMOXML.SelectSingleNode("//CONFIGURACION/LOGIN").InnerText = SQLogin;
                 DISMOXML.SelectSingleNode("//CONFIGURACION/LOGINSG").InnerText = SQLoginseg;
                 DISMOXML.SelectSingleNode("//CONFIGURACION/LOGINWEB").InnerText = Myqlogin;
+                DISMOXML.SelectSingleNode("//CONFIGURACION/LOGINPG").InnerText = pglogin;
                 DISMOXML.SelectSingleNode("//CONFIGURACION/KEYID").InnerText = SqlID;
                 DISMOXML.SelectSingleNode("//CONFIGURACION/KEYIDSG").InnerText = SqlIDseg;
                 DISMOXML.SelectSingleNode("//CONFIGURACION/KEYIDWEB").InnerText = MsqlID;
+                DISMOXML.SelectSingleNode("//CONFIGURACION/KEYIDPG").InnerText = pgID;
 
                 DISMOXML.Save(path);
             }

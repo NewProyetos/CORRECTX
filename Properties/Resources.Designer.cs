@@ -63,9 +63,29 @@ namespace Sinconizacion_EXactus.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap addfile_32x32 {
+            get {
+                object obj = ResourceManager.GetObject("addfile_32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ajaxloaderc {
             get {
                 object obj = ResourceManager.GetObject("ajaxloaderc", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap analytics {
+            get {
+                object obj = ResourceManager.GetObject("analytics", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -383,6 +403,26 @@ namespace Sinconizacion_EXactus.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap customer_32x32 {
+            get {
+                object obj = ResourceManager.GetObject("customer_32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap delete_32x32 {
+            get {
+                object obj = ResourceManager.GetObject("delete_32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Dismoapp {
             get {
                 object obj = ResourceManager.GetObject("Dismoapp", resourceCulture);
@@ -416,6 +456,16 @@ namespace Sinconizacion_EXactus.Properties {
         internal static System.Drawing.Bitmap DMtrans {
             get {
                 object obj = ResourceManager.GetObject("DMtrans", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap edit_32x32 {
+            get {
+                object obj = ResourceManager.GetObject("edit_32x32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1003,9 +1053,29 @@ namespace Sinconizacion_EXactus.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap objetivos {
+            get {
+                object obj = ResourceManager.GetObject("objetivos", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap OC_peque {
             get {
                 object obj = ResourceManager.GetObject("OC+peque", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap odito {
+            get {
+                object obj = ResourceManager.GetObject("odito", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1096,6 +1166,16 @@ namespace Sinconizacion_EXactus.Properties {
         internal static System.Drawing.Bitmap ready {
             get {
                 object obj = ResourceManager.GetObject("ready", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap recibo {
+            get {
+                object obj = ResourceManager.GetObject("recibo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

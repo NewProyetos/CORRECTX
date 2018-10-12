@@ -29,11 +29,14 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource4 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.lIQUIDACIONBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.reporteCC = new Sinconizacion_EXactus.ReporteCC();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.button1 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -43,12 +46,12 @@
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.REGALIASBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.lIQUIDACIONBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.reporteCC)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.REGALIASBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // lIQUIDACIONBindingSource
@@ -66,13 +69,16 @@
             this.reportViewer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            reportDataSource4.Name = "liquidaciones";
-            reportDataSource4.Value = this.lIQUIDACIONBindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource4);
+            reportDataSource1.Name = "liquidaciones";
+            reportDataSource1.Value = this.lIQUIDACIONBindingSource;
+            reportDataSource2.Name = "REGALIAS";
+            reportDataSource2.Value = this.REGALIASBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource2);
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "Sinconizacion_EXactus.CORECTX APP.CREDITOS.LIQUIDACIONES.Boleta_liquidacion.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(21, 60);
             this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.Size = new System.Drawing.Size(904, 198);
+            this.reportViewer1.Size = new System.Drawing.Size(904, 299);
             this.reportViewer1.TabIndex = 0;
             this.reportViewer1.ZoomMode = Microsoft.Reporting.WinForms.ZoomMode.PageWidth;
             // 
@@ -95,6 +101,29 @@
             this.groupBox1.Size = new System.Drawing.Size(895, 55);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.linkLabel1);
+            this.groupBox2.Location = new System.Drawing.Point(480, 7);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(120, 43);
+            this.groupBox2.TabIndex = 2;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Notas de Credito";
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.linkLabel1.Location = new System.Drawing.Point(22, 17);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(74, 15);
+            this.linkLabel1.TabIndex = 0;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "linkLabel1";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // button1
             // 
@@ -175,34 +204,16 @@
             this.comboBox1.TabIndex = 0;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // groupBox2
+            // REGALIASBindingSource
             // 
-            this.groupBox2.Controls.Add(this.linkLabel1);
-            this.groupBox2.Location = new System.Drawing.Point(480, 7);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(120, 43);
-            this.groupBox2.TabIndex = 2;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Notas de Credito";
-            // 
-            // linkLabel1
-            // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.linkLabel1.Location = new System.Drawing.Point(22, 17);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(74, 15);
-            this.linkLabel1.TabIndex = 0;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "linkLabel1";
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            this.REGALIASBindingSource.DataMember = "REGALIAS";
+            this.REGALIASBindingSource.DataSource = this.reporteCC;
             // 
             // LIQUIDACIONES
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(928, 262);
+            this.ClientSize = new System.Drawing.Size(928, 363);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.reportViewer1);
             this.Name = "LIQUIDACIONES";
@@ -215,6 +226,7 @@
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.REGALIASBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -236,5 +248,6 @@
         private ReporteCC reporteCC;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.BindingSource REGALIASBindingSource;
     }
 }

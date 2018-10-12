@@ -173,6 +173,7 @@ namespace Sinconizacion_EXactus.CORECTX_APP.BODEGA.REGALIAS
 
 
 
+
             datePickerini.Format = DateTimePickerFormat.Short;
             datePickerini.Value = new DateTime(DT.Year, DT.Month, 1);
             datePickerini.Size = new Size(120, 20);
@@ -247,7 +248,10 @@ namespace Sinconizacion_EXactus.CORECTX_APP.BODEGA.REGALIAS
                     break;
                 case "PROCESADA":
                     estador = "L";
-                    break;              
+                    break;
+                case "RECIBIDA":
+                    estador = "R";
+                    break;
 
                 default:
                     estador = "A";
@@ -309,14 +313,28 @@ namespace Sinconizacion_EXactus.CORECTX_APP.BODEGA.REGALIAS
 
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (Main_Menu.Puesto == "BOD" || Main_Menu.Puesto == "ADMIN")
+            {
+                int idx = dataGridView1.CurrentRow.Index;
+                regalia = Convert.ToString(dataGridView1.Rows[idx].Cells[2].Value);
+                string rstado = Convert.ToString(dataGridView1.Rows[idx].Cells[1].Value);
 
-            int idx = dataGridView1.CurrentRow.Index;
-            regalia = Convert.ToString(dataGridView1.Rows[idx].Cells[2].Value);
-            string rstado = Convert.ToString(dataGridView1.Rows[idx].Cells[1].Value);
+                if (rstado == "R")
+                {
+                    Traspasos tras = new Traspasos();
+                    tras.Show();
+                }
+                else
+                {
+                    MessageBox.Show("EL ESTADO DE LA REGALIA DEBE SER EN RECIBIDA PARA PODER SER LIQUIDADA","ERROR",MessageBoxButtons.OK,MessageBoxIcon.Error);
 
-            Traspasos tras = new Traspasos();
-            tras.Show();
+                }
 
+            }
+            else
+            {
+
+            }
 
         }
 
@@ -392,7 +410,7 @@ namespace Sinconizacion_EXactus.CORECTX_APP.BODEGA.REGALIAS
             con.conectar("DM");
             SqlCommand cmd8 = new SqlCommand();
             cmd8.Connection = con.condm;
-            cmd8.CommandText = "UPDATE [DM].[CORRECT].[REGALIAS_SOLICI_ENC] SET UPDATE_USER= '" + Login.usuario.ToUpper() + "' ,DATE_UPDATE='" + fecha_aplicacion + "',REGALIA = '',ESTADO = 'A'   where NUM_REG ='" + regalia_anular + "'";
+            cmd8.CommandText = "UPDATE [DM].[CORRECT].[REGALIAS_SOLICI_ENC] SET UPDATE_USER= '" + Login.usuario.ToUpper() + "' ,DATE_UPDATE='" + fecha_aplicacion + "',REGALIA = '',ESTADO = 'R'   where NUM_REG ='" + regalia_anular + "'";
             // cmd8.Parameters.Add("@UPDATE_USER", SqlDbType.NVarChar).Value = Login.usuario.ToUpper();
             //cmd8.Parameters.Add("@DATE_UPDATE", SqlDbType.NVarChar).Value = fecha_aplicacion;
             //cmd8.Parameters.Add("@REGALIA", SqlDbType.NVarChar).Value = trasspaso_anular;
@@ -455,7 +473,7 @@ namespace Sinconizacion_EXactus.CORECTX_APP.BODEGA.REGALIAS
                 }
             }
             else
-
+    
             {
                 btrecibir.Enabled = false ;
             }
@@ -466,7 +484,7 @@ namespace Sinconizacion_EXactus.CORECTX_APP.BODEGA.REGALIAS
             con.conectar("DM");
             SqlCommand cmd8 = new SqlCommand();
             cmd8.Connection = con.condm;
-            cmd8.CommandText = "UPDATE [DM].[CORRECT].[REGALIAS_SOLICI_ENC] SET USUARIO_RECIBIO= '" + Login.usuario.ToUpper() + "' ,FECHA_RECIBIDO_BOD='" + fecha_recibido + "'  where NUM_REG ='" + regalia_recibir + "'";
+            cmd8.CommandText = "UPDATE [DM].[CORRECT].[REGALIAS_SOLICI_ENC] SET USUARIO_RECIBIO= '" + Login.usuario.ToUpper() + "' ,FECHA_RECIBIDO_BOD='" + fecha_recibido + "' , ESTADO = 'R' where NUM_REG ='" + regalia_recibir + "'";
            
             cmd8.ExecuteNonQuery();
             con.Desconectar("DM");

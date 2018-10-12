@@ -32,9 +32,6 @@
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Constancias));
-            this.CONSTANCIAS_SBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.recursos_Humanos = new Sinconizacion_EXactus.Recursos_Humanos();
-            this.CONSTANCIAS_DESBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
@@ -43,32 +40,26 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.CONSTANCIAS_SBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.recursos_Humanos = new Sinconizacion_EXactus.Recursos_Humanos();
+            this.CONSTANCIAS_DESBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.CARTA_LABORESBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CONSTANCIAS_SBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.recursos_Humanos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CONSTANCIAS_DESBindingSource)).BeginInit();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CARTA_LABORESBindingSource)).BeginInit();
             this.SuspendLayout();
-            // 
-            // CONSTANCIAS_SBindingSource
-            // 
-            this.CONSTANCIAS_SBindingSource.DataMember = "CONSTANCIAS_S";
-            this.CONSTANCIAS_SBindingSource.DataSource = this.recursos_Humanos;
-            // 
-            // recursos_Humanos
-            // 
-            this.recursos_Humanos.DataSetName = "Recursos_Humanos";
-            this.recursos_Humanos.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // CONSTANCIAS_DESBindingSource
-            // 
-            this.CONSTANCIAS_DESBindingSource.DataMember = "CONSTANCIAS_DES";
-            this.CONSTANCIAS_DESBindingSource.DataSource = this.recursos_Humanos;
             // 
             // groupBox1
             // 
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.Controls.Add(this.radioButton2);
+            this.groupBox1.Controls.Add(this.radioButton1);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.textBox2);
@@ -76,14 +67,14 @@
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Location = new System.Drawing.Point(2, 1);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(934, 48);
+            this.groupBox1.Size = new System.Drawing.Size(934, 68);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Empleado";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(727, 15);
+            this.button1.Location = new System.Drawing.Point(785, 25);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 4;
@@ -94,7 +85,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(247, 22);
+            this.label2.Location = new System.Drawing.Point(349, 28);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(47, 13);
             this.label2.TabIndex = 3;
@@ -102,7 +93,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(297, 19);
+            this.textBox2.Location = new System.Drawing.Point(399, 25);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(348, 20);
             this.textBox2.TabIndex = 2;
@@ -111,7 +102,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(34, 22);
+            this.label1.Location = new System.Drawing.Point(175, 28);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(43, 13);
             this.label1.TabIndex = 1;
@@ -119,7 +110,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(84, 19);
+            this.textBox1.Location = new System.Drawing.Point(225, 25);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 0;
@@ -131,9 +122,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox2.Controls.Add(this.reportViewer1);
-            this.groupBox2.Location = new System.Drawing.Point(2, 55);
+            this.groupBox2.Location = new System.Drawing.Point(2, 75);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(934, 587);
+            this.groupBox2.Size = new System.Drawing.Size(934, 567);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             // 
@@ -151,8 +142,50 @@
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "Sinconizacion_EXactus.CORECTX APP.RRHH.Constancia.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(6, 19);
             this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.Size = new System.Drawing.Size(922, 560);
+            this.reportViewer1.Size = new System.Drawing.Size(922, 540);
             this.reportViewer1.TabIndex = 1;
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(27, 20);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(113, 17);
+            this.radioButton1.TabIndex = 5;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Constancia Salario";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(27, 42);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(91, 17);
+            this.radioButton2.TabIndex = 6;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "Carta Labores";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // CONSTANCIAS_SBindingSource
+            // 
+            this.CONSTANCIAS_SBindingSource.DataMember = "CONSTANCIAS_S";
+            this.CONSTANCIAS_SBindingSource.DataSource = this.recursos_Humanos;
+            // 
+            // recursos_Humanos
+            // 
+            this.recursos_Humanos.DataSetName = "Recursos_Humanos";
+            this.recursos_Humanos.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // CONSTANCIAS_DESBindingSource
+            // 
+            this.CONSTANCIAS_DESBindingSource.DataMember = "CONSTANCIAS_DES";
+            this.CONSTANCIAS_DESBindingSource.DataSource = this.recursos_Humanos;
+            // 
+            // CARTA_LABORESBindingSource
+            // 
+            this.CARTA_LABORESBindingSource.DataMember = "CARTA_LABORES";
+            this.CARTA_LABORESBindingSource.DataSource = this.recursos_Humanos;
             // 
             // Constancias
             // 
@@ -165,12 +198,13 @@
             this.Name = "Constancias";
             this.Text = "Constancias";
             this.Load += new System.EventHandler(this.Constancias_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.CONSTANCIAS_SBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.recursos_Humanos)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CONSTANCIAS_DESBindingSource)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.CONSTANCIAS_SBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.recursos_Humanos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CONSTANCIAS_DESBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CARTA_LABORESBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -188,5 +222,8 @@
         private Recursos_Humanos recursos_Humanos;
         private System.Windows.Forms.BindingSource CONSTANCIAS_SBindingSource;
         private System.Windows.Forms.BindingSource CONSTANCIAS_DESBindingSource;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.BindingSource CARTA_LABORESBindingSource;
     }
 }

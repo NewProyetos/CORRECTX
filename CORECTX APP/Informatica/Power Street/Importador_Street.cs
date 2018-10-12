@@ -2837,11 +2837,18 @@ namespace Sinconizacion_EXactus
                       
 
                     }
-
+                  
                     if (NUM_PED.Length > 8)
                     {
                         int nun_pedido = Convert.ToInt32(NUM_PED);
-                        num_dev = COD_ZON.Substring(1, 3) + "D" + Convert.ToString(nun_pedido);
+                        if (COD_ZON.Length > 3)
+                        {
+                            num_dev = COD_ZON.Substring(1, 3) + "D" + Convert.ToString(nun_pedido);
+                        }
+                        else
+                        {
+                            num_dev = COD_ZON + "D" + Convert.ToString(nun_pedido);
+                        }
                     }
                     else
                     {
@@ -3317,6 +3324,8 @@ namespace Sinconizacion_EXactus
 
                 toolStripStatusLabel1.Text = "Importacion de Documentos Finalizada.. "+cantidad_Documentos+" Cargados... ";
                 statusStrip1.BackColor = Color.Coral;
+                insert_Ruta_regalias();
+
 
                 if (Errores.Rows.Count >= 1)
                 {
@@ -3519,6 +3528,16 @@ namespace Sinconizacion_EXactus
             int num_linea = Convert.ToInt32(cmdcnt.ExecuteScalar());
 
             SqlCommand cmd = new SqlCommand("UPDATE [EXACTUS].[ERPADMIN].[alFAC_ENC_DEV] SET NUM_ITM = '"+num_linea+"' WHERE NUM_DEV ='"+devol+"'", con.conex);
+            //cmd.Parameters.AddWithValue("FACTURA", devol);
+
+            cmd.ExecuteNonQuery();
+            con.Desconectar("EX");
+
+        }
+        private void insert_Ruta_regalias()
+        {
+            con.conectar("EX");
+            SqlCommand cmd = new SqlCommand("INSERT INTO [EXACTUS].[ERPADMIN].[RUTA_CFG] SELECT COD_CIA,COD_ZON ,'UN1','P'+RIGHT(COD_ZON,3),'B400', GETDATE()-1 ,GETDATE()+20,NEWID(),0,GETDATE(),'sa','sa',GETDATE(),'V'+RIGHT(COD_ZON,3),'VENDEDOR'+' '+RIGHT(COD_ZON,3),'C'+RIGHT(COD_ZON,3),'COBRADOR'+' '+RIGHT(COD_ZON,3)  FROM [EXACTUS].[ERPADMIN].[alFAC_ENC_DEV]  where DOC_PRO is null and DATEPART(MONTH,FEC_DEV) >= DATEPART(MONTH,GETDATE()-36)  and COD_ZON not in (SELECT [RUTA] FROM [EXACTUS].[ERPADMIN].[RUTA_CFG])  group by COD_CIA,COD_ZON", con.conex);
             //cmd.Parameters.AddWithValue("FACTURA", devol);
 
             cmd.ExecuteNonQuery();

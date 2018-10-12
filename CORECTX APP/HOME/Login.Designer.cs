@@ -73,7 +73,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(101, 55);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 13);
+            this.label1.Size = new System.Drawing.Size(47, 13);
             this.label1.TabIndex = 2;
             this.label1.Text = "Usuario:";
             // 
@@ -84,7 +84,7 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(100, 83);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(64, 13);
+            this.label2.Size = new System.Drawing.Size(67, 13);
             this.label2.TabIndex = 3;
             this.label2.Text = "Contraseña:";
             // 
@@ -95,13 +95,14 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(80, 20);
             this.textBox1.TabIndex = 1;
+            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(166, 80);
             this.textBox2.Name = "textBox2";
             this.textBox2.PasswordChar = '*';
-            this.textBox2.Size = new System.Drawing.Size(80, 20);
+            this.textBox2.Size = new System.Drawing.Size(80, 21);
             this.textBox2.TabIndex = 2;
             this.textBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox2_KeyPress);
             // 
@@ -147,7 +148,7 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(101, 114);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(51, 13);
+            this.label4.Size = new System.Drawing.Size(52, 13);
             this.label4.TabIndex = 8;
             this.label4.Text = "Empresa:";
             // 
@@ -169,7 +170,7 @@
             this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(181, 171);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(26, 13);
+            this.label6.Size = new System.Drawing.Size(27, 13);
             this.label6.TabIndex = 11;
             this.label6.Text = "Ver:";
             // 
@@ -203,8 +204,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BackgroundImageLayoutStore = System.Windows.Forms.ImageLayout.Stretch;
+            this.BackgroundImageStore = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImageStore")));
             this.ClientSize = new System.Drawing.Size(275, 185);
             this.ControlBox = false;
             this.Controls.Add(this.label7);

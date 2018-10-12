@@ -46,6 +46,8 @@ namespace Sinconizacion_EXactus {
         
         private RESULTADOS_PASO_3DataTable tableRESULTADOS_PASO_3;
         
+        private CARTA_LABORESDataTable tableCARTA_LABORES;
+        
         private global::System.Data.DataRelation relationEVALUACION_DESEMPEÑO_OBJETIVOS_EVALUACION;
         
         private global::System.Data.DataRelation relationEVALUACION_DESEMPEÑO_EVALUACION_CALIFICACION_PRELIMINAR;
@@ -122,6 +124,9 @@ namespace Sinconizacion_EXactus {
                 }
                 if ((ds.Tables["RESULTADOS PASO 3"] != null)) {
                     base.Tables.Add(new RESULTADOS_PASO_3DataTable(ds.Tables["RESULTADOS PASO 3"]));
+                }
+                if ((ds.Tables["CARTA_LABORES"] != null)) {
+                    base.Tables.Add(new CARTA_LABORESDataTable(ds.Tables["CARTA_LABORES"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -253,6 +258,16 @@ namespace Sinconizacion_EXactus {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Browsable(false)]
+        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+        public CARTA_LABORESDataTable CARTA_LABORES {
+            get {
+                return this.tableCARTA_LABORES;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.BrowsableAttribute(true)]
         [global::System.ComponentModel.DesignerSerializationVisibilityAttribute(global::System.ComponentModel.DesignerSerializationVisibility.Visible)]
         public override global::System.Data.SchemaSerializationMode SchemaSerializationMode {
@@ -350,6 +365,9 @@ namespace Sinconizacion_EXactus {
                 }
                 if ((ds.Tables["RESULTADOS PASO 3"] != null)) {
                     base.Tables.Add(new RESULTADOS_PASO_3DataTable(ds.Tables["RESULTADOS PASO 3"]));
+                }
+                if ((ds.Tables["CARTA_LABORES"] != null)) {
+                    base.Tables.Add(new CARTA_LABORESDataTable(ds.Tables["CARTA_LABORES"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -450,6 +468,12 @@ namespace Sinconizacion_EXactus {
                     this.tableRESULTADOS_PASO_3.InitVars();
                 }
             }
+            this.tableCARTA_LABORES = ((CARTA_LABORESDataTable)(base.Tables["CARTA_LABORES"]));
+            if ((initTable == true)) {
+                if ((this.tableCARTA_LABORES != null)) {
+                    this.tableCARTA_LABORES.InitVars();
+                }
+            }
             this.relationEVALUACION_DESEMPEÑO_OBJETIVOS_EVALUACION = this.Relations["EVALUACION_DESEMPEÑO_OBJETIVOS_EVALUACION"];
             this.relationEVALUACION_DESEMPEÑO_EVALUACION_CALIFICACION_PRELIMINAR = this.Relations["EVALUACION_DESEMPEÑO_EVALUACION_CALIFICACION_PRELIMINAR"];
             this.relationEVALUACION_DESEMPEÑO_EVALUACION_CALIFICACION_FINAL = this.Relations["EVALUACION_DESEMPEÑO_EVALUACION_CALIFICACION_FINAL"];
@@ -490,6 +514,8 @@ namespace Sinconizacion_EXactus {
             base.Tables.Add(this.tableRESULTADO_PASO2);
             this.tableRESULTADOS_PASO_3 = new RESULTADOS_PASO_3DataTable();
             base.Tables.Add(this.tableRESULTADOS_PASO_3);
+            this.tableCARTA_LABORES = new CARTA_LABORESDataTable();
+            base.Tables.Add(this.tableCARTA_LABORES);
             this.relationEVALUACION_DESEMPEÑO_OBJETIVOS_EVALUACION = new global::System.Data.DataRelation("EVALUACION_DESEMPEÑO_OBJETIVOS_EVALUACION", new global::System.Data.DataColumn[] {
                         this.tableEVALUACION_DESEMPEÑO.ID_EVALUACIONColumn}, new global::System.Data.DataColumn[] {
                         this.tableOBJETIVOS_EVALUACION.ID_EVALUACIONColumn}, false);
@@ -592,6 +618,12 @@ namespace Sinconizacion_EXactus {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private bool ShouldSerializeCARTA_LABORES() {
+            return false;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void SchemaChanged(object sender, global::System.ComponentModel.CollectionChangeEventArgs e) {
             if ((e.Action == global::System.ComponentModel.CollectionChangeAction.Remove)) {
                 this.InitVars();
@@ -678,6 +710,9 @@ namespace Sinconizacion_EXactus {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public delegate void RESULTADOS_PASO_3RowChangeEventHandler(object sender, RESULTADOS_PASO_3RowChangeEvent e);
         
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public delegate void CARTA_LABORESRowChangeEventHandler(object sender, CARTA_LABORESRowChangeEvent e);
+        
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
@@ -714,6 +749,8 @@ namespace Sinconizacion_EXactus {
             private global::System.Data.DataColumn columnNOMINADES;
             
             private global::System.Data.DataColumn columnRENTA;
+            
+            private global::System.Data.DataColumn columnFECHA_SALIDA;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
@@ -870,6 +907,14 @@ namespace Sinconizacion_EXactus {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn FECHA_SALIDAColumn {
+                get {
+                    return this.columnFECHA_SALIDA;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -905,7 +950,23 @@ namespace Sinconizacion_EXactus {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public CONSTANCIAS_SRow AddCONSTANCIAS_SRow(string EMPLEADO, string NOMBRE, string FECHA_INGRESO, string DESCRIPCION, decimal SALARIO_REFERENCIA, decimal VIATICOS, decimal VARIABLE, string SUELDO_TEXTO, string NOMINA, decimal TOTAL, decimal ISSS, decimal AFP, string FECHA_GENERACION, string NOMINADES, decimal RENTA) {
+            public CONSTANCIAS_SRow AddCONSTANCIAS_SRow(
+                        string EMPLEADO, 
+                        string NOMBRE, 
+                        string FECHA_INGRESO, 
+                        string DESCRIPCION, 
+                        decimal SALARIO_REFERENCIA, 
+                        decimal VIATICOS, 
+                        decimal VARIABLE, 
+                        string SUELDO_TEXTO, 
+                        string NOMINA, 
+                        decimal TOTAL, 
+                        decimal ISSS, 
+                        decimal AFP, 
+                        string FECHA_GENERACION, 
+                        string NOMINADES, 
+                        decimal RENTA, 
+                        string FECHA_SALIDA) {
                 CONSTANCIAS_SRow rowCONSTANCIAS_SRow = ((CONSTANCIAS_SRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         EMPLEADO,
@@ -922,7 +983,8 @@ namespace Sinconizacion_EXactus {
                         AFP,
                         FECHA_GENERACION,
                         NOMINADES,
-                        RENTA};
+                        RENTA,
+                        FECHA_SALIDA};
                 rowCONSTANCIAS_SRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowCONSTANCIAS_SRow);
                 return rowCONSTANCIAS_SRow;
@@ -967,6 +1029,7 @@ namespace Sinconizacion_EXactus {
                 this.columnFECHA_GENERACION = base.Columns["FECHA_GENERACION"];
                 this.columnNOMINADES = base.Columns["NOMINADES"];
                 this.columnRENTA = base.Columns["RENTA"];
+                this.columnFECHA_SALIDA = base.Columns["FECHA_SALIDA"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1002,6 +1065,8 @@ namespace Sinconizacion_EXactus {
                 base.Columns.Add(this.columnNOMINADES);
                 this.columnRENTA = new global::System.Data.DataColumn("RENTA", typeof(decimal), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnRENTA);
+                this.columnFECHA_SALIDA = new global::System.Data.DataColumn("FECHA_SALIDA", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFECHA_SALIDA);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnEMPLEADO}, true));
                 this.columnEMPLEADO.AllowDBNull = false;
@@ -1024,6 +1089,8 @@ namespace Sinconizacion_EXactus {
                 this.columnNOMINADES.ReadOnly = true;
                 this.columnNOMINADES.MaxLength = 10;
                 this.columnRENTA.ReadOnly = true;
+                this.columnFECHA_SALIDA.ReadOnly = true;
+                this.columnFECHA_SALIDA.MaxLength = 228;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4608,6 +4675,323 @@ namespace Sinconizacion_EXactus {
         }
         
         /// <summary>
+        ///Represents the strongly named DataTable class.
+        ///</summary>
+        [global::System.Serializable()]
+        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+        public partial class CARTA_LABORESDataTable : global::System.Data.TypedTableBase<CARTA_LABORESRow> {
+            
+            private global::System.Data.DataColumn columnEMPLEADO;
+            
+            private global::System.Data.DataColumn columnNOMBRE;
+            
+            private global::System.Data.DataColumn columnFECHA_INGRESO;
+            
+            private global::System.Data.DataColumn columnFECHA_GENERACION;
+            
+            private global::System.Data.DataColumn columnDESCRIPCION;
+            
+            private global::System.Data.DataColumn columnFECHA_SALIDA;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public CARTA_LABORESDataTable() {
+                this.TableName = "CARTA_LABORES";
+                this.BeginInit();
+                this.InitClass();
+                this.EndInit();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal CARTA_LABORESDataTable(global::System.Data.DataTable table) {
+                this.TableName = table.TableName;
+                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
+                    this.CaseSensitive = table.CaseSensitive;
+                }
+                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
+                    this.Locale = table.Locale;
+                }
+                if ((table.Namespace != table.DataSet.Namespace)) {
+                    this.Namespace = table.Namespace;
+                }
+                this.Prefix = table.Prefix;
+                this.MinimumCapacity = table.MinimumCapacity;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected CARTA_LABORESDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+                    base(info, context) {
+                this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn EMPLEADOColumn {
+                get {
+                    return this.columnEMPLEADO;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn NOMBREColumn {
+                get {
+                    return this.columnNOMBRE;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn FECHA_INGRESOColumn {
+                get {
+                    return this.columnFECHA_INGRESO;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn FECHA_GENERACIONColumn {
+                get {
+                    return this.columnFECHA_GENERACION;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn DESCRIPCIONColumn {
+                get {
+                    return this.columnDESCRIPCION;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn FECHA_SALIDAColumn {
+                get {
+                    return this.columnFECHA_SALIDA;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            [global::System.ComponentModel.Browsable(false)]
+            public int Count {
+                get {
+                    return this.Rows.Count;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public CARTA_LABORESRow this[int index] {
+                get {
+                    return ((CARTA_LABORESRow)(this.Rows[index]));
+                }
+            }
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event CARTA_LABORESRowChangeEventHandler CARTA_LABORESRowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event CARTA_LABORESRowChangeEventHandler CARTA_LABORESRowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event CARTA_LABORESRowChangeEventHandler CARTA_LABORESRowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event CARTA_LABORESRowChangeEventHandler CARTA_LABORESRowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void AddCARTA_LABORESRow(CARTA_LABORESRow row) {
+                this.Rows.Add(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public CARTA_LABORESRow AddCARTA_LABORESRow(string EMPLEADO, string NOMBRE, string FECHA_INGRESO, string FECHA_GENERACION, string DESCRIPCION, string FECHA_SALIDA) {
+                CARTA_LABORESRow rowCARTA_LABORESRow = ((CARTA_LABORESRow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        EMPLEADO,
+                        NOMBRE,
+                        FECHA_INGRESO,
+                        FECHA_GENERACION,
+                        DESCRIPCION,
+                        FECHA_SALIDA};
+                rowCARTA_LABORESRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowCARTA_LABORESRow);
+                return rowCARTA_LABORESRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public override global::System.Data.DataTable Clone() {
+                CARTA_LABORESDataTable cln = ((CARTA_LABORESDataTable)(base.Clone()));
+                cln.InitVars();
+                return cln;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Data.DataTable CreateInstance() {
+                return new CARTA_LABORESDataTable();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal void InitVars() {
+                this.columnEMPLEADO = base.Columns["EMPLEADO"];
+                this.columnNOMBRE = base.Columns["NOMBRE"];
+                this.columnFECHA_INGRESO = base.Columns["FECHA_INGRESO"];
+                this.columnFECHA_GENERACION = base.Columns["FECHA_GENERACION"];
+                this.columnDESCRIPCION = base.Columns["DESCRIPCION"];
+                this.columnFECHA_SALIDA = base.Columns["FECHA_SALIDA"];
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            private void InitClass() {
+                this.columnEMPLEADO = new global::System.Data.DataColumn("EMPLEADO", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnEMPLEADO);
+                this.columnNOMBRE = new global::System.Data.DataColumn("NOMBRE", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnNOMBRE);
+                this.columnFECHA_INGRESO = new global::System.Data.DataColumn("FECHA_INGRESO", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFECHA_INGRESO);
+                this.columnFECHA_GENERACION = new global::System.Data.DataColumn("FECHA_GENERACION", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFECHA_GENERACION);
+                this.columnDESCRIPCION = new global::System.Data.DataColumn("DESCRIPCION", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDESCRIPCION);
+                this.columnFECHA_SALIDA = new global::System.Data.DataColumn("FECHA_SALIDA", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFECHA_SALIDA);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public CARTA_LABORESRow NewCARTA_LABORESRow() {
+                return ((CARTA_LABORESRow)(this.NewRow()));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+                return new CARTA_LABORESRow(builder);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Type GetRowType() {
+                return typeof(CARTA_LABORESRow);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanged(e);
+                if ((this.CARTA_LABORESRowChanged != null)) {
+                    this.CARTA_LABORESRowChanged(this, new CARTA_LABORESRowChangeEvent(((CARTA_LABORESRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanging(e);
+                if ((this.CARTA_LABORESRowChanging != null)) {
+                    this.CARTA_LABORESRowChanging(this, new CARTA_LABORESRowChangeEvent(((CARTA_LABORESRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleted(e);
+                if ((this.CARTA_LABORESRowDeleted != null)) {
+                    this.CARTA_LABORESRowDeleted(this, new CARTA_LABORESRowChangeEvent(((CARTA_LABORESRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleting(e);
+                if ((this.CARTA_LABORESRowDeleting != null)) {
+                    this.CARTA_LABORESRowDeleting(this, new CARTA_LABORESRowChangeEvent(((CARTA_LABORESRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void RemoveCARTA_LABORESRow(CARTA_LABORESRow row) {
+                this.Rows.Remove(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
+                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
+                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
+                Recursos_Humanos ds = new Recursos_Humanos();
+                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
+                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
+                any1.MinOccurs = new decimal(0);
+                any1.MaxOccurs = decimal.MaxValue;
+                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any1);
+                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
+                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
+                any2.MinOccurs = new decimal(1);
+                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any2);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute1.Name = "namespace";
+                attribute1.FixedValue = ds.Namespace;
+                type.Attributes.Add(attribute1);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute2.Name = "tableTypeName";
+                attribute2.FixedValue = "CARTA_LABORESDataTable";
+                type.Attributes.Add(attribute2);
+                type.Particle = sequence;
+                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+                if (xs.Contains(dsSchema.TargetNamespace)) {
+                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
+                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
+                    try {
+                        global::System.Xml.Schema.XmlSchema schema = null;
+                        dsSchema.Write(s1);
+                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
+                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+                            s2.SetLength(0);
+                            schema.Write(s2);
+                            if ((s1.Length == s2.Length)) {
+                                s1.Position = 0;
+                                s2.Position = 0;
+                                for (; ((s1.Position != s1.Length) 
+                                            && (s1.ReadByte() == s2.ReadByte())); ) {
+                                    ;
+                                }
+                                if ((s1.Position == s1.Length)) {
+                                    return type;
+                                }
+                            }
+                        }
+                    }
+                    finally {
+                        if ((s1 != null)) {
+                            s1.Close();
+                        }
+                        if ((s2 != null)) {
+                            s2.Close();
+                        }
+                    }
+                }
+                xs.Add(dsSchema);
+                return type;
+            }
+        }
+        
+        /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
         public partial class CONSTANCIAS_SRow : global::System.Data.DataRow {
@@ -4854,6 +5238,22 @@ namespace Sinconizacion_EXactus {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string FECHA_SALIDA {
+                get {
+                    try {
+                        return ((string)(this[this.tableCONSTANCIAS_S.FECHA_SALIDAColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'FECHA_SALIDA\' de la tabla \'CONSTANCIAS_S\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableCONSTANCIAS_S.FECHA_SALIDAColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsFECHA_INGRESONull() {
                 return this.IsNull(this.tableCONSTANCIAS_S.FECHA_INGRESOColumn);
             }
@@ -5006,6 +5406,18 @@ namespace Sinconizacion_EXactus {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetRENTANull() {
                 this[this.tableCONSTANCIAS_S.RENTAColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsFECHA_SALIDANull() {
+                return this.IsNull(this.tableCONSTANCIAS_S.FECHA_SALIDAColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetFECHA_SALIDANull() {
+                this[this.tableCONSTANCIAS_S.FECHA_SALIDAColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -7250,6 +7662,189 @@ namespace Sinconizacion_EXactus {
         }
         
         /// <summary>
+        ///Represents strongly named DataRow class.
+        ///</summary>
+        public partial class CARTA_LABORESRow : global::System.Data.DataRow {
+            
+            private CARTA_LABORESDataTable tableCARTA_LABORES;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal CARTA_LABORESRow(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.tableCARTA_LABORES = ((CARTA_LABORESDataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string EMPLEADO {
+                get {
+                    try {
+                        return ((string)(this[this.tableCARTA_LABORES.EMPLEADOColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'EMPLEADO\' de la tabla \'CARTA_LABORES\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableCARTA_LABORES.EMPLEADOColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string NOMBRE {
+                get {
+                    try {
+                        return ((string)(this[this.tableCARTA_LABORES.NOMBREColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'NOMBRE\' de la tabla \'CARTA_LABORES\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableCARTA_LABORES.NOMBREColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string FECHA_INGRESO {
+                get {
+                    try {
+                        return ((string)(this[this.tableCARTA_LABORES.FECHA_INGRESOColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'FECHA_INGRESO\' de la tabla \'CARTA_LABORES\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableCARTA_LABORES.FECHA_INGRESOColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string FECHA_GENERACION {
+                get {
+                    try {
+                        return ((string)(this[this.tableCARTA_LABORES.FECHA_GENERACIONColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'FECHA_GENERACION\' de la tabla \'CARTA_LABORES\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableCARTA_LABORES.FECHA_GENERACIONColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string DESCRIPCION {
+                get {
+                    try {
+                        return ((string)(this[this.tableCARTA_LABORES.DESCRIPCIONColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'DESCRIPCION\' de la tabla \'CARTA_LABORES\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableCARTA_LABORES.DESCRIPCIONColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string FECHA_SALIDA {
+                get {
+                    try {
+                        return ((string)(this[this.tableCARTA_LABORES.FECHA_SALIDAColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'FECHA_SALIDA\' de la tabla \'CARTA_LABORES\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableCARTA_LABORES.FECHA_SALIDAColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsEMPLEADONull() {
+                return this.IsNull(this.tableCARTA_LABORES.EMPLEADOColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetEMPLEADONull() {
+                this[this.tableCARTA_LABORES.EMPLEADOColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsNOMBRENull() {
+                return this.IsNull(this.tableCARTA_LABORES.NOMBREColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetNOMBRENull() {
+                this[this.tableCARTA_LABORES.NOMBREColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsFECHA_INGRESONull() {
+                return this.IsNull(this.tableCARTA_LABORES.FECHA_INGRESOColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetFECHA_INGRESONull() {
+                this[this.tableCARTA_LABORES.FECHA_INGRESOColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsFECHA_GENERACIONNull() {
+                return this.IsNull(this.tableCARTA_LABORES.FECHA_GENERACIONColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetFECHA_GENERACIONNull() {
+                this[this.tableCARTA_LABORES.FECHA_GENERACIONColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsDESCRIPCIONNull() {
+                return this.IsNull(this.tableCARTA_LABORES.DESCRIPCIONColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetDESCRIPCIONNull() {
+                this[this.tableCARTA_LABORES.DESCRIPCIONColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsFECHA_SALIDANull() {
+                return this.IsNull(this.tableCARTA_LABORES.FECHA_SALIDAColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetFECHA_SALIDANull() {
+                this[this.tableCARTA_LABORES.FECHA_SALIDAColumn] = global::System.Convert.DBNull;
+            }
+        }
+        
+        /// <summary>
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
@@ -7622,6 +8217,40 @@ namespace Sinconizacion_EXactus {
                 }
             }
         }
+        
+        /// <summary>
+        ///Row event argument class
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public class CARTA_LABORESRowChangeEvent : global::System.EventArgs {
+            
+            private CARTA_LABORESRow eventRow;
+            
+            private global::System.Data.DataRowAction eventAction;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public CARTA_LABORESRowChangeEvent(CARTA_LABORESRow row, global::System.Data.DataRowAction action) {
+                this.eventRow = row;
+                this.eventAction = action;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public CARTA_LABORESRow Row {
+                get {
+                    return this.eventRow;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataRowAction Action {
+                get {
+                    return this.eventAction;
+                }
+            }
+        }
     }
 }
 namespace Sinconizacion_EXactus.Recursos_HumanosTableAdapters {
@@ -7763,6 +8392,7 @@ namespace Sinconizacion_EXactus.Recursos_HumanosTableAdapters {
             tableMapping.ColumnMappings.Add("FECHA_GENERACION", "FECHA_GENERACION");
             tableMapping.ColumnMappings.Add("NOMINADES", "NOMINADES");
             tableMapping.ColumnMappings.Add("RENTA", "RENTA");
+            tableMapping.ColumnMappings.Add("FECHA_SALIDA", "FECHA_SALIDA");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -7790,13 +8420,18 @@ namespace Sinconizacion_EXactus.Recursos_HumanosTableAdapters {
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TOTAL_VAR", global::System.Data.SqlDbType.Decimal, 9, global::System.Data.ParameterDirection.Input, 18, 2, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SALARIO", global::System.Data.SqlDbType.Decimal, 9, global::System.Data.ParameterDirection.Input, 18, 2, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@NOMINADES", global::System.Data.SqlDbType.NVarChar, 10, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ISSS", global::System.Data.SqlDbType.Decimal, 9, global::System.Data.ParameterDirection.Input, 18, 2, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@AFP", global::System.Data.SqlDbType.Decimal, 9, global::System.Data.ParameterDirection.Input, 18, 2, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RENTA", global::System.Data.SqlDbType.Decimal, 9, global::System.Data.ParameterDirection.Input, 18, 2, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SALMENDEDUC", global::System.Data.SqlDbType.Decimal, 9, global::System.Data.ParameterDirection.Input, 18, 2, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RESTA", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Recursos_Humanos.CONSTANCIAS_SDataTable dataTable, string NOMINA, string EMPLEADO, global::System.Nullable<decimal> VIATICO, global::System.Nullable<decimal> VARIABLE, global::System.Nullable<decimal> TOTAL, global::System.Nullable<decimal> TOTAL_VAR, global::System.Nullable<decimal> SALARIO, string NOMINADES) {
+        public virtual int Fill(Recursos_Humanos.CONSTANCIAS_SDataTable dataTable, string NOMINA, string EMPLEADO, global::System.Nullable<decimal> VIATICO, global::System.Nullable<decimal> VARIABLE, global::System.Nullable<decimal> TOTAL, global::System.Nullable<decimal> TOTAL_VAR, global::System.Nullable<decimal> SALARIO, string NOMINADES, global::System.Nullable<decimal> ISSS, global::System.Nullable<decimal> AFP, global::System.Nullable<decimal> RENTA, global::System.Nullable<decimal> SALMENDEDUC, global::System.Nullable<int> RESTA) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((NOMINA == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -7845,6 +8480,36 @@ namespace Sinconizacion_EXactus.Recursos_HumanosTableAdapters {
             }
             else {
                 this.Adapter.SelectCommand.Parameters[8].Value = ((string)(NOMINADES));
+            }
+            if ((ISSS.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[9].Value = ((decimal)(ISSS.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[9].Value = global::System.DBNull.Value;
+            }
+            if ((AFP.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[10].Value = ((decimal)(AFP.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[10].Value = global::System.DBNull.Value;
+            }
+            if ((RENTA.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[11].Value = ((decimal)(RENTA.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[11].Value = global::System.DBNull.Value;
+            }
+            if ((SALMENDEDUC.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[12].Value = ((decimal)(SALMENDEDUC.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[12].Value = global::System.DBNull.Value;
+            }
+            if ((RESTA.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[13].Value = ((int)(RESTA.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[13].Value = global::System.DBNull.Value;
             }
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -7857,7 +8522,7 @@ namespace Sinconizacion_EXactus.Recursos_HumanosTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Recursos_Humanos.CONSTANCIAS_SDataTable GetData(string NOMINA, string EMPLEADO, global::System.Nullable<decimal> VIATICO, global::System.Nullable<decimal> VARIABLE, global::System.Nullable<decimal> TOTAL, global::System.Nullable<decimal> TOTAL_VAR, global::System.Nullable<decimal> SALARIO, string NOMINADES) {
+        public virtual Recursos_Humanos.CONSTANCIAS_SDataTable GetData(string NOMINA, string EMPLEADO, global::System.Nullable<decimal> VIATICO, global::System.Nullable<decimal> VARIABLE, global::System.Nullable<decimal> TOTAL, global::System.Nullable<decimal> TOTAL_VAR, global::System.Nullable<decimal> SALARIO, string NOMINADES, global::System.Nullable<decimal> ISSS, global::System.Nullable<decimal> AFP, global::System.Nullable<decimal> RENTA, global::System.Nullable<decimal> SALMENDEDUC, global::System.Nullable<int> RESTA) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((NOMINA == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -7906,6 +8571,36 @@ namespace Sinconizacion_EXactus.Recursos_HumanosTableAdapters {
             }
             else {
                 this.Adapter.SelectCommand.Parameters[8].Value = ((string)(NOMINADES));
+            }
+            if ((ISSS.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[9].Value = ((decimal)(ISSS.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[9].Value = global::System.DBNull.Value;
+            }
+            if ((AFP.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[10].Value = ((decimal)(AFP.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[10].Value = global::System.DBNull.Value;
+            }
+            if ((RENTA.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[11].Value = ((decimal)(RENTA.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[11].Value = global::System.DBNull.Value;
+            }
+            if ((SALMENDEDUC.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[12].Value = ((decimal)(SALMENDEDUC.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[12].Value = global::System.DBNull.Value;
+            }
+            if ((RESTA.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[13].Value = ((int)(RESTA.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[13].Value = global::System.DBNull.Value;
             }
             Recursos_Humanos.CONSTANCIAS_SDataTable dataTable = new Recursos_Humanos.CONSTANCIAS_SDataTable();
             this.Adapter.Fill(dataTable);

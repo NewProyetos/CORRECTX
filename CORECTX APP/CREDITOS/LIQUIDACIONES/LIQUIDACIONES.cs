@@ -80,7 +80,8 @@ namespace Sinconizacion_EXactus.CORECTX_APP.CREDITOS.LIQUIDACIONES
         {
             this.reportViewer1.LocalReport.ReportPath = @"C:\CORRECT\CORECTX APP\CREDITOS\LIQUIDACIONES\Boleta_liquidacion.rdlc";
             this.reporteCC.LIQUIDACION.Clear();
-            
+            this.reporteCC.REGALIAS.Clear();
+
             String Ruta = this.comboBox1.Text;
             String fechaini = this.dateTimePicker1.Value.ToString("yyyy-MM-dd");
             String fechafin = this.dateTimePicker2.Value.ToString("yyyy-MM-dd");
@@ -90,7 +91,7 @@ namespace Sinconizacion_EXactus.CORECTX_APP.CREDITOS.LIQUIDACIONES
             con.conectar("DM");
 
 
-            SqlCommand cmd = new SqlCommand("[CORRECT].[LIQUIDACION_ENTREGA]", con.condm);
+            SqlCommand cmd = new SqlCommand("[CORRECT].[LIQUIDACION_ENTREGA_REPORT]", con.condm);
 
             cmd.CommandType = System.Data.CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@fecha_ini", fechaini);
@@ -101,6 +102,18 @@ namespace Sinconizacion_EXactus.CORECTX_APP.CREDITOS.LIQUIDACIONES
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             da.Fill(reporteCC.LIQUIDACION);
 
+
+
+            SqlCommand cmdreg = new SqlCommand("[CORRECT].[LIQUIDACION_ENTREGA_REGALIA]", con.condm);
+
+            cmdreg.CommandType = System.Data.CommandType.StoredProcedure;
+            cmdreg.Parameters.AddWithValue("@fecha_i", fechaini);
+            cmdreg.Parameters.AddWithValue("@fecha_f", fechafin);
+            cmdreg.Parameters.AddWithValue("@ENTR", Ruta);
+            cmdreg.Parameters.AddWithValue("@USUAR", Usuario);
+            cmdreg.Parameters.AddWithValue("@empres", Empresa);
+            SqlDataAdapter dareg = new SqlDataAdapter(cmdreg);
+            dareg.Fill(reporteCC.REGALIAS);
 
             con.Desconectar("DM");
 

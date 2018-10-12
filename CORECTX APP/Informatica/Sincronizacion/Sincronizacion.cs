@@ -30,6 +30,11 @@ namespace Sinconizacion_EXactus
         public static string PedidoN;
         public static String conduit;
         public static String time;
+        DataTable sinc_json_table = new DataTable();
+        DataTable no_sinc_emm = new DataTable();
+        DataTable sinc_json_temp = new DataTable();
+
+        public static DataTable No_sincronizadas = new DataTable();
         public String feha_hist;
         DateTime fechaup;
         public string stado;
@@ -43,10 +48,11 @@ namespace Sinconizacion_EXactus
 
         TreeNode node = new TreeNode();
         TreeNode node1 = new TreeNode();
+        String searchStringr;
         string Nombre_user;
 
         private ContextMenuStrip menugrid = new ContextMenuStrip();
-       
+
 
         DataTable devoluciones = new DataTable();
         String ULTIMONCF;
@@ -59,7 +65,7 @@ namespace Sinconizacion_EXactus
         }
 
         public static String Selected_File;
-        
+
 
         private void Fecha_Sincro_ValueChanged(object sender, EventArgs e)
         {
@@ -67,74 +73,88 @@ namespace Sinconizacion_EXactus
         }
 
         private void Form1_Load(object sender, EventArgs e)
-         {
+        {
+            
 
-            ToolStripMenuItem KILL = new ToolStripMenuItem("KILL",null, new EventHandler(kill_process));
+            linkLabel4.Hide();
+            linkLabel5.Hide();
+            linkLabel6.Hide();
+            sinc_json_temp.Columns.Add("RUTA", typeof(string));
+
+
+            sinc_json_table.Columns.Add("RUTA", typeof(string));
+            sinc_json_table.Columns.Add("CONDUIT", typeof(string));
+            sinc_json_table.Columns.Add("FECHA", typeof(string));
+            sinc_json_table.Columns.Add("ESTADO", typeof(string));
+            sinc_json_table.Columns.Add("ERRORES", typeof(string));
+
+            ToolStripMenuItem KILL = new ToolStripMenuItem("KILL", null, new EventHandler(kill_process));
             menugrid.Items.AddRange(new ToolStripMenuItem[] { KILL });
 
             this.Text = "SINCRONIZACION   (" + Login.empresa + " ) ";
             descuentos(null, null);
-             consulta_task(null, null);
+            consulta_task(null, null);
+            Pendientes_Procesar();
             // timer2.Interval = (60000) * 10;
             // timer2.Start();
-             button7.Enabled = false;
+            button7.Enabled = false;
 
             MaximizeBox = false;
-              tiempo = DateTime.Now.ToString("tt");
+            tiempo = DateTime.Now.ToString("tt");
 
-              if (Main_Menu.Carga_ERP_FR != 1)
-              {
-                  groupBox2.Enabled = false;
-                  button6.Enabled = false;
-                  groupBox5.Enabled = false;
-                  groupBox5.Enabled = true;
-                  this.comboBox3.Text = "Tarde";
-                  this.comboBox1.Text = "FRmdescarga";
-              
-                                                  
-              }
+            if (Main_Menu.Carga_ERP_FR != 1)
+            {
+                groupBox2.Enabled = false;
+                button6.Enabled = false;
+                groupBox5.Enabled = false;
+                groupBox5.Enabled = true;
+                this.comboBox3.Text = "Tarde";
+                this.comboBox1.Text = "FRmdescarga";
 
-              else
-              {
-                  if (tiempo == "AM")
-                  {
-                      this.comboBox3.Text = "Mañana";
-                      this.comboBox1.Text = "FRmcarga";
 
-                  }
-                  else
-                  {
-                      this.comboBox3.Text = "Tarde";
-                      this.comboBox1.Text = "FRmdescarga";
-                  }
-              }
-              if (Main_Menu.Descuentos_Bonidicaciones_acceso != 1)
-              {
+            }
 
-                  button7.Enabled = false;
+            else
+            {
+                if (tiempo == "AM")
+                {
+                    this.comboBox3.Text = "Mañana";
+                    this.comboBox1.Text = "FRmcarga";
 
-              }
-              else
-              {
-                  button7.Enabled = true;
-              }
-            
-           // label18.Text = "Ver." + Assembly.GetExecutingAssembly().GetName().Version.ToString();
-            
+                }
+                else
+                {
+                    this.comboBox3.Text = "Tarde";
+                    this.comboBox1.Text = "FRmdescarga";
+                }
+            }
+            if (Main_Menu.Descuentos_Bonidicaciones_acceso != 1)
+            {
+
+                button7.Enabled = false;
+
+            }
+            else
+            {
+                button7.Enabled = true;
+            }
+
+            // label18.Text = "Ver." + Assembly.GetExecutingAssembly().GetName().Version.ToString();
+
             Fecha_Sincro.Format = DateTimePickerFormat.Custom;
             Fecha_Sincro.CustomFormat = " dd-MM-yyyy";
-            
-        
+
+
 
             con.conectar("EX");
 
 
 
 
-            SqlCommand cm2 = new SqlCommand("SELECT PED.COD_ZON FROM  ERPADMIN.alFAC_ENC_PED as PED LEFT JOIN ERPADMIN.RUTA_ASIGNADA_RT as RT on PED.COD_ZON = RT.RUTA where RT.COMPANIA = '"+Login.empresa+"' GROUP BY COD_ZON ORDER BY COD_ZON ASC", con.conex);
+            SqlCommand cm2 = new SqlCommand("SELECT PED.COD_ZON FROM  ERPADMIN.alFAC_ENC_PED as PED LEFT JOIN ERPADMIN.RUTA_ASIGNADA_RT as RT on PED.COD_ZON = RT.RUTA where RT.COMPANIA = '" + Login.empresa + "' GROUP BY COD_ZON ORDER BY COD_ZON ASC", con.conex);
             cm2.CommandTimeout = 0;
             SqlDataReader dr2 = cm2.ExecuteReader();
-            
+
             while (dr2.Read())
             {
                 comboBox2.Items.Add(dr2["COD_ZON"]);
@@ -162,7 +182,7 @@ namespace Sinconizacion_EXactus
             listView5.FullRowSelect = true;
 
             con.Desconectar("EX");
-          
+
 
         }
 
@@ -177,7 +197,7 @@ namespace Sinconizacion_EXactus
             {
 
                 MessageBoxButtons bt1 = MessageBoxButtons.YesNo;
-                DialogResult result = MessageBox.Show("Desea Eliminar la conecxion SQL-EXACTUS de USUARIO: "+Nombre_user+"?", "KILL PROCESS", bt1, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1);
+                DialogResult result = MessageBox.Show("Desea Eliminar la conecxion SQL-EXACTUS de USUARIO: " + Nombre_user + "?", "KILL PROCESS", bt1, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1);
                 if (result == DialogResult.Yes)
                 {
 
@@ -200,15 +220,17 @@ namespace Sinconizacion_EXactus
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Pendientes_Procesar();
+            sinc_json_temp.Clear();
+            no_sinc_emm.Clear();
             fecha_sinc = Fecha_Sincro.Value.ToString("yyyy-MM-dd");
             conduit = this.comboBox1.Text;
- 
-           
+
+
             con.conectar("EX");
             treeView1.Nodes.Clear();
             treeView1.ImageList = imageList1;
             
-           
             // carga los nodos del tree con las rutas sincronizadas  en FRMCARGA------------------
             if (this.comboBox3.Text == "Mañana")
             {
@@ -223,40 +245,41 @@ namespace Sinconizacion_EXactus
 
                     while (dr.Read())
                     {
-                       node = new TreeNode(dr["PDA"].ToString());
-                       
-                        
+                        node = new TreeNode(dr["PDA"].ToString());
+
+
                         node1 = new TreeNode(dr["SYNC_START"].ToString());
-                        
+
                         node.Nodes.Add(node1);
                         node1.Nodes.Add(dr["CONDUIT"].ToString());
                         node1.Nodes.Add("Estado: " + dr["STATE"].ToString());
                         string estado = Convert.ToString(dr["STATE"]);
-                         node1.Nodes.Add("Fin: " + dr["SYNC_END"].ToString());
+                        node1.Nodes.Add("Fin: " + dr["SYNC_END"].ToString());
 
-                         if (estado == "Exito")
-                         {
-                             node.ImageIndex = 0;
-                             node.SelectedImageIndex = 0;
-                         }
-                         else
-                         {
-                             node1.ImageIndex = 2;
-                             node1.SelectedImageIndex = 2;
-                             node.ImageIndex = 2;
-                             node.SelectedImageIndex = 2;
+                        if (estado == "Exito")
+                        {
+                            node.ImageIndex = 0;
+                            node.SelectedImageIndex = 0;
+                        }
+                        else
+                        {
+                            node1.ImageIndex = 2;
+                            node1.SelectedImageIndex = 2;
+                            node.ImageIndex = 2;
+                            node.SelectedImageIndex = 2;
 
 
-                         }
+                        }
+                      
 
                         treeView1.Nodes.Add(node);
 
-                     
+
 
                     }
                     dr.Close();
-                    
-                    
+                  //  sinc_json();
+
                 }
                 catch
                 {
@@ -264,23 +287,28 @@ namespace Sinconizacion_EXactus
                     dr.Close();
                 }
 
-                SqlCommand cm1 = new SqlCommand("SELECT COUNT(HANDHELD) as 'sinc' FROM [EXACTUS].[ERPADMIN].[HANDHELD_RT]  WHERE  HANDHELD  IN (SELECT SYNC.PDA FROM [EXACTUS].[ERPADMIN].[EMM_SYNCINFO] as SYNC LEFT JOIN ERPADMIN.RUTA_ASIGNADA_RT as RT on SYNC.PDA = RT.HANDHELD  WHERE RT.COMPANIA = '"+Login.empresa+"' AND CONDUIT = '" + this.comboBox1.Text + "'  AND  SYNC_START BETWEEN '" + Fecha_Sincro.Value.ToString("yyyy-MM-dd") + " 1:00:00' AND '" + Fecha_Sincro.Value.ToString("yyyy-MM-dd") + " 12:00:00')", con.conex);
-                cm1.CommandTimeout = 0;
-                SqlDataReader dr1 = cm1.ExecuteReader();
-                while (dr1.Read())
-                {
-                    label21.Text = Convert.ToString(dr1["SINC"]);
-                }
-                dr1.Close();
+                //SqlCommand cm1 = new SqlCommand("SELECT COUNT(HANDHELD) as 'sinc' FROM [EXACTUS].[ERPADMIN].[HANDHELD_RT]  WHERE  HANDHELD  IN (SELECT SYNC.PDA FROM [EXACTUS].[ERPADMIN].[EMM_SYNCINFO] as SYNC LEFT JOIN ERPADMIN.RUTA_ASIGNADA_RT as RT on SYNC.PDA = RT.HANDHELD  WHERE RT.COMPANIA = '" + Login.empresa + "' AND CONDUIT = '" + this.comboBox1.Text + "'  AND  SYNC_START BETWEEN '" + Fecha_Sincro.Value.ToString("yyyy-MM-dd") + " 1:00:00' AND '" + Fecha_Sincro.Value.ToString("yyyy-MM-dd") + " 12:00:00')", con.conex);
+                //cm1.CommandTimeout = 0;
+                //SqlDataReader dr1 = cm1.ExecuteReader();
+                //while (dr1.Read())
+                //{
+                //    label21.Text = Convert.ToString(dr1["SINC"]);
+                //}
+                //dr1.Close();
 
-                SqlCommand cm2 = new SqlCommand("SELECT COUNT (A. HANDHELD) as 'NO SINC' FROM  ERPADMIN.RUTA_ASIGNADA_RT A INNER JOIN ERPADMIN.AGENTE_RT B ON A.AGENTE = B.AGENTE WHERE A.COMPANIA = '"+Login.empresa+"' AND A. HANDHELD NOT IN (SELECT PDA FROM [EXACTUS].[ERPADMIN].[EMM_SYNCINFO] WHERE  CONDUIT = '" + this.comboBox1.Text + "'  AND  SYNC_START BETWEEN '" + Fecha_Sincro.Value.ToString("yyyy-MM-dd") + " 1:00:00' AND '" + Fecha_Sincro.Value.ToString("yyyy-MM-dd") + " 12:00:00')AND B.NOMBRE <> 'OFFLINE' ", con.conex);
+                // SqlCommand cm2 = new SqlCommand("A. HANDHELD as 'RUTA' FROM  ERPADMIN.RUTA_ASIGNADA_RT A INNER JOIN ERPADMIN.AGENTE_RT B ON A.AGENTE = B.AGENTE WHERE A.COMPANIA = '" + Login.empresa + "' AND A. HANDHELD NOT IN (SELECT PDA FROM [EXACTUS].[ERPADMIN].[EMM_SYNCINFO] WHERE  CONDUIT = '" + this.comboBox1.Text + "'  AND  SYNC_START BETWEEN '" + Fecha_Sincro.Value.ToString("yyyy-MM-dd") + " 1:00:00' AND '" + Fecha_Sincro.Value.ToString("yyyy-MM-dd") + " 12:00:00')AND B.NOMBRE <> 'OFFLINE' ", con.conex);
+                SqlCommand cm2 = new SqlCommand("SELECT SYNC.PDA,SYNC.CONDUIT,SYNC.STATE,SYNC.SYNC_START,SYNC.SYNC_END FROM [EXACTUS].[ERPADMIN].[EMM_SYNCINFO] AS SYNC LEFT JOIN ERPADMIN.RUTA_ASIGNADA_RT as RT ON SYNC.PDA = RT.HANDHELD WHERE RT.COMPANIA = '" + Login.empresa + "' AND SYNC.CONDUIT = '" + this.comboBox1.Text + "' AND  SYNC.SYNC_START BETWEEN '" + this.Fecha_Sincro.Value.ToString("yyyy-MM-dd") + " 1:00:00' AND '" + this.Fecha_Sincro.Value.ToString("yyyy-MM-dd") + " 12:00:00' GROUP BY SYNC.CONDUIT,SYNC.STATE,SYNC.SYNC_START,SYNC.SYNC_END,PDA  ORDER BY PDA ", con.conex);
                 cm2.CommandTimeout = 0;
-                SqlDataReader dr2 = cm2.ExecuteReader();
-                while (dr2.Read())
-                {
-                    this.linkLabel2.Text = Convert.ToString(dr2["NO SINC"]);
-                }
-                dr2.Close();
+
+                SqlDataAdapter da = new SqlDataAdapter(cm2);
+                da.Fill(no_sinc_emm);
+
+                //SqlDataReader dr2 = cm2.ExecuteReader();
+                //while (dr2.Read())
+                //{
+                //    this.linkLabel2.Text = Convert.ToString(dr2["NO SINC"]);
+                //}
+                //dr2.Close();
 
 
 
@@ -292,12 +320,12 @@ namespace Sinconizacion_EXactus
                 {
 
 
-                    SqlCommand cm = new SqlCommand("SELECT SYNC.PDA,SYNC.CONDUIT,SYNC.STATE,SYNC.SYNC_START,SYNC.SYNC_END FROM [EXACTUS].[ERPADMIN].[EMM_SYNCINFO] AS SYNC LEFT JOIN ERPADMIN.RUTA_ASIGNADA_RT as RT ON SYNC.PDA = RT.HANDHELD WHERE RT.COMPANIA = '"+Login.empresa+"' AND SYNC.CONDUIT = '" + this.comboBox1.Text + "' AND  SYNC.SYNC_START BETWEEN '" + this.Fecha_Sincro.Value.ToString("yyyy-MM-dd") + " 12:00:00' AND '" + this.Fecha_Sincro.Value.ToString("yyyy-MM-dd") + " 23:59:00' GROUP BY SYNC.CONDUIT,SYNC.STATE,SYNC.SYNC_START,SYNC.SYNC_END,PDA  ORDER BY PDA ", con.conex);
+                    SqlCommand cm = new SqlCommand("SELECT SYNC.PDA,SYNC.CONDUIT,SYNC.STATE,SYNC.SYNC_START,SYNC.SYNC_END FROM [EXACTUS].[ERPADMIN].[EMM_SYNCINFO] AS SYNC LEFT JOIN ERPADMIN.RUTA_ASIGNADA_RT as RT ON SYNC.PDA = RT.HANDHELD WHERE RT.COMPANIA = '" + Login.empresa + "' AND SYNC.CONDUIT = '" + this.comboBox1.Text + "' AND  SYNC.SYNC_START BETWEEN '" + this.Fecha_Sincro.Value.ToString("yyyy-MM-dd") + " 12:00:00' AND '" + this.Fecha_Sincro.Value.ToString("yyyy-MM-dd") + " 23:59:00' GROUP BY SYNC.CONDUIT,SYNC.STATE,SYNC.SYNC_START,SYNC.SYNC_END,PDA  ORDER BY PDA ", con.conex);
                     cm.CommandTimeout = 0;
                     SqlDataReader dr = cm.ExecuteReader();
-                    
-                    try
-                    {
+
+                    //try
+                    //{
 
 
                         while (dr.Read())
@@ -327,38 +355,44 @@ namespace Sinconizacion_EXactus
 
 
                             }
+                           
                             treeView1.Nodes.Add(node);
 
 
 
                         }
+                        //sinc_json();
                         dr.Close();
-                    }
-                    catch
-                    {
-                        MessageBox.Show("No se pudo cargar informacion");
-                        dr.Close();
-                    }
+                    //}
+                    ////catch 
+                    //{
+                    //    MessageBox.Show("No se pudo cargar informacion");
+                    //    dr.Close();
+                    //}
                     // Carga la cantidad de  Rutas  SINCRONIZADAS --------------------------------------- 
-                    SqlCommand cm1 = new SqlCommand("SELECT COUNT(SINC.HANDHELD) as 'sinc' FROM [EXACTUS].[ERPADMIN].[HANDHELD_RT] as  SINC LEFT JOIN ERPADMIN.RUTA_ASIGNADA_RT as RT on SINC.HANDHELD = RT.HANDHELD WHERE RT.COMPANIA = '"+Login.empresa+"' AND SINC.HANDHELD  IN (SELECT PDA FROM [EXACTUS].[ERPADMIN].[EMM_SYNCINFO] WHERE CONDUIT = '" + this.comboBox1.Text + "'  AND  SYNC_START BETWEEN '" + Fecha_Sincro.Value.ToString("yyyy-MM-dd") + " 12:00:00' AND '" + Fecha_Sincro.Value.ToString("yyyy-MM-dd") + " 23:59:00')", con.conex);
-                    cm1.CommandTimeout = 0;
-                    SqlDataReader dr1 = cm1.ExecuteReader();
-                    while (dr1.Read())
-                    {
-                        label21.Text = Convert.ToString(dr1["SINC"]);
-                    }
-                    dr1.Close();
+                    //SqlCommand cm1 = new SqlCommand("SELECT COUNT(SINC.HANDHELD) as 'sinc' FROM [EXACTUS].[ERPADMIN].[HANDHELD_RT] as  SINC LEFT JOIN ERPADMIN.RUTA_ASIGNADA_RT as RT on SINC.HANDHELD = RT.HANDHELD WHERE RT.COMPANIA = '" + Login.empresa + "' AND SINC.HANDHELD  IN (SELECT PDA FROM [EXACTUS].[ERPADMIN].[EMM_SYNCINFO] WHERE CONDUIT = '" + this.comboBox1.Text + "'  AND  SYNC_START BETWEEN '" + Fecha_Sincro.Value.ToString("yyyy-MM-dd") + " 12:00:00' AND '" + Fecha_Sincro.Value.ToString("yyyy-MM-dd") + " 23:59:00')", con.conex);
+                    //cm1.CommandTimeout = 0;
+                    //SqlDataReader dr1 = cm1.ExecuteReader();
+                    //while (dr1.Read())
+                    //{
+                    //    label21.Text = Convert.ToString(dr1["SINC"]);
+                    //}
+                    //dr1.Close();
                     // Carga la cantidad de  Rutas NO SINCRONIZADAS --------------------------------------- 
 
-                    SqlCommand cm2 = new SqlCommand("SELECT COUNT (A. HANDHELD) as 'NO SINC' FROM  ERPADMIN.RUTA_ASIGNADA_RT A INNER JOIN ERPADMIN.AGENTE_RT B ON A.AGENTE = B.AGENTE WHERE A.COMPANIA = '"+Login.empresa+"' AND A. HANDHELD NOT IN (SELECT PDA FROM [EXACTUS].[ERPADMIN].[EMM_SYNCINFO] WHERE  CONDUIT = '" + this.comboBox1.Text + "'  AND  SYNC_START BETWEEN '" + Fecha_Sincro.Value.ToString("yyyy-MM-dd") + " 12:00:00' AND '" + Fecha_Sincro.Value.ToString("yyyy-MM-dd") + " 23:59:00')AND B.NOMBRE <> 'OFFLINE' ", con.conex);
-                    cm2.CommandTimeout = 0;
-                    SqlDataReader dr2 = cm2.ExecuteReader();
-                    while (dr2.Read())
-                    {
-                        this.linkLabel2.Text = Convert.ToString(dr2["NO SINC"]);
-                    }
-                    dr2.Close();
+                    //SqlCommand cm2 = new SqlCommand(" A.HANDHELD as 'RUTA' FROM  ERPADMIN.RUTA_ASIGNADA_RT A INNER JOIN ERPADMIN.AGENTE_RT B ON A.AGENTE = B.AGENTE WHERE A.COMPANIA = '" + Login.empresa + "' AND A. HANDHELD NOT IN (SELECT PDA FROM [EXACTUS].[ERPADMIN].[EMM_SYNCINFO] WHERE  CONDUIT = '" + this.comboBox1.Text + "'  AND  SYNC_START BETWEEN '" + Fecha_Sincro.Value.ToString("yyyy-MM-dd") + " 12:00:00' AND '" + Fecha_Sincro.Value.ToString("yyyy-MM-dd") + " 23:59:00') AND B.NOMBRE <> 'OFFLINE' ", con.conex);
+                    SqlCommand cm2 = new SqlCommand("  SELECT A. HANDHELD as 'RUTA' FROM  ERPADMIN.RUTA_ASIGNADA_RT  as A INNER JOIN ERPADMIN.AGENTE_RT B ON A.AGENTE = B.AGENTE WHERE A.COMPANIA = '" + Login.empresa+"' AND A. HANDHELD NOT IN (SELECT PDA FROM [EXACTUS].[ERPADMIN].[EMM_SYNCINFO] WHERE  CONDUIT = '"+this.comboBox1.Text+ "'  AND  SYNC_START BETWEEN ' " + this.Fecha_Sincro.Value.ToString("yyyy-MM-dd") + "  12:00:00' AND '" + this.Fecha_Sincro.Value.ToString("yyyy-MM-dd") + " 23:59:00') AND B.NOMBRE <> 'OFFLINE'", con.conex);
 
+                    SqlDataAdapter dat = new SqlDataAdapter(cm2);
+                    dat.Fill(no_sinc_emm);
+                    //cm2.CommandTimeout = 0;
+                    //SqlDataReader dr2 = cm2.ExecuteReader();
+                    //while (dr2.Read())
+                    //{
+                    //    this.linkLabel2.Text = Convert.ToString(dr2["NO SINC"]);
+                    //}
+                    //dr2.Close();
+                    cantidad_no_sinc(no_sinc_emm, sinc_json_temp);
                 }
                 else
                 {
@@ -366,7 +400,7 @@ namespace Sinconizacion_EXactus
                     if (this.comboBox3.Text == "Todos")
                     {
 
-                        SqlCommand cm = new SqlCommand("SELECT PDA,CONDUIT,STATE,SYNC_START,SYNC_END FROM [EXACTUS].[ERPADMIN].[EMM_SYNCINFO] as SYNC LEFT JOIN ERPADMIN.RUTA_ASIGNADA_RT as  RT ON SYNC.PDA = RT.HANDHELD  WHERE RT.COMPANIA = '"+Login.empresa+"' AND CONDUIT = '" + this.comboBox1.Text + "' AND DATEADD(dd, 0, DATEDIFF(dd, 0, SYNC_START ))='" + this.Fecha_Sincro.Value.ToString("yyyy-MM-dd") + "'GROUP BY CONDUIT,STATE,SYNC_START,SYNC_END,PDA ", con.conex);
+                        SqlCommand cm = new SqlCommand("SELECT PDA,CONDUIT,STATE,SYNC_START,SYNC_END FROM [EXACTUS].[ERPADMIN].[EMM_SYNCINFO] as SYNC LEFT JOIN ERPADMIN.RUTA_ASIGNADA_RT as  RT ON SYNC.PDA = RT.HANDHELD  WHERE RT.COMPANIA = '" + Login.empresa + "' AND CONDUIT = '" + this.comboBox1.Text + "' AND DATEADD(dd, 0, DATEDIFF(dd, 0, SYNC_START ))='" + this.Fecha_Sincro.Value.ToString("yyyy-MM-dd") + "'GROUP BY CONDUIT,STATE,SYNC_START,SYNC_END,PDA ", con.conex);
                         cm.CommandTimeout = 0;
                         SqlDataReader dr = cm.ExecuteReader();
 
@@ -400,16 +434,18 @@ namespace Sinconizacion_EXactus
 
                                 }
 
+                           
+
                                 treeView1.Nodes.Add(node);
 
 
 
                             }
-
+                           // sinc_json();
                             dr.Close();
 
 
-                            SqlCommand nosic = new SqlCommand("SELECT COUNT(A. HANDHELD) as 'NO SINC' FROM  ERPADMIN.RUTA_ASIGNADA_RT A INNER JOIN ERPADMIN.AGENTE_RT B ON A.AGENTE = B.AGENTE WHERE A.COMPANIA = '"+Login.empresa+"' AND A. HANDHELD NOT IN (SELECT PDA FROM [EXACTUS].[ERPADMIN].[EMM_SYNCINFO] WHERE  CONDUIT = '" + Sincronizacion.conduit + "' AND PDA LIKE 'P%' AND  SYNC_START BETWEEN '" + Sincronizacion.fecha_sinc + " 1:00:00' AND '" + Sincronizacion.fecha_sinc + " 23:59:59')AND B.NOMBRE <> 'OFFLINE' ", con.conex);
+                            SqlCommand nosic = new SqlCommand("SELECT COUNT(A. HANDHELD) as 'NO SINC' FROM  ERPADMIN.RUTA_ASIGNADA_RT A INNER JOIN ERPADMIN.AGENTE_RT B ON A.AGENTE = B.AGENTE WHERE A.COMPANIA = '" + Login.empresa + "' AND A. HANDHELD NOT IN (SELECT PDA FROM [EXACTUS].[ERPADMIN].[EMM_SYNCINFO] WHERE  CONDUIT = '" + Sincronizacion.conduit + "' AND PDA LIKE 'P%' AND  SYNC_START BETWEEN '" + Sincronizacion.fecha_sinc + " 1:00:00' AND '" + Sincronizacion.fecha_sinc + " 23:59:59')AND B.NOMBRE <> 'OFFLINE' ", con.conex);
                             nosic.CommandTimeout = 0;
                             SqlDataReader nosicndr = nosic.ExecuteReader();
                             while (nosicndr.Read())
@@ -425,8 +461,8 @@ namespace Sinconizacion_EXactus
                             dr.Close();
                         }
 
-                         //Carga la cantidad de  Rutas  SINCRONIZADAS --------------------------------------- 
-                        SqlCommand cm1 = new SqlCommand("SELECT COUNT(SINC.HANDHELD) as 'sinc' FROM [EXACTUS].[ERPADMIN].[HANDHELD_RT] as SINC LEFT JOIN ERPADMIN.RUTA_ASIGNADA_RT AS RT ON SINC.HANDHELD = RT.HANDHELD  WHERE RT.COMPANIA = '" + Login.empresa+"' AND SINC.HANDHELD  IN (SELECT PDA FROM [EXACTUS].[ERPADMIN].[EMM_SYNCINFO] WHERE CONDUIT = '" + this.comboBox1.Text + "'  AND DATEADD(dd, 0, DATEDIFF(dd, 0, SYNC_START ))='" + Fecha_Sincro.Value.ToString("yyyy-MM-dd") + "')", con.conex);
+                        //Carga la cantidad de  Rutas  SINCRONIZADAS --------------------------------------- 
+                        SqlCommand cm1 = new SqlCommand("SELECT COUNT(SINC.HANDHELD) as 'sinc' FROM [EXACTUS].[ERPADMIN].[HANDHELD_RT] as SINC LEFT JOIN ERPADMIN.RUTA_ASIGNADA_RT AS RT ON SINC.HANDHELD = RT.HANDHELD  WHERE RT.COMPANIA = '" + Login.empresa + "' AND SINC.HANDHELD  IN (SELECT PDA FROM [EXACTUS].[ERPADMIN].[EMM_SYNCINFO] WHERE CONDUIT = '" + this.comboBox1.Text + "'  AND DATEADD(dd, 0, DATEDIFF(dd, 0, SYNC_START ))='" + Fecha_Sincro.Value.ToString("yyyy-MM-dd") + "')", con.conex);
                         cm1.CommandTimeout = 0;
                         SqlDataReader dr1 = cm1.ExecuteReader();
                         while (dr1.Read())
@@ -443,10 +479,10 @@ namespace Sinconizacion_EXactus
                         //    this.linkLabel2.Text = Convert.ToString(dr2["NO SINC"]);
                         //}
                         //dr2.Close();
-                    
+
                     }
-                  
-                
+
+
                 }
 
 
@@ -454,17 +490,18 @@ namespace Sinconizacion_EXactus
 
 
 
-            
-            }                         
-            
+
+            }
+
 
 
             con.Desconectar("EX");
 
+            cantidad_sincroniadas(sinc_json_temp);
             button4_Click(null, null);
-            
+
         }
-        private void treeView1_NodeMouseClick(object sender,TreeNodeMouseClickEventArgs e)
+        private void treeView1_NodeMouseClick(object sender, TreeNodeMouseClickEventArgs e)
         {
             MessageBox.Show("Ok");
         }
@@ -474,15 +511,15 @@ namespace Sinconizacion_EXactus
             Usuarios_exactus.Clear();
             Usuarios_APP_Exactus.Clear();
             treeView2.Nodes.Clear();
-          
-          
 
-           con.conectar("MAS");
 
-            SqlCommand cmd = new SqlCommand("[dbo].[USUARIOS_EXACTUS]",con.conmas );
+
+            con.conectar("MAS");
+
+            SqlCommand cmd = new SqlCommand("[dbo].[USUARIOS_EXACTUS]", con.conmas);
             cmd.CommandTimeout = 0;
             cmd.CommandType = CommandType.StoredProcedure;
-            
+
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             da.Fill(Usuarios_exactus);
             SqlCommand cmd1 = new SqlCommand("[dbo].[USUARIOS_APP_EXACTUS]", con.conmas);
@@ -504,7 +541,7 @@ namespace Sinconizacion_EXactus
 
                 for (int o = 0; o < Usuarios_APP_Exactus.Rows.Count; o++)
                 {
-                   
+
                     string nombre_app_loguin = Usuarios_APP_Exactus.Rows[o]["login"].ToString();
                     string nombre_app_host = Usuarios_APP_Exactus.Rows[o]["HostName"].ToString();
 
@@ -517,30 +554,33 @@ namespace Sinconizacion_EXactus
                             string Nombre_programa = (Usuarios_APP_Exactus.Rows[o]["ProgramName"].ToString());
                             node5.Nodes.Add(node4);
                         }
-                       
+
                     }
-                    
+
                 }
-                
+
                 node3.Nodes.Add(node5);
-                
-                
+
+
 
                 treeView2.Nodes.Add(node3);
                 int cantidad = Usuarios_exactus.Rows.Count;
                 if (Main_Menu.Departamento == "INFORMATICA")
                 {
                     treeView2.ContextMenuStrip = menugrid;
+                    linkLabel4.Show();
+                    linkLabel5.Show();
+                    linkLabel6.Show();
                 }
                 label36.Text = Convert.ToString(cantidad);
             }
 
-            
-           
-            
-           }
 
-   
+
+
+        }
+
+
 
         private void button3_Click(object sender, EventArgs e)
         {
@@ -555,7 +595,7 @@ namespace Sinconizacion_EXactus
 
         }
 
-       
+
 
         private void label11_Click(object sender, EventArgs e)
         {
@@ -649,7 +689,7 @@ namespace Sinconizacion_EXactus
             cm9.CommandTimeout = 0;
             cm9.CommandTimeout = 0;
             SqlDataReader dr9 = cm9.ExecuteReader();
-            
+
             while (dr9.Read())
             {
                 textBox7.Text = Convert.ToString(dr9["Facturados"]);
@@ -666,11 +706,11 @@ namespace Sinconizacion_EXactus
             listView2.Clear();
             listView2.Columns.Add("Ruta", 92, HorizontalAlignment.Left);
 
-            SqlCommand cm11 = new SqlCommand("SELECT COD_ZON as RUTA FROM ERPADMIN.alFAC_ENC_PED AS PED LEFT JOIN ERPADMIN.RUTA_ASIGNADA_RT AS RT ON PED.COD_ZON = RT.RUTA WHERE RT.COMPANIA = '"+Login.empresa+"' AND DOC_PRO IS NULL AND DATEADD(dd, 0, DATEDIFF(dd, 0, FEC_PED ))='" + this.Fecha_Sincro.Value.ToString("yyyy-MM-dd") + "' GROUP BY COD_ZON ", con.conex);
+            SqlCommand cm11 = new SqlCommand("SELECT COD_ZON as RUTA FROM ERPADMIN.alFAC_ENC_PED AS PED LEFT JOIN ERPADMIN.RUTA_ASIGNADA_RT AS RT ON PED.COD_ZON = RT.RUTA WHERE RT.COMPANIA = '" + Login.empresa + "' AND DOC_PRO IS NULL AND DATEADD(dd, 0, DATEDIFF(dd, 0, FEC_PED ))='" + this.Fecha_Sincro.Value.ToString("yyyy-MM-dd") + "' GROUP BY COD_ZON ", con.conex);
             cm11.CommandTimeout = 0;
             SqlDataReader dr11 = cm11.ExecuteReader();
-            
-            
+
+
 
             while (dr11.Read())
             {
@@ -686,11 +726,11 @@ namespace Sinconizacion_EXactus
             listView3.Columns.Add("Ruta", 40, HorizontalAlignment.Left);
             listView3.Columns.Add("Factura", 100, HorizontalAlignment.Left);
 
-            SqlCommand cm12 = new SqlCommand("SELECT  PED.COD_ZON as RUTA, PED.NUM_PED as Pedido from  ERPADMIN.alFAC_ENC_PED as  PED  LEFT JOIN [EXACTUS].[ERPADMIN].[RUTA_ASIGNADA_RT] as RUT  on PED.COD_ZON = RUT.RUTA  left join "+Login.empresa+ ".FACTURA AS FAC on PED.NUM_PED = FAC.FACTURA where PED.TIP_DOC = 'F' AND DATEADD(dd, 0, DATEDIFF(dd, 0, PED.FEC_PED ))='" + this.Fecha_Sincro.Value.ToString("yyyy-MM-dd") + "' AND FAC.FACTURA is NULL and RUT.COMPANIA = '"+Login.empresa+"'", con.conex);
-          //SqlCommand cm15 = new SqlCommand("select  a.COD_ZON as RUTA, a.NUM_PED as Pedido from   ERPADMIN.alFAC_ENC_PED a left join " + Login.empresa + ".FACTURA b on a.NUM_PED = b.FACTURA where a.TIP_DOC = 'F' AND DATEADD(dd, 0, DATEDIFF(dd, 0, a.FEC_PED ))='" + this.Fecha_Sincro.Value.ToString("yyyy-MM-dd") + "' AND b.FACTURA is NULL ", con.conex);
+            SqlCommand cm12 = new SqlCommand("SELECT  PED.COD_ZON as RUTA, PED.NUM_PED as Pedido from  ERPADMIN.alFAC_ENC_PED as  PED  LEFT JOIN [EXACTUS].[ERPADMIN].[RUTA_ASIGNADA_RT] as RUT  on PED.COD_ZON = RUT.RUTA  left join " + Login.empresa + ".FACTURA AS FAC on PED.NUM_PED = FAC.FACTURA where PED.TIP_DOC = 'F' AND DATEADD(dd, 0, DATEDIFF(dd, 0, PED.FEC_PED ))='" + this.Fecha_Sincro.Value.ToString("yyyy-MM-dd") + "' AND FAC.FACTURA is NULL and RUT.COMPANIA = '" + Login.empresa + "'", con.conex);
+            //SqlCommand cm15 = new SqlCommand("select  a.COD_ZON as RUTA, a.NUM_PED as Pedido from   ERPADMIN.alFAC_ENC_PED a left join " + Login.empresa + ".FACTURA b on a.NUM_PED = b.FACTURA where a.TIP_DOC = 'F' AND DATEADD(dd, 0, DATEDIFF(dd, 0, a.FEC_PED ))='" + this.Fecha_Sincro.Value.ToString("yyyy-MM-dd") + "' AND b.FACTURA is NULL ", con.conex);
             cm12.CommandTimeout = 0;
             SqlDataReader dr12 = cm12.ExecuteReader();
-           
+
 
 
             while (dr12.Read())
@@ -709,10 +749,10 @@ namespace Sinconizacion_EXactus
             listView1.Columns.Add("Ruta", 40, HorizontalAlignment.Left);
             listView1.Columns.Add("Pedido", 100, HorizontalAlignment.Left);
 
-            SqlCommand cm13 = new SqlCommand("select  a.COD_ZON as RUTA, a.NUM_PED as PEDIDO   from   ERPADMIN.alFAC_ENC_PED a  LEFT JOIN [EXACTUS].[ERPADMIN].[RUTA_ASIGNADA_RT] as RUT  on a.COD_ZON = RUT.RUTA  LEFT join "+Login.empresa+".PEDIDO b on a.NUM_PED = b.PEDIDO where a.TIP_DOC = '1' AND DATEADD(dd, 0, DATEDIFF(dd, 0, a.FEC_PED ))='" + this.Fecha_Sincro.Value.ToString("yyyy-MM-dd") + "'  and B.ESTADO = 'N' and RUT.COMPANIA = '" + Login.empresa+"' order by a.COD_ZON ", con.conex);
+            SqlCommand cm13 = new SqlCommand("select  a.COD_ZON as RUTA, a.NUM_PED as PEDIDO   from   ERPADMIN.alFAC_ENC_PED a  LEFT JOIN [EXACTUS].[ERPADMIN].[RUTA_ASIGNADA_RT] as RUT  on a.COD_ZON = RUT.RUTA  LEFT join " + Login.empresa + ".PEDIDO b on a.NUM_PED = b.PEDIDO where a.TIP_DOC = '1' AND DATEADD(dd, 0, DATEDIFF(dd, 0, a.FEC_PED ))='" + this.Fecha_Sincro.Value.ToString("yyyy-MM-dd") + "'  and B.ESTADO = 'N' and RUT.COMPANIA = '" + Login.empresa + "' order by a.COD_ZON ", con.conex);
             cm13.CommandTimeout = 0;
-            SqlDataReader dr13= cm13.ExecuteReader();
-            
+            SqlDataReader dr13 = cm13.ExecuteReader();
+
 
             while (dr13.Read())
             {
@@ -725,7 +765,7 @@ namespace Sinconizacion_EXactus
             dr13.Close();
 
 
-        // Cobros -------------------------------------------------------
+            // Cobros -------------------------------------------------------
 
             listView4.Clear();
             listView4.Columns.Add("Ruta", 40, HorizontalAlignment.Left);
@@ -734,7 +774,7 @@ namespace Sinconizacion_EXactus
             SqlCommand cm14 = new SqlCommand("SELECT REC.COD_ZON,REC.NUM_REC FROM [EXACTUS].[ERPADMIN].[alCXC_MOV_DIR] as REC LEFT JOIN [EXACTUS].[ERPADMIN].[RUTA_ASIGNADA_RT] as RUT on REC.COD_ZON = RUT.RUTA  where NUM_REC not in (SELECT DOCUMENTO FROM [EXACTUS].[" + Login.empresa + "].[DOCUMENTOS_CC])  AND DATEADD(dd, 0, DATEDIFF(dd, 0, FEC_PRO ))='" + this.Fecha_Sincro.Value.ToString("yyyy-MM-dd") + "' and RUT.COMPANIA = '" + Login.empresa + "'  order by COD_ZON", con.conex);
             cm14.CommandTimeout = 0;
             SqlDataReader dr14 = cm14.ExecuteReader();
-            
+
 
             while (dr14.Read())
             {
@@ -749,17 +789,17 @@ namespace Sinconizacion_EXactus
 
             // Devoluciones  ---------------------------------------------------
 
-            
+
             listView5.Clear();
             listView5.Columns.Add("Ruta", 40, HorizontalAlignment.Left);
             listView5.Columns.Add("Devolcion", 100, HorizontalAlignment.Left);
 
-            SqlCommand cm15 = new SqlCommand("SELECT DEV.[COD_ZON],DEV.[NUM_DEV] FROM [EXACTUS].[ERPADMIN].[alFAC_ENC_DEV] as DEV LEFT JOIN ERPADMIN.RUTA_ASIGNADA_RT as RT on DEV.COD_ZON = RT.RUTA where RT.COMPANIA = '"+Login.empresa+"' AND NUM_DEV not in (SELECT DOCUMENTO FROM [EXACTUS].[" + Login.empresa + "].[DOCUMENTOS_CC]  where tipo = 'N/C' and FECHA_DOCUMENTO > DATEADD(DD, DATEDIFF(dd,72,GETDATE()),0) )   AND DATEADD(dd, 0, DATEDIFF(dd, 0, FEC_DEV ))='" + this.Fecha_Sincro.Value.ToString("yyyy-MM-dd") + "'", con.conex);
+            SqlCommand cm15 = new SqlCommand("SELECT DEV.[COD_ZON],DEV.[NUM_DEV] FROM [EXACTUS].[ERPADMIN].[alFAC_ENC_DEV] as DEV LEFT JOIN ERPADMIN.RUTA_ASIGNADA_RT as RT on DEV.COD_ZON = RT.RUTA where RT.COMPANIA = '" + Login.empresa + "' AND NUM_DEV not in (SELECT DOCUMENTO FROM [EXACTUS].[" + Login.empresa + "].[DOCUMENTOS_CC]  where tipo = 'N/C' and FECHA_DOCUMENTO > DATEADD(DD, DATEDIFF(dd,72,GETDATE()),0) )   AND DATEADD(dd, 0, DATEDIFF(dd, 0, FEC_DEV ))='" + this.Fecha_Sincro.Value.ToString("yyyy-MM-dd") + "'", con.conex);
             cm15.CommandTimeout = 0;
             SqlDataReader dr15 = cm15.ExecuteReader();
-           
-           
-            
+
+
+
 
 
             while (dr15.Read())
@@ -776,44 +816,44 @@ namespace Sinconizacion_EXactus
 
 
 
-            con.Desconectar("EX");   
+            con.Desconectar("EX");
 
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
             // Carga el archivo TXT  del Proceso de carga HH --------------------------------------- 
-        
+
 
             if (textBox9.Text == "")
-                
-        
+
+
             {
                 MessageBox.Show("Ingrese Path del archivo Log");
             }
             else
             {
-                log_carga_HH fm3 = new log_carga_HH();                
+                log_carga_HH fm3 = new log_carga_HH();
                 fm3.ShowDialog();
-                
+
             }
-            
+
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             // Abre una ventana para selecionar el Archivo TXT despues de haber sido cargado las HH --------------------------------------- 
 
-           Selected_File =  string.Empty;
-           this.textBox9.Clear();
-           openFileDialog1.AutoUpgradeEnabled = false;
-           openFileDialog1.InitialDirectory = @"\\192.168.1.25\c$\ExactusERP\Log_Carga_FR_HH";
+            Selected_File = string.Empty;
+            this.textBox9.Clear();
+            openFileDialog1.AutoUpgradeEnabled = false;
+            openFileDialog1.InitialDirectory = @"\\192.168.1.25\c$\ExactusERP\Log_Carga_FR_HH";
             openFileDialog1.Title = "Select a File";
             openFileDialog1.FileName = string.Empty;
             openFileDialog1.Filter = "Log Files|*.log| Text Files|*.txt";
             if (openFileDialog1.ShowDialog() == DialogResult.Cancel)
             {
-               
+
             }
             else
             {
@@ -848,29 +888,29 @@ namespace Sinconizacion_EXactus
                     time = "Tarde";
                 }
                 else
-                    
+
                 {
                     time = "Todos";
                 }
-             }
+            }
         }
 
         private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
         {
-           
+
             if (this.comboBox3.Text == "Mañana")
             {
                 time = "Mañana";
             }
             else
                 if (this.comboBox3.Text == "Tarde")
-                {
-                    time = "Tarde";
-                }
-                else if (this.comboBox3.Text == "Todos")
-                {
-                    time = "Todos";
-                }
+            {
+                time = "Tarde";
+            }
+            else if (this.comboBox3.Text == "Todos")
+            {
+                time = "Todos";
+            }
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -879,14 +919,14 @@ namespace Sinconizacion_EXactus
 
             validar_devoluciones();
 
-             MessageBoxButtons bt1 = MessageBoxButtons.YesNo;
+            MessageBoxButtons bt1 = MessageBoxButtons.YesNo;
             DialogResult result = MessageBox.Show("Desea Ejecuta el proceso de Carga ERP?", "CARGA FR-ERP", bt1, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1);
             if (result == DialogResult.Yes)
             {
-              
 
 
-                
+
+
                 System.Diagnostics.Process p = new System.Diagnostics.Process();
                 p.StartInfo.FileName = @"C:\SoftlandERP\CargaFR-ERP.exe";
                 p.StartInfo.Arguments = ("sa D!sW0ML3.50 DISMO EXACTUS");
@@ -897,7 +937,7 @@ namespace Sinconizacion_EXactus
 
         private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            
+
             string Selected_File_carga;
 
             OpenFileDialog openFileDialog3 = new OpenFileDialog();
@@ -906,11 +946,11 @@ namespace Sinconizacion_EXactus
 
 
             Selected_File_carga = string.Empty;
-          
-           string  usuario = SystemInformation.UserName;
-           string direccion = @"C:\CORRECT\app";
 
-            
+            string usuario = SystemInformation.UserName;
+            string direccion = @"C:\CORRECT\app";
+
+
             openFileDialog3.InitialDirectory = direccion;
             openFileDialog3.Title = "Select a File";
             openFileDialog3.FileName = string.Empty;
@@ -925,7 +965,7 @@ namespace Sinconizacion_EXactus
 
                 System.Diagnostics.Process.Start(@"Notepad.exe", Selected_File_carga);
 
-                
+
 
             }
 
@@ -940,7 +980,7 @@ namespace Sinconizacion_EXactus
             if (fechaup.ToLongTimeString() == "4:15:05 PM")
             {
                 consulta_task(null, null);
-               
+
             }
             if (fechaup.ToLongTimeString() == "5:00:05 PM")
             {
@@ -995,7 +1035,7 @@ namespace Sinconizacion_EXactus
                         label28.ForeColor = Color.Red;
                         break;
 
-                        
+
                 }
 
 
@@ -1010,7 +1050,7 @@ namespace Sinconizacion_EXactus
             while (dr2.Read())
             {
                 stado = null;
-                stado =  Convert.ToString(dr2["Estado"]);
+                stado = Convert.ToString(dr2["Estado"]);
 
                 switch (stado)
                 {
@@ -1065,7 +1105,7 @@ namespace Sinconizacion_EXactus
             SqlCommand cm4 = new SqlCommand("SELECT [Estado]  FROM [DM].[CORRECT].[Tareas_programada]  where Nombre_Tarea = 'Exactus Carga ERP 3'", con.condm);
             cm4.CommandTimeout = 0;
             SqlDataReader dr4 = cm4.ExecuteReader();
-            
+
             while (dr4.Read())
             {
                 stado = null;
@@ -1100,7 +1140,7 @@ namespace Sinconizacion_EXactus
             SqlCommand cm5 = new SqlCommand("SELECT [Estado]  FROM [DM].[CORRECT].[Tareas_programada]  where Nombre_Tarea = 'Exactus Carga ERP 4'", con.condm);
             cm5.CommandTimeout = 0;
             SqlDataReader dr5 = cm5.ExecuteReader();
-            
+
             while (dr5.Read())
             {
                 stado = null;
@@ -1130,11 +1170,11 @@ namespace Sinconizacion_EXactus
             SqlCommand cm6 = new SqlCommand("SELECT [Estado]  FROM [DM].[CORRECT].[Tareas_programada]  where Nombre_Tarea = 'Exactus Carga ERP 5'", con.condm);
             cm6.CommandTimeout = 0;
             SqlDataReader dr6 = cm6.ExecuteReader();
-            
+
             while (dr6.Read())
             {
                 stado = null;
-                stado =  Convert.ToString(dr6["Estado"]);
+                stado = Convert.ToString(dr6["Estado"]);
 
                 switch (stado)
                 {
@@ -1157,7 +1197,7 @@ namespace Sinconizacion_EXactus
             dr6.Close();
 
 
-            
+
 
 
 
@@ -1167,16 +1207,16 @@ namespace Sinconizacion_EXactus
 
             if (Exists(estado))
             {
-              this.timer2.Stop();
-              this.timer2.Interval = (60000);
-              this.timer2.Start();
+                this.timer2.Stop();
+                this.timer2.Interval = (60000);
+                this.timer2.Start();
             }
             else
             {
                 this.timer2.Stop();
                 this.timer2.Interval = (60000) * 10;
                 this.timer2.Start();
-            
+
             }
         }
 
@@ -1208,14 +1248,14 @@ namespace Sinconizacion_EXactus
             {
                 return true;
             }
-        
+
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
             string hoy = DateTime.Today.ToLongTimeString();
 
-              MessageBoxButtons bt1 = MessageBoxButtons.YesNo;
+            MessageBoxButtons bt1 = MessageBoxButtons.YesNo;
             DialogResult result = MessageBox.Show("Desea Actualzar los Descuentos y Promociones?", "Descuentos y Promociones", bt1, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1);
             if (result == DialogResult.Yes)
             {
@@ -1227,17 +1267,17 @@ namespace Sinconizacion_EXactus
                     cmd.Connection = con.condm;
                     cmd.CommandText = "INSERT INTO [DM].[CORRECT].[Historico_Update_Des_y_Boni] ([USUARIO],[FECHA]) VALUES (@USUARIO,@FECHA)";
                     cmd.Parameters.Add("@USUARIO", SqlDbType.NVarChar).Value = Login.usuario.ToUpper();
-                    cmd.Parameters.AddWithValue("@FECHA",Main_Menu.fechaup);
-                    cmd.ExecuteNonQuery();                          
-                    
-                    
-                    
+                    cmd.Parameters.AddWithValue("@FECHA", Main_Menu.fechaup);
+                    cmd.ExecuteNonQuery();
+
+
+
                     SqlCommand sp = new SqlCommand("[CORRECT].[COPIA_DESC_ERP_A_FR]", con.condm);
                     sp.CommandType = CommandType.StoredProcedure;
                     sp.CommandTimeout = 0;
-                        sp.ExecuteNonQuery();
+                    sp.ExecuteNonQuery();
 
-                                                          
+
 
 
                     con.Desconectar("DM");
@@ -1268,7 +1308,7 @@ namespace Sinconizacion_EXactus
 
                 while (dr3.Read())
                 {
-                    label17.Text ="D:"+ Convert.ToString(dr3["Clientes"]);
+                    label17.Text = "D:" + Convert.ToString(dr3["Clientes"]);
                     boni = Convert.ToInt32(dr3["Clientes"]);
                 }
                 dr3.Close();
@@ -1279,7 +1319,7 @@ namespace Sinconizacion_EXactus
                 SqlCommand cm4 = new SqlCommand("SELECT  COUNT (CLIENTE) as 'Clientes' FROM [EXACTUS].[ERPADMIN].[BONIFICACION_CLIART] ", con.conex);
                 cm4.CommandTimeout = 0;
                 SqlDataReader dr4 = cm4.ExecuteReader();
-                
+
                 while (dr4.Read())
                 {
                     label34.Text = "B:" + Convert.ToString(dr4["Clientes"]);
@@ -1290,7 +1330,7 @@ namespace Sinconizacion_EXactus
 
                 con.Desconectar("EX");
 
-             
+
             }
 
             catch
@@ -1299,17 +1339,17 @@ namespace Sinconizacion_EXactus
             }
             con.Desconectar("EX");
 
-        
+
         }
 
         private void listView3_SelectedIndexChanged(object sender, EventArgs e)
         {
-          
+
         }
 
         private void listView3_DoubleClick(object sender, EventArgs e)
         {
-          
+
         }
 
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
@@ -1328,7 +1368,7 @@ namespace Sinconizacion_EXactus
             if (PedidoN != "" || PedidoN != null)
             {
                 MessageBoxButtons bt1 = MessageBoxButtons.YesNo;
-                DialogResult result = MessageBox.Show("Desea Cambiar la fecha al Pedido  No. "+PedidoN+"?", "Cambio de Fechas Pedidos", bt1, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1);
+                DialogResult result = MessageBox.Show("Desea Cambiar la fecha al Pedido  No. " + PedidoN + "?", "Cambio de Fechas Pedidos", bt1, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1);
                 if (result == DialogResult.Yes)
                 {
 
@@ -1363,86 +1403,86 @@ namespace Sinconizacion_EXactus
             {
                 DataRow row = devoluciones.Rows[i];
                 String PREFIJO = row["PREFIJO"].ToString();
-               String NUN_REGALIA = row["NUM_DEV"].ToString();
+                String NUN_REGALIA = row["NUM_DEV"].ToString();
 
 
-               
+
 
                 if (devoluciones.Rows.Count >= 1)
                 {
-                  
+
                     //if (DBNull.Value == row["NCF_PREFIJO"])
                     //{
-                        con.conectar("EX");
-                        SqlCommand CMNCF= new SqlCommand("SELECT [ULTIMO_VALOR]  FROM [EXACTUS].[" + Login.empresa + "].[NCF_CONSECUTIVO]  where PREFIJO = '" + PREFIJO+"'", con.conex);
-                        CMNCF.CommandTimeout = 0;
-                        SqlDataReader drcf = CMNCF.ExecuteReader();
-                      
-                        while (drcf.Read())
-                        {
+                    con.conectar("EX");
+                    SqlCommand CMNCF = new SqlCommand("SELECT [ULTIMO_VALOR]  FROM [EXACTUS].[" + Login.empresa + "].[NCF_CONSECUTIVO]  where PREFIJO = '" + PREFIJO + "'", con.conex);
+                    CMNCF.CommandTimeout = 0;
+                    SqlDataReader drcf = CMNCF.ExecuteReader();
 
-                            ULTIMONCF = Convert.ToString(drcf["ULTIMO_VALOR"]);
-                        }
+                    while (drcf.Read())
+                    {
 
-                        con.Desconectar("EX");
+                        ULTIMONCF = Convert.ToString(drcf["ULTIMO_VALOR"]);
+                    }
+
+                    con.Desconectar("EX");
                     if (ULT_PREFIJO == PREFIJO)
                     {
                         ULTIMONCF = NCF;
                     }
-                 
+
                     nuevoval = (Convert.ToInt32(ULTIMONCF)) + 1;
                     string nvalor = Convert.ToString(nuevoval);
 
 
-                        int ceros = ULTIMONCF.Length - nvalor.Length;
+                    int ceros = ULTIMONCF.Length - nvalor.Length;
 
-                        switch (ceros)
-                        {
-                            case 1:
-                                NCF = "0" + nuevoval;
-                                break;
-                            case 2:
-                                NCF = "00" + nuevoval;
-                                break;
-                            case 3:
-                                NCF = "000" + nuevoval;
-                                break;
-                            case 4:
-                                NCF = "0000" + nuevoval;
-                                break;
-                            case 5:
-                                NCF = "00000" + nuevoval;
-                                break;
-                            case 6:
-                                NCF = "000000" + nuevoval;
-                                break;
-                            case 7:
-                                NCF = "0000000" + nuevoval;
-                                break;
-                            case 8:
-                                NCF = "00000000" + nuevoval;
-                                break;
-                            case 9:
-                                NCF = "000000000" + nuevoval;
-                                break;
-                            case 10:
-                                NCF = "0000000000" + nuevoval;
-                                break;
+                    switch (ceros)
+                    {
+                        case 1:
+                            NCF = "0" + nuevoval;
+                            break;
+                        case 2:
+                            NCF = "00" + nuevoval;
+                            break;
+                        case 3:
+                            NCF = "000" + nuevoval;
+                            break;
+                        case 4:
+                            NCF = "0000" + nuevoval;
+                            break;
+                        case 5:
+                            NCF = "00000" + nuevoval;
+                            break;
+                        case 6:
+                            NCF = "000000" + nuevoval;
+                            break;
+                        case 7:
+                            NCF = "0000000" + nuevoval;
+                            break;
+                        case 8:
+                            NCF = "00000000" + nuevoval;
+                            break;
+                        case 9:
+                            NCF = "000000000" + nuevoval;
+                            break;
+                        case 10:
+                            NCF = "0000000000" + nuevoval;
+                            break;
 
-                            case 11:
-                                NCF = "0000000000" + nuevoval;
-                                break;
-                        }
+                        case 11:
+                            NCF = "0000000000" + nuevoval;
+                            break;
+                    }
 
-                   
 
-                        con.conectar("EX");
-                        SqlCommand cmd = new SqlCommand("UPDATE dev SET dev.COD_PAIS = clie.COD_PAIS,dev.NCF_PREFIJO = '" + PREFIJO + "',dev.NCF = '" + NCF + "',dev.COD_GEO1 = 'Ninguna',dev.COD_GEO2 = 'Ninguna',SERIE_RESOLUCION = ''  FROM [EXACTUS].[ERPADMIN].[alFAC_ENC_DEV] dev  left join [EXACTUS].[ERPADMIN].[CLIENTE_CIA] clie  on dev.COD_CLT = clie.COD_CLT  where dev.NUM_DEV = '"+NUN_REGALIA+"'", con.conex);
-                        cmd.CommandTimeout = 0;
-                        cmd.ExecuteNonQuery();
 
-                        con.Desconectar("EX");
-                      ULT_PREFIJO = PREFIJO;
+                    con.conectar("EX");
+                    SqlCommand cmd = new SqlCommand("UPDATE dev SET dev.COD_PAIS = clie.COD_PAIS,dev.NCF_PREFIJO = '" + PREFIJO + "',dev.NCF = '" + NCF + "',dev.COD_GEO1 = 'Ninguna',dev.COD_GEO2 = 'Ninguna',SERIE_RESOLUCION = ''  FROM [EXACTUS].[ERPADMIN].[alFAC_ENC_DEV] dev  left join [EXACTUS].[ERPADMIN].[CLIENTE_CIA] clie  on dev.COD_CLT = clie.COD_CLT  where dev.NUM_DEV = '" + NUN_REGALIA + "'", con.conex);
+                    cmd.CommandTimeout = 0;
+                    cmd.ExecuteNonQuery();
+
+                    con.Desconectar("EX");
+                    ULT_PREFIJO = PREFIJO;
 
                     //}
                     //else
@@ -1455,14 +1495,14 @@ namespace Sinconizacion_EXactus
 
                     //    con.Desconectar("EX");
 
-                    
+
                     //}
 
 
                 }
-              
 
-            
+
+
             }
 
 
@@ -1473,7 +1513,7 @@ namespace Sinconizacion_EXactus
 
 
             con.Desconectar("EX");
-        
+
         }
 
         private void treeView2_AfterSelect(object sender, TreeViewEventArgs e)
@@ -1485,7 +1525,470 @@ namespace Sinconizacion_EXactus
             {
                 Nombre_user = treeView2.SelectedNode.Text;
             }
+
+        }
+
+        private void sinc_json()
+        {
            
+            int conteo = 0;
+            DirectoryInfo di = new DirectoryInfo(@"\\192.168.1.123\BitacorasFR");
+            //TreeNode nodejson = new TreeNode();
+            //TreeNode nodejsonfecha = new TreeNode();
+            //TreeNode nodejsonestado = new TreeNode();
+
+            string fecha_date = Fecha_Sincro.Value.ToString("dd.MM.yyyy");
+
+            foreach (var fi in di.GetFiles("Sincro_*_*_" + fecha_date + ".12.00.00.AM.txt", SearchOption.AllDirectories))
+            {
+                conteo = conteo + 1;
+
+
+                String s = fi.FullName;
+
+
+                //String searchString = "_";
+                //int startIndex = s.IndexOf(searchString);
+                //searchString = "_P" + searchString.Substring(1);
+                //int endIndex = s.IndexOf(searchString);
+                //String substring = s.Substring(startIndex + 1, (endIndex + searchString.Length - startIndex) - 3);
+
+                string tipo_proceso = sub_string(s, "_", "_P");
+
+                if (comboBox1.Text == "FRmcarga" && tipo_proceso == "Carga")
+                {
+                    sinc_json_table.Clear();
+
+                    if (Login.empresa == "DISMO")
+                    {
+                        searchStringr = "P";
+                    }
+                    else
+                    {
+                        searchStringr = "G";
+                    }
+                    int startIndexruta = s.IndexOf(searchStringr);
+                    String ruta = s.Substring(startIndexruta, 4);
+                    string[] lineas = File.ReadAllLines(fi.FullName);
+                    string result = (lineas[lineas.Length - 3].ToString());
+
+                    string fecha = sub_string(result, ":", "...");
+                    string estado_js = sub_string(result, " finalizó", "; ");
+
+                    string Errores_encontrados;
+
+                    if (Buscar_errores_json(s))
+                    {
+                        Errores_encontrados = "Hay Errores";
+                    }
+                    else
+
+                    {
+                        Errores_encontrados = "Exitosa";
+                    }
+
+
+
+                    sinc_json_table.Rows.Add(ruta, "FRmcarga", fecha, estado_js, Errores_encontrados);
+
+                    treeview_json(sinc_json_table);
+
+
+                }
+
+
+                else if (comboBox1.Text == "FRmdescarga" && tipo_proceso == "Descarga")
+                {
+                    sinc_json_table.Clear();
+
+
+
+
+                    if (Login.empresa == "DISMO")
+                    {
+                        searchStringr = "P";
+                    }
+                    else
+                    {
+                        searchStringr = "G";
+                    }
+
+                    int startIndexruta = s.IndexOf(searchStringr);
+                    if (startIndexruta < 0)
+                    {
+
+                    }
+                    else
+                    {
+                        String ruta = s.Substring(startIndexruta, 4);
+                        string[] lineas = File.ReadAllLines(fi.FullName);
+                        string result = (lineas[lineas.Length - 3].ToString());
+
+                        string fecha = sub_string(result, ":", "...");
+                        string estado_js = sub_string(result, " finalizó", "; ");
+
+                        string Errores_encontrados = "";
+
+
+                        if (Buscar_errores_json(s))
+                        {
+                            Errores_encontrados = "Hay Errores";
+
+                        }
+                        else
+
+                        {
+                            Errores_encontrados = "Exitosa";
+
+                        }
+
+
+                        sinc_json_table.Rows.Add(ruta, "FRmdescarga", fecha, estado_js, Errores_encontrados);
+
+                        treeview_json(sinc_json_table);
+                    }
+                }
+
+                else
+                {
+
+                }
+                
+              
+            }
+            CallRecursive(treeView1);
+        }
+
+        private string sub_string(string texto, string inicial, string final)
+        {
+            string resultado = "";
+
+            String searchString = inicial;
+            int startIndex = texto.IndexOf(searchString);
+            searchString = final;
+            int endIndex = texto.IndexOf(searchString);
+            resultado = texto.Substring(startIndex + 1, (endIndex + searchString.Length - startIndex) - 3);
+
+            return resultado;
+
+        }
+
+
+        private bool Buscar_errores_json(string direccion)
+        {
+            byte[] bytes;
+            string text = "";
+            FileStream fs;
+            fs = new FileStream(direccion, FileMode.Open);
+
+            bytes = new byte[fs.Length];
+
+           
+            fs.Read(bytes, 0, bytes.Length);
+            if (fs.CanRead)
+            {
+                text = Encoding.ASCII.GetString(bytes);              
+
+                fs.Close();
+            }
+            if (text.Contains("Error"))
+            {
+
+                return true;
+
+            }
+
+
+            else if (text.Contains("error"))
+            {
+                return true;
+
+
+            }
+
+            else
+            {
+                return false;
+
+            }
+
+        }
+
+      
+
+        private void treeview_json(DataTable table)
+        {
+            //for (int i = 0; i < table.Rows.Count; i++)
+            //{
+            //    DataRow dr = table.Rows[i];
+
+            //    string fec = Convert.ToString(dr["FECHA"]);
+            //    string rut = Convert.ToString(dr["RUTA"]);
+            //    string est = Convert.ToString(dr["ESTADO"]);
+            //    string err = Convert.ToString(dr["ERRORES"]);
+
+
+            //    if (comboBox3.Text == "Mañana" && fec.Substring(21, 2) == "AM")
+            //    {
+            //        node = new TreeNode(rut);
+            //        node1 = new TreeNode(fec);
+            //        node3 = new TreeNode(err);
+                  
+
+            //        if (est == "finalizó correctamente")
+            //        {
+            //            node.ImageIndex = 3;
+            //            node.SelectedImageIndex = 3;
+            //        }
+            //        else
+            //        {
+            //            node1.ImageIndex = 4;
+            //            node1.SelectedImageIndex = 4;
+            //            node.ImageIndex = 4;
+            //            node.SelectedImageIndex = 4;
+
+
+            //        }
+
+            //        if (err == "Hay Errores")
+            //        {
+            //            node3.ImageIndex = 4;
+            //            node3.SelectedImageIndex = 4;
+            //        }
+
+
+            //        node1.Nodes.Add(node3);
+            //        node.Nodes.Add(node1);
+
+
+            //        treeView1.Nodes.Add(node);
+
+
+
+            //    }
+
+            //    else if (comboBox3.Text == "Tarde" && fec.Substring(21, 2) == "PM")
+            //    {
+            //        node = new TreeNode(rut);
+            //        node1 = new TreeNode(fec);
+            //        node3 = new TreeNode(err);
+                   
+
+            //        if (est == "finalizó correctamente")
+            //        {
+            //            node.ImageIndex = 3;
+            //            node.SelectedImageIndex = 3;
+            //        }
+            //        else
+            //        {
+            //            node1.ImageIndex = 4;
+            //            node1.SelectedImageIndex = 4;
+            //            node.ImageIndex = 4;
+            //            node.SelectedImageIndex = 4;
+
+
+            //        }
+
+            //        if (err == "Hay Errores")
+            //        {
+            //            node3.ImageIndex = 4;
+            //            node3.SelectedImageIndex = 4;
+
+            //            node1.ImageIndex = 4;
+            //            node1.SelectedImageIndex = 4;
+            //        }
+
+
+            //        node1.Nodes.Add(node3);
+            //        node.Nodes.Add(node1);
+
+            //        treeView1.Nodes.Add(node);
+
+            //    }
+
+              
+
+            //}
+          }
+
+
+        private void SincronizadosJson(TreeNode treeNode)
+        {
+
+           
+            
+
+            // Print the node.
+           // System.Diagnostics.Debug.WriteLine(treeNode.Text);
+           // sinc_json_temp.Rows.Add(treeNode.Text);
+            // MessageBox.Show(treeNode.Text);
+            // Print each node recursively.
+            //foreach (TreeNode tn in treeNode.Nodes)
+            //{
+            //    string nombre = tn.Text;
+
+            //    PrintRecursive(tn);
+            //}
+
+
+          
+        }
+
+        private void CallRecursive(TreeView treeView)
+        {
+           
+            // Print each node recursively.
+            TreeNodeCollection nodes = treeView.Nodes;
+            
+            foreach (TreeNode n in nodes)
+            {
+                SincronizadosJson(n);
+            }
+        }
+
+        private void cantidad_sincroniadas( DataTable dt)
+        {
+            var query = dt.AsEnumerable()
+          .OrderBy(dr1 => dr1.Field<string>("RUTA"))
+          .Select(dr1 => new { state = dr1.Field<string>("RUTA") })
+            .Distinct().ToList();
+
+
+            //int cantidad = query.Count;
+
+
+            label21.Text = query.Count.ToString();
+        }
+
+        private void cantidad_no_sinc(DataTable sinc , DataTable no_sinc_tb)
+        {
+            //  var diff = sinc.AsEnumerable().Except(no_sinc_tb.AsEnumerable(), DataRowComparer.Default);
+
+            try
+            {
+                No_sincronizadas = sinc.AsEnumerable().Except(no_sinc_tb.AsEnumerable(), DataRowComparer.Default).CopyToDataTable<DataRow>();
+
+                linkLabel2.Text = Convert.ToString(No_sincronizadas.Rows.Count);
+            }
+            catch
+            {
+                linkLabel2.Text = "0";
+            }
+        }
+
+        private void Pendientes_Procesar()
+        {
+            string pedidos_ = "";
+            string cobros_ = "";
+            string devoluciones_ = "";
+
+            string pedidos_p = "";
+            string cobros_p = "";
+            string devoluciones_p = "";
+
+            if (Main_Menu.Departamento == "INFORMATICA")
+            {
+
+                linkLabel4.Show();
+                linkLabel5.Show();
+                linkLabel6.Show();
+            }
+
+
+            con.conectar("EX");
+
+            SqlCommand cmd = new SqlCommand("SELECT  COUNT([NUM_PED]) as 'PEDIDOS', (SELECT COUNT([NUM_DEV]) as PEDIDOS  FROM [EXACTUS].[ERPADMIN].[alFAC_ENC_DEV]   where DOC_PRO is null and EST_DEV <> 'C') as 'DEVOLUCIONES' ,(SELECT COUNT(rc.NUM_REC) FROM [EXACTUS].[ERPADMIN].[alCXC_DOC_APL] as rc where rc.DOC_PRO is null and rc.IND_ANL = 'N' ) as 'RECIBOS'  FROM [EXACTUS].[ERPADMIN].[alFAC_ENC_PED]   where DOC_PRO is null and ESTADO <>'C'", con.conex);
+            SqlDataReader dr = cmd.ExecuteReader();
+
+           
+
+
+            while (dr.Read())
+            {
+                pedidos_ = Convert.ToString(dr["PEDIDOS"]);
+                cobros_ = Convert.ToString(dr["RECIBOS"]);
+                devoluciones_ = Convert.ToString(dr["DEVOLUCIONES"]);
+
+            }
+            dr.Close();
+
+            SqlCommand cmd2 = new SqlCommand("SELECT  COUNT([NUM_PED]) as 'PEDIDOS', (SELECT COUNT([NUM_DEV]) as PEDIDOS  FROM [EXACTUS].[ERPADMIN].[alFAC_ENC_DEV]   where DOC_PRO = 'P' and EST_DEV <> 'C') as 'DEVOLUCIONES' ,(SELECT COUNT(rc.NUM_REC) FROM [EXACTUS].[ERPADMIN].[alCXC_DOC_APL] as rc where rc.DOC_PRO = 'P' and rc.IND_ANL <> 'S' ) as 'RECIBOS'  FROM [EXACTUS].[ERPADMIN].[alFAC_ENC_PED]   where DOC_PRO ='P' and ESTADO <>'C'", con.conex);
+            SqlDataReader dr2 = cmd2.ExecuteReader();
+            while (dr2.Read())
+            {
+                pedidos_p = Convert.ToString(dr2["PEDIDOS"]);
+                cobros_p = Convert.ToString(dr2["RECIBOS"]);
+                devoluciones_p = Convert.ToString(dr2["DEVOLUCIONES"]);
+
+            }
+            dr2.Close();
+
+
+            int pd = Convert.ToInt32(pedidos_);
+
+            if (pd >= 1 && pd <= 200)
+            {
+                
+                linkLabel4.LinkColor = Color.Green;
+
+            }
+            if (pd >= 201 && pd <= 500)
+            {
+                linkLabel4.LinkColor = Color.Orange;
+            }
+            if (pd >= 501)
+            {
+                linkLabel4.LinkColor = Color.Red;
+            }
+                        
+
+
+            linkLabel4.Text =pedidos_ + " Pedidos No Procesados";
+            linkLabel5.Text = cobros_ +" Recibos No procesados";
+            linkLabel6.Text = devoluciones_ +" Devoluciones No procesadas";
+            con.Desconectar("EX");
+
+            
+            linkLabel7.Text = devoluciones_p + " P";
+            linkLabel8.Text = cobros_p + " P";
+            linkLabel9.Text = pedidos_p + " P";
+        }
+
+        private void linkLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {            
+            Pendientes_fr_open("pedidos", "is null");
+        }
+
+        private void linkLabel9_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+           Pendientes_fr_open("pedidos", "= 'P'");
+        }
+        private void Pendientes_fr_open(string tipo , string estado)
+        {
+            CORECTX_APP.Informatica.Sincronizacion.Pendites_de_Procesar pd = new CORECTX_APP.Informatica.Sincronizacion.Pendites_de_Procesar(tipo, estado);
+            pd.Show();
+        }
+
+        private void linkLabel5_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Pendientes_fr_open("cobros", "is null");
+        }
+
+        private void linkLabel8_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Pendientes_fr_open("cobros", "= 'P'");
+
+            
+        }
+
+        private void linkLabel6_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Pendientes_fr_open("devoluciones", "is null");
+        }
+
+        private void linkLabel7_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Pendientes_fr_open("devoluciones", "= 'P'");
         }
     }
 }

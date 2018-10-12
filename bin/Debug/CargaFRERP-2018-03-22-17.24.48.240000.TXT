@@ -1,0 +1,10 @@
+Se van a leer globales de ruteo
+
+Iniciara el proceso de carga de documentos realizados en FR pendientes de reflejar en el ERP. 2018-03-22-17.24.48.253000
+
+
+Obteniendo Globales del Modulo.
+Error al insertar bloqueo en la tabla locks
+
+
+Se presentaron problemas al realizar la carga de los documentos realizados en FR pendientes de reflejar en el ERP. 2018-03-22-17.27.56.283000

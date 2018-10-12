@@ -43,14 +43,19 @@ namespace Sinconizacion_EXactus.CORECTX_APP.Reports
 
         private void GeneralForms_Load(object sender, EventArgs e)
         {
-            gridView1.SetMasterRowExpandedEx(0, 0, true);
-            gridView1.SetMasterRowExpanded(1, true);
+            
             //GridControl grid = gridControl1;
-            //GridLevelNode node1 = grid.LevelTree.Nodes.Add("Regalias", gridView1);          
-            GridLevelNode node1 = gridControl1.LevelTree.Nodes.Add("Regalias", gridView1);
-            GridLevelNode node11 = node1.Nodes.Add("Regalias Detalle", gridView2);
-            //node1.Nodes.Add(node11);
-
+            //GridLevelNode node1 = grid.LevelTree.Nodes.Add("Regalias", gridView1);   
+            if (ID_Reporte == 3)
+            { }
+            else
+            {
+                gridView1.SetMasterRowExpandedEx(0, 0, true);
+                gridView1.SetMasterRowExpanded(1, true);
+                GridLevelNode node1 = gridControl1.LevelTree.Nodes.Add("Regalias", gridView1);
+                GridLevelNode node11 = node1.Nodes.Add("Regalias Detalle", gridView2);
+                //node1.Nodes.Add(node11);
+            }
          
             //GridLevelNode node2 = grid.LevelTree.Nodes.Add("Traspaso Detalle", gridView3);
 
@@ -66,7 +71,11 @@ namespace Sinconizacion_EXactus.CORECTX_APP.Reports
             filterbt.Click += new EventHandler(filterbt_click);
             gridView1.OptionsView.ShowFooter = true;
 
-            
+            if (ID_Reporte == 3)
+            {
+              
+                datePickerini.Value = DateTime.Now.Date.AddDays(-1).AddHours(17);
+            }
 
             load_ojetos_toostrip();
 
@@ -94,8 +103,14 @@ namespace Sinconizacion_EXactus.CORECTX_APP.Reports
 
         private void btupdate_click(object sender, EventArgs e)
         {
-            //  carga_dato();
-            carga_enc();
+            if (ID_Reporte == 3)
+            {
+                carga_dato();
+            }
+            else
+            {
+                carga_enc();
+            }
         }
 
         private void btexcel_click(object sender, EventArgs e)
@@ -198,9 +213,14 @@ namespace Sinconizacion_EXactus.CORECTX_APP.Reports
                 case 2:
                     consultasql = "[DM].[CORRECT].[REPORTE_REGALIAS]";
                     break;
+
+                case 3:
+                    consultasql = "[DM].[CORRECT].[ATICULOS_BONIFICADOS]";
+                    break;
+
             }
 
-            dtfull.Clear();
+            dtfull.Clear(); 
             con.conectar("EX");
             SqlCommand cmd2 = new SqlCommand();
 
@@ -215,9 +235,18 @@ namespace Sinconizacion_EXactus.CORECTX_APP.Reports
             da1.Fill(dtfull);
             con.Desconectar("EX");
 
+            if (ID_Reporte == 3)
+            {
+                gridControl1.Refresh();
+                gridControl1.DataSource = dtfull;
+                
+                
+            }
+            else
+            {
 
-            carga_enc();
-
+                carga_enc();
+            }
 
             //gridControl1.Refresh();
             // gridControl1.DataSource = dtfull;

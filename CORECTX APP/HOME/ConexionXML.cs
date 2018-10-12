@@ -1,4 +1,4 @@
-﻿using System;
+﻿ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,6 +6,7 @@ using System.Data;
 using System.Data.SqlClient;
 using MySql.Data.MySqlClient;
 using System.Windows.Forms;
+using Npgsql;
 
 namespace Sinconizacion_EXactus
 {
@@ -21,6 +22,7 @@ namespace Sinconizacion_EXactus
         public SqlConnection condm;
         public SqlConnection conmas;
         public SqlConnection conseg;
+        public NpgsqlConnection pgcon;
         String Sqlserver;
         String Sqlserverseg;
         String Mysqlserver;
@@ -34,7 +36,11 @@ namespace Sinconizacion_EXactus
         String SQLPass;
         String SQLPSEG;
         String MYsqlPass;
-      
+        String PGSQLserver;
+        String pgdb;
+        String pglogin;
+        String pgID;
+
 
 
         public void conectar(string Database)
@@ -56,6 +62,11 @@ namespace Sinconizacion_EXactus
 
                 string cadseg = "data source=" + Sqlserverseg + ";initial catalog="+DBSEGURIDAD+" ;user Id =" + UserSQLseg + " ; password = " + SQLPSEG + "";
                 conseg = new SqlConnection(cadseg);
+
+                string pgcad = "Server=" + PGSQLserver + ";User Id=" + pglogin + "; " + "Password=" + pgID + ";Database=" + pgdb + ";";
+                 pgcon = new NpgsqlConnection(pgcad);
+
+
 
 
                 if (Database == "EX")
@@ -87,6 +98,11 @@ namespace Sinconizacion_EXactus
                     conseg.Open();
                 }
 
+                else if (Database == "ODOO")
+                {
+
+                    pgcon.Open();
+                }
             }
             catch (Exception error_e)
             {
@@ -128,6 +144,11 @@ namespace Sinconizacion_EXactus
 
                 conseg.Close();
             }
+            else if (Database == "ODOO")
+            {
+
+                pgcon.Close();
+            }
         }
               
       
@@ -138,10 +159,13 @@ namespace Sinconizacion_EXactus
             DataRow row = DT.Rows[0];
             
             Sqlserver = Convert.ToString(row["SERVIDORSQL"]);
+            PGSQLserver = Convert.ToString(row["SERVIDORPGSQL"]);
             Sqlserverseg = Convert.ToString(row["SERVIDORSQLSEG"]);
             UserSQL = Convert.ToString(row["LOGIN"]);
             UserSQLseg = Convert.ToString(row["LOGINSG"]);
+            pglogin = Convert.ToString(row["LOGINPG"]);
             DBEXACTUS = Convert.ToString(row["DBSQLEX"]);
+            pgdb = Convert.ToString(row["DBPG"]);
             Mysqlserver = Convert.ToString(row["SERVIDORWEB"]);
             UserMysql = Convert.ToString(row["LOGINWEB"]);
             DBWEB = Convert.ToString(row["DBWEB"]);
@@ -152,8 +176,9 @@ namespace Sinconizacion_EXactus
             SQLPass = Encripter.Desencriptar(Convert.ToString(row["KEYID"]));
             MYsqlPass = Encripter.Desencriptar(Convert.ToString(row["KEYIDWEB"]));
             SQLPSEG = Encripter.Desencriptar(Convert.ToString(row["KEYIDSG"]));
+            pgID = Encripter.Desencriptar(Convert.ToString(row["KEYIDPG"]));
 
-         }
+        }
 
 
 

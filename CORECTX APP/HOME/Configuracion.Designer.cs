@@ -44,17 +44,17 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.button4 = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -78,6 +78,7 @@
             "mysql.dismonline",
             "192.168.1.25 [DM]",
             "192.168.1.11 [ACCESSCONTROL]",
+            "18.216.38.163 [ODOO]",
             "SFTP UNILEVER DMS"});
             this.comboBox1.Location = new System.Drawing.Point(87, 11);
             this.comboBox1.Name = "comboBox1";
@@ -223,63 +224,23 @@
             this.tabPage2.Text = "SFTP";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // checkBox1
             // 
-            this.button4.Location = new System.Drawing.Point(187, 199);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 1;
-            this.button4.Text = "Guardar";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(138, 169);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(15, 14);
+            this.checkBox1.TabIndex = 11;
+            this.checkBox1.UseVisualStyleBackColor = true;
             // 
-            // label6
+            // label10
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(19, 19);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(32, 13);
-            this.label6.TabIndex = 2;
-            this.label6.Text = "Host:";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(19, 54);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(46, 13);
-            this.label7.TabIndex = 3;
-            this.label7.Text = "Usuario:";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(19, 88);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(64, 13);
-            this.label8.TabIndex = 4;
-            this.label8.Text = "Contraseña:";
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(68, 19);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(175, 20);
-            this.textBox5.TabIndex = 5;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(68, 51);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(151, 20);
-            this.textBox6.TabIndex = 6;
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(89, 85);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(130, 20);
-            this.textBox7.TabIndex = 7;
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(24, 168);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(105, 13);
+            this.label10.TabIndex = 10;
+            this.label10.Text = "Proceso Automatico:";
             // 
             // textBox8
             // 
@@ -297,23 +258,63 @@
             this.label9.TabIndex = 8;
             this.label9.Text = "Puerto:";
             // 
-            // label10
+            // textBox7
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(24, 168);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(105, 13);
-            this.label10.TabIndex = 10;
-            this.label10.Text = "Proceso Automatico:";
+            this.textBox7.Location = new System.Drawing.Point(89, 85);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(130, 20);
+            this.textBox7.TabIndex = 7;
             // 
-            // checkBox1
+            // textBox6
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(138, 169);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(15, 14);
-            this.checkBox1.TabIndex = 11;
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.textBox6.Location = new System.Drawing.Point(68, 51);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(151, 20);
+            this.textBox6.TabIndex = 6;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(68, 19);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(175, 20);
+            this.textBox5.TabIndex = 5;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(19, 88);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(64, 13);
+            this.label8.TabIndex = 4;
+            this.label8.Text = "Contraseña:";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(19, 54);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(46, 13);
+            this.label7.TabIndex = 3;
+            this.label7.Text = "Usuario:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(19, 19);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(32, 13);
+            this.label6.TabIndex = 2;
+            this.label6.Text = "Host:";
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(187, 199);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.TabIndex = 1;
+            this.button4.Text = "Guardar";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // Configuracion
             // 

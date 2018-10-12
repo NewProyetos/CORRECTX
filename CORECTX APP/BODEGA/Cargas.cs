@@ -25,17 +25,31 @@ namespace Sinconizacion_EXactus
         //conexion conet = new conexion();
 
         DataTable dt = new DataTable();
-
+        DataSet ds_carga = new DataSet();
         public Excel.Application aplicacion;
         public Excel.Workbook libros_trabajo;
         int detalle;
-        
+        int filto_tiempo;
+        int hora_ini;
+        int hora_fin;
+
         private void Cargas_Load(object sender, EventArgs e)
         {
             checkBox1.Checked = true;
+            dateTimePicker2.CustomFormat = "hh:mm tt";
+            dateTimePicker2.ShowUpDown = true;
+
+            dateTimePicker3.CustomFormat = "hh:mm tt";
+            dateTimePicker3.ShowUpDown = true;
+            // dateTimePicker3.Value = 24;
+
+            dateTimePicker2.Enabled = false;
+            dateTimePicker3.Enabled = false;
+            dateTimePicker4.Enabled = false;
+
 
             detalle = 1;
-
+            filto_tiempo = 1;
             this.reportViewer1.ProcessingMode =
     Microsoft.Reporting.WinForms.ProcessingMode.Local;
 
@@ -66,6 +80,15 @@ namespace Sinconizacion_EXactus
             
           con.Desconectar("EX");
 
+            if (Main_Menu.carga_detallefac == "S")
+            {
+                checkBox1.Enabled = true;
+            }
+            else
+            {
+                checkBox1.Enabled = false;
+            }
+
 
 
          
@@ -73,6 +96,15 @@ namespace Sinconizacion_EXactus
 
         private void button1_Click(object sender, EventArgs e)
         {
+            hora_ini = Convert.ToInt32(dateTimePicker2.Value.ToString("HH"));
+            hora_fin = Convert.ToInt32(dateTimePicker3.Value.ToString("HH"));
+            
+
+            if (this.ReporteCC.Tables.Contains("Table1"))
+            {
+                this.ReporteCC.Tables["Table1"].Clear();
+            }
+
             this.reportViewer1.LocalReport.ReportPath = @"C:\CORRECT\CORECTX APP\BODEGA\Reporte Cargas Bodega.rdlc";
             this.ReporteCC.Cargas.Clear();
             this.ReporteCC.Cargas_KIT.Clear();
@@ -82,43 +114,87 @@ namespace Sinconizacion_EXactus
             String Ruta = this.comboBox1.Text;
             String fechast = this.dateTimePicker1.Value.ToString("yyyy-MM-dd");
             DateTime fecha = Convert.ToDateTime(fechast);
-            
 
-          
+
+
             //this.CargasTableAdapter.Fill(this.ReporteCC.Cargas,Ruta,fecha);
 
 
-            con.conectar("EX");
 
 
-            SqlCommand cm2 = new SqlCommand("SELECT A.[RUTA],B.ARTICULO,C.DESCRIPCION,CAST(SUM(B.CANTIDAD) as decimal (18,2)) as 'TOTAL',C.FACTOR_CONVER_6 as FACTOR  FROM [EXACTUS].[" + Login.empresa+"].[FACTURA] as A  INNER JOIN  [EXACTUS].["+Login.empresa+ "].[FACTURA_LINEA] B on A.PEDIDO = B.PEDIDO  INNER JOIN [EXACTUS].[" + Login.empresa +"].[ARTICULO] C  on B.ARTICULO = C.ARTICULO  where  C.TIPO <> 'K' and RUTA = '" + this.comboBox1.Text + "' and A.ANULADA ='N' and DATEADD(dd, 0, DATEDIFF(dd, 0, A.FECHA)) = '" + this.dateTimePicker1.Value.ToString("yyyy/MM/dd") + "' and USUARIO = '" + this.comboBox2.Text + "' Group by  A.[RUTA],B.ARTICULO,C.DESCRIPCION,A.FECHA_HORA,C.FACTOR_CONVER_6,c.CLASIFICACION_1 order by c.CLASIFICACION_1,C.DESCRIPCION", con.conex);
-            SqlDataAdapter da = new SqlDataAdapter(cm2);
-            da.Fill(this.ReporteCC.Cargas);
+            con.conectar("DM");
 
-            SqlCommand cm4 = new SqlCommand("SELECT A.[RUTA],B.ARTICULO,C.DESCRIPCION,CAST(SUM(B.CANTIDAD) as decimal (18,2)) as 'TOTAL' FROM [EXACTUS].[" + Login.empresa + "].[FACTURA] as A  INNER JOIN  [EXACTUS].[" + Login.empresa + "].[FACTURA_LINEA] B on A.PEDIDO = B.PEDIDO  INNER JOIN [EXACTUS].[" + Login.empresa +"].[ARTICULO] C  on B.ARTICULO = C.ARTICULO  where  C.TIPO = 'K' and RUTA = '" + this.comboBox1.Text + "' and A.ANULADA ='N' and DATEADD(dd, 0, DATEDIFF(dd, 0, A.FECHA)) = '" + this.dateTimePicker1.Value.ToString("yyyy/MM/dd") + "' and USUARIO = '" + this.comboBox2.Text + "' Group by  A.[RUTA],B.ARTICULO,C.DESCRIPCION,A.FECHA_HORA", con.conex);
-            SqlDataAdapter da4 = new SqlDataAdapter(cm4);
-            da4.Fill(this.ReporteCC.Cargas_KIT);
-
-            SqlCommand cm5 = new SqlCommand(" SELECT FACTURA as DOCUMENTO ,CLIENTE as CODIGO_CLIENTE,NOMBRE_CLIENTE as NOMBRE ,DIRECCION_FACTURA as DIRECCION,'SS' as DEPARTAMENTO,'SS' as MUNICIPIO, CAST(TOTAL_FACTURA as decimal(18,2)) as MONTO  FROM [EXACTUS].[" + Login.empresa+ "].[FACTURA] as A where A.TIPO_DOCUMENTO = 'F' and A.ANULADA ='N' and CONDICION_PAGO = '01' and A.RUTA = '" + this.comboBox1.Text+ "' and DATEADD(dd, 0, DATEDIFF(dd, 0, A.FECHA)) = '" + this.dateTimePicker1.Value.ToString("yyyy / MM / dd") + "' and A.USUARIO = '"+this.comboBox2.Text+"'", con.conex);
-            SqlDataAdapter da5 = new SqlDataAdapter(cm5);
-            da5.Fill(this.ReporteCC.CLIENTES_CONTADO);
-
-
-            SqlCommand cm6 = new SqlCommand(" SELECT FACTURA as DOCUMENTO ,CLIENTE as CODIGO_CLIENTE,NOMBRE_CLIENTE as NOMBRE ,DIRECCION_FACTURA as DIRECCION,'SS' as DEPARTAMENTO,'SS' as MUNICIPIO, CAST(TOTAL_FACTURA as decimal(18,2)) as MONTO  FROM [EXACTUS].[" + Login.empresa + "].[FACTURA] as A where A.TIPO_DOCUMENTO = 'F' and A.ANULADA ='N' and CONDICION_PAGO <> '01' and A.RUTA = '" + this.comboBox1.Text + "' and DATEADD(dd, 0, DATEDIFF(dd, 0, A.FECHA)) = '" + this.dateTimePicker1.Value.ToString("yyyy / MM / dd") + "' and A.USUARIO = '" + this.comboBox2.Text + "'", con.conex);
-            SqlDataAdapter da6 = new SqlDataAdapter(cm6);
-            da6.Fill(this.ReporteCC.CLIENTES_CREDITO);
-
-
-            SqlCommand cm3 = new SqlCommand("SELECT COUNT(FACTURA) as cantidad  FROM [EXACTUS].[" + Login.empresa +"].[FACTURA]  WHERE RUTA = '" + this.comboBox1.Text + "' and ANULADA = 'N' and  DATEADD(dd, 0, DATEDIFF(dd, 0, FECHA)) = '" + this.dateTimePicker1.Value.ToString("yyyy/MM/dd") + "'  and USUARIO = '"+this.comboBox2.Text+"'", con.conex);            
-            SqlDataReader dr3 = cm3.ExecuteReader();
-            while (dr3.Read())
+            // SqlCommand cm2 = new SqlCommand("SELECT A.[RUTA],B.ARTICULO,C.DESCRIPCION,CAST(SUM(B.CANTIDAD) as decimal (18,2)) as 'TOTAL',C.FACTOR_CONVER_6 as FACTOR  FROM [EXACTUS].[" + Login.empresa+"].[FACTURA] as A  INNER JOIN  [EXACTUS].["+Login.empresa+ "].[FACTURA_LINEA] B on A.PEDIDO = B.PEDIDO  INNER JOIN [EXACTUS].[" + Login.empresa +"].[ARTICULO] C  on B.ARTICULO = C.ARTICULO  where  C.TIPO <> 'K' and RUTA = '" + this.comboBox1.Text + "' and A.ANULADA ='N' and DATEADD(dd, 0, DATEDIFF(dd, 0, A.FECHA)) = '" + this.dateTimePicker1.Value.ToString("yyyy/MM/dd") + "' and USUARIO = '" + this.comboBox2.Text + "' Group by  A.[RUTA],B.ARTICULO,C.DESCRIPCION,A.FECHA_HORA,C.FACTOR_CONVER_6,c.CLASIFICACION_1 order by c.CLASIFICACION_1,C.DESCRIPCION", con.conex);
+            SqlCommand cm2 = new SqlCommand("[CORRECT].[HOJA_CARGA]", con.condm);
+            cm2.CommandType = CommandType.StoredProcedure;
+            cm2.Parameters.AddWithValue("@EMPRESA", Login.empresa.ToUpper());
+            cm2.Parameters.AddWithValue("@Ruta", comboBox1.Text);
+            cm2.Parameters.AddWithValue("@fecha", this.dateTimePicker1.Value.ToString("yyyy/MM/dd"));
+            cm2.Parameters.AddWithValue("@usuario", comboBox2.Text);           
+            cm2.Parameters.AddWithValue("@Filtro", filto_tiempo);
+            if (filto_tiempo == 1)
             {
-              cantidad=Convert.ToInt32(dr3["cantidad"]);
+                cm2.Parameters.AddWithValue("@horaini", null);
+                cm2.Parameters.AddWithValue("@horafin", null);
+                cm2.Parameters.AddWithValue("fecha_imp", null);
+
+
             }
-            dr3.Close();
+            else
+            {
+                cm2.Parameters.AddWithValue("@horaini", hora_ini);
+                cm2.Parameters.AddWithValue("@horafin", hora_fin);
+                cm2.Parameters.AddWithValue("fecha_imp", this.dateTimePicker4.Value.ToString("yyyy/MM/dd"));
+            }
 
 
-            con.Desconectar("EX");
+            
+            SqlDataAdapter da = new SqlDataAdapter(cm2);
+            
+            da.TableMappings.Add("Table", "Cargas");
+            da.TableMappings.Add("Table2", "Cargas_KIT");
+            da.TableMappings.Add("Table3", "CLIENTES_CONTADO");
+            da.TableMappings.Add("Table4", "CLIENTES_CREDITO");
+
+
+            //da.Fill(ds_carga);
+            // this.ReporteCC.Cargas= ds_carga.Tables[0].Copy()
+            da.Fill(this.ReporteCC);
+
+            if (this.ReporteCC.Tables.Contains("Table1"))
+            {
+                DataRow ro = this.ReporteCC.Tables["Table1"].Rows[0];
+                cantidad = Convert.ToInt32(ro[0]);
+            }
+
+            con.Desconectar("DM");
+
+            //con.conectar("EX");
+
+            //SqlCommand cm4 = new SqlCommand("SELECT A.[RUTA],B.ARTICULO,C.DESCRIPCION,CAST(SUM(B.CANTIDAD) as decimal (18,2)) as 'TOTAL' FROM [EXACTUS].[" + Login.empresa + "].[FACTURA] as A  INNER JOIN  [EXACTUS].[" + Login.empresa + "].[FACTURA_LINEA] B on A.PEDIDO = B.PEDIDO  INNER JOIN [EXACTUS].[" + Login.empresa +"].[ARTICULO] C  on B.ARTICULO = C.ARTICULO  where  C.TIPO = 'K' and RUTA = '" + this.comboBox1.Text + "' and A.ANULADA ='N' and DATEADD(dd, 0, DATEDIFF(dd, 0, A.FECHA)) = '" + this.dateTimePicker1.Value.ToString("yyyy/MM/dd") + "' and USUARIO = '" + this.comboBox2.Text + "' Group by  A.[RUTA],B.ARTICULO,C.DESCRIPCION,A.FECHA_HORA", con.conex);
+            //SqlDataAdapter da4 = new SqlDataAdapter(cm4);
+            //da4.Fill(this.ReporteCC.Cargas_KIT);
+
+            //SqlCommand cm5 = new SqlCommand(" SELECT FACTURA as DOCUMENTO ,CLIENTE as CODIGO_CLIENTE,NOMBRE_CLIENTE as NOMBRE ,DIRECCION_FACTURA as DIRECCION,'SS' as DEPARTAMENTO,'SS' as MUNICIPIO, CAST(TOTAL_FACTURA as decimal(18,2)) as MONTO  FROM [EXACTUS].[" + Login.empresa+ "].[FACTURA] as A where A.TIPO_DOCUMENTO = 'F' and A.ANULADA ='N' and CONDICION_PAGO = '01' and A.RUTA = '" + this.comboBox1.Text+ "' and DATEADD(dd, 0, DATEDIFF(dd, 0, A.FECHA)) = '" + this.dateTimePicker1.Value.ToString("yyyy / MM / dd") + "' and A.USUARIO = '"+this.comboBox2.Text+"'", con.conex);
+            //SqlDataAdapter da5 = new SqlDataAdapter(cm5);
+            //da5.Fill(this.ReporteCC.CLIENTES_CONTADO);
+
+
+            //SqlCommand cm6 = new SqlCommand(" SELECT FACTURA as DOCUMENTO ,CLIENTE as CODIGO_CLIENTE,NOMBRE_CLIENTE as NOMBRE ,DIRECCION_FACTURA as DIRECCION,'SS' as DEPARTAMENTO,'SS' as MUNICIPIO, CAST(TOTAL_FACTURA as decimal(18,2)) as MONTO  FROM [EXACTUS].[" + Login.empresa + "].[FACTURA] as A where A.TIPO_DOCUMENTO = 'F' and A.ANULADA ='N' and CONDICION_PAGO <> '01' and A.RUTA = '" + this.comboBox1.Text + "' and DATEADD(dd, 0, DATEDIFF(dd, 0, A.FECHA)) = '" + this.dateTimePicker1.Value.ToString("yyyy / MM / dd") + "' and A.USUARIO = '" + this.comboBox2.Text + "'", con.conex);
+            //SqlDataAdapter da6 = new SqlDataAdapter(cm6);
+            //da6.Fill(this.ReporteCC.CLIENTES_CREDITO);
+
+
+            //SqlCommand cm3 = new SqlCommand("SELECT COUNT(FACTURA) as cantidad  FROM [EXACTUS].[" + Login.empresa +"].[FACTURA]  WHERE RUTA = '" + this.comboBox1.Text + "' and ANULADA = 'N' and  DATEADD(dd, 0, DATEDIFF(dd, 0, FECHA)) = '" + this.dateTimePicker1.Value.ToString("yyyy/MM/dd") + "'  and USUARIO = '"+this.comboBox2.Text+"'", con.conex);            
+            //SqlDataReader dr3 = cm3.ExecuteReader();
+            //while (dr3.Read())
+            //{
+            //  cantidad=Convert.ToInt32(dr3["cantidad"]);
+            //}
+            //dr3.Close();
+
+
+            //con.Desconectar("EX");
 
 
            
@@ -224,6 +300,26 @@ namespace Sinconizacion_EXactus
             else
             {
                 detalle = 0;
+            }
+        }
+
+        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox2.Checked)
+            {
+                dateTimePicker2.Enabled = true;
+                dateTimePicker3.Enabled = true;
+                dateTimePicker4.Enabled = true;
+                filto_tiempo = 2;
+               
+
+            }
+            else
+            {
+                dateTimePicker2.Enabled = false;
+                dateTimePicker3.Enabled = false;
+                dateTimePicker4.Enabled = false;
+                filto_tiempo = 1;
             }
         }
     }

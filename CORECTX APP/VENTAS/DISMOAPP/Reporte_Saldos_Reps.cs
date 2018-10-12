@@ -82,7 +82,10 @@ namespace Sinconizacion_EXactus
             
             }
             // ---- carga de vendedores------
-            cmdruta = "SELECT clie.vendedor,vis.usuario FROM dismodb.dmVisitas as vis left join dismodb.dmClientes as clie on vis.cliente = clie.codigo group by vendedor;";
+
+
+          //  cmdruta = "SELECT clie.vendedor,vis.usuario FROM dismodb.dmVisitas as vis left join dismodb.dmClientes as clie on vis.cliente = clie.codigo group by vendedor;";
+            cmdruta = "SELECT ruta as vendedor , equipo as usuario FROM dismodb.dmRutero group by ruta,vendedor;";
             cargaRUTAS(cmdruta);
             //------------------------------------------------------------------------------------
                         
@@ -96,7 +99,7 @@ namespace Sinconizacion_EXactus
                     comboBox1.Text = Main_Menu.USERWEB;
                    // cmdruta = "SELECT clie.RUTA FROM dismodb.ROUTE Rut left join dismodb.CLIENTS clie on Rut.CODCLI = clie.CODCLIE where USR = '" + Main_Menu.USERWEB + "' and RUTA is not null Group by clie.RUTA  ";
                     visitacomd = "CALL REPORTE_VISITAS_ACUMULADO ('" + fechaini + "','" + fechafin + "','" + Main_Menu.USERWEB + "')";
-                    visitacomd2 = "CALL REPORTE_VISITAS_DETALLE ('" + fechaini + "','" + fechafin + "','" + Main_Menu.USERWEB + "')";
+                    visitacomd2 = "CALL REPORTE_VISITAS_DETALLE2 ('" + fechaini + "','" + fechafin + "','" + Main_Menu.USERWEB + "')";
                     //cargaRUTAS(cmdruta);
                     //CARGA_VISITAS(visitacomd, visitacomd2);
                     combo(vends);
@@ -194,7 +197,20 @@ namespace Sinconizacion_EXactus
                     proc = "CALL REPORTES_DISMOAPP('" + fechaini + "','" + fechafin + "','" + reportid + "',1,null,null,null)";
 
                 }
-                Consultadismoapp(proc);
+                if (reportid == "1")
+                {
+                    if (Supervisor == "Todos")
+                    {
+                       proc = "CALL REPORTES_DISMOAPP2('" + fechaini + "','" + fechafin + "','" + reportid + "',1,'" + comboBox1.Text + "',null,null)";
+                    }
+                    else
+                    {
+                        proc = "CALL REPORTES_DISMOAPP2('" + fechaini + "','" + fechafin + "','" + reportid + "',2,'" + comboBox1.Text + "',null,null)";
+                    }
+                }
+             
+                    Consultadismoapp(proc);
+              
             }
 
          }
@@ -580,9 +596,9 @@ namespace Sinconizacion_EXactus
             
             }
 
-            visitacomd = "CALL REPORTE_VISITAS_ACUMULADO ('" + fechaini + "','" + fechafin + "','" + comboBox1.Text + "')";
-            visitacomd2 = "CALL REPORTE_VISITAS_DETALLE ('" + fechaini + "','" + fechafin + "','" + comboBox1.Text + "')";
-            CARGA_VISITAS(visitacomd, visitacomd2);
+            //visitacomd = "CALL REPORTE_VISITAS_ACUMULADO ('" + fechaini + "','" + fechafin + "','" + comboBox1.Text + "')";
+            //visitacomd2 = "CALL REPORTE_VISITAS_DETALLE2 ('" + fechaini + "','" + fechafin + "','" + comboBox1.Text + "')";
+            //CARGA_VISITAS(visitacomd, visitacomd2);
 
         }
 

@@ -36,6 +36,11 @@
             this.muebles_merchan3 = new Sinconizacion_EXactus.Muebles_merchan();
             this.gridView3 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.reportE_REGALIAS_ENCTableAdapter1 = new Sinconizacion_EXactus.Muebles_merchanTableAdapters.REPORTE_REGALIAS_ENCTableAdapter();
+            this.reportE_REGALIAS_DETTableAdapter1 = new Sinconizacion_EXactus.Muebles_merchanTableAdapters.REPORTE_REGALIAS_DETTableAdapter();
+            this.reportE_REGALIAS_TRASTableAdapter1 = new Sinconizacion_EXactus.Muebles_merchanTableAdapters.REPORTE_REGALIAS_TRASTableAdapter();
             this.colNUM_REG = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colRUTA = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colVENDEDOR = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -50,11 +55,6 @@
             this.colDATE_UPDATE = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colREGALIA = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colCONCEPTO = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.reportE_REGALIAS_ENCTableAdapter1 = new Sinconizacion_EXactus.Muebles_merchanTableAdapters.REPORTE_REGALIAS_ENCTableAdapter();
-            this.reportE_REGALIAS_DETTableAdapter1 = new Sinconizacion_EXactus.Muebles_merchanTableAdapters.REPORTE_REGALIAS_DETTableAdapter();
-            this.reportE_REGALIAS_TRASTableAdapter1 = new Sinconizacion_EXactus.Muebles_merchanTableAdapters.REPORTE_REGALIAS_TRASTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.muebles_merchan3)).BeginInit();
@@ -120,6 +120,38 @@
             this.colCONCEPTO});
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
+            // 
+            // groupControl1
+            // 
+            this.groupControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupControl1.Controls.Add(this.gridControl1);
+            this.groupControl1.Location = new System.Drawing.Point(2, 28);
+            this.groupControl1.Name = "groupControl1";
+            this.groupControl1.Size = new System.Drawing.Size(1004, 603);
+            this.groupControl1.TabIndex = 2;
+            this.groupControl1.Text = "Nombre de Reporte";
+            // 
+            // toolStrip1
+            // 
+            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
+            this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.Size = new System.Drawing.Size(1018, 25);
+            this.toolStrip1.TabIndex = 3;
+            this.toolStrip1.Text = "toolStrip1";
+            // 
+            // reportE_REGALIAS_ENCTableAdapter1
+            // 
+            this.reportE_REGALIAS_ENCTableAdapter1.ClearBeforeFill = true;
+            // 
+            // reportE_REGALIAS_DETTableAdapter1
+            // 
+            this.reportE_REGALIAS_DETTableAdapter1.ClearBeforeFill = true;
+            // 
+            // reportE_REGALIAS_TRASTableAdapter1
+            // 
+            this.reportE_REGALIAS_TRASTableAdapter1.ClearBeforeFill = true;
             // 
             // colNUM_REG
             // 
@@ -219,38 +251,6 @@
             this.colCONCEPTO.Visible = true;
             this.colCONCEPTO.VisibleIndex = 13;
             // 
-            // groupControl1
-            // 
-            this.groupControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupControl1.Controls.Add(this.gridControl1);
-            this.groupControl1.Location = new System.Drawing.Point(2, 28);
-            this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(1004, 603);
-            this.groupControl1.TabIndex = 2;
-            this.groupControl1.Text = "Nombre de Reporte";
-            // 
-            // toolStrip1
-            // 
-            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1018, 25);
-            this.toolStrip1.TabIndex = 3;
-            this.toolStrip1.Text = "toolStrip1";
-            // 
-            // reportE_REGALIAS_ENCTableAdapter1
-            // 
-            this.reportE_REGALIAS_ENCTableAdapter1.ClearBeforeFill = true;
-            // 
-            // reportE_REGALIAS_DETTableAdapter1
-            // 
-            this.reportE_REGALIAS_DETTableAdapter1.ClearBeforeFill = true;
-            // 
-            // reportE_REGALIAS_TRASTableAdapter1
-            // 
-            this.reportE_REGALIAS_TRASTableAdapter1.ClearBeforeFill = true;
-            // 
             // GeneralForms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -282,6 +282,11 @@
         private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private Muebles_merchan muebles_merchan3;
+        private Muebles_merchanTableAdapters.REPORTE_REGALIAS_ENCTableAdapter reportE_REGALIAS_ENCTableAdapter1;
+        private Muebles_merchanTableAdapters.REPORTE_REGALIAS_DETTableAdapter reportE_REGALIAS_DETTableAdapter1;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView2;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView3;
+        private Muebles_merchanTableAdapters.REPORTE_REGALIAS_TRASTableAdapter reportE_REGALIAS_TRASTableAdapter1;
         private DevExpress.XtraGrid.Columns.GridColumn colNUM_REG;
         private DevExpress.XtraGrid.Columns.GridColumn colRUTA;
         private DevExpress.XtraGrid.Columns.GridColumn colVENDEDOR;
@@ -296,10 +301,5 @@
         private DevExpress.XtraGrid.Columns.GridColumn colDATE_UPDATE;
         private DevExpress.XtraGrid.Columns.GridColumn colREGALIA;
         private DevExpress.XtraGrid.Columns.GridColumn colCONCEPTO;
-        private Muebles_merchanTableAdapters.REPORTE_REGALIAS_ENCTableAdapter reportE_REGALIAS_ENCTableAdapter1;
-        private Muebles_merchanTableAdapters.REPORTE_REGALIAS_DETTableAdapter reportE_REGALIAS_DETTableAdapter1;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView2;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView3;
-        private Muebles_merchanTableAdapters.REPORTE_REGALIAS_TRASTableAdapter reportE_REGALIAS_TRASTableAdapter1;
     }
 }

@@ -20,6 +20,7 @@ namespace Sinconizacion_EXactus.CORECTX_APP.BODEGA.REGALIAS
         }
         DataTable bodegas = new DataTable();
         DataTable libro = new DataTable();
+        DataTable libro_ven = new DataTable();
         conexionXML con = new conexionXML();
         String Bodlike;
         String fechaini;
@@ -27,15 +28,25 @@ namespace Sinconizacion_EXactus.CORECTX_APP.BODEGA.REGALIAS
         String Bodegaini;
         String Bodegafin;
         string empresa;
+        string tipo_fecha;
 
         private void Report_Libro_Load(object sender, EventArgs e)
         {
+            radioButton2.Checked = true;
+            tipo_fecha = "A";
             pictureBox1.Hide();
             dataGridView1.Enabled = true;
             dataGridView1.RowHeadersVisible = false;
             //dataGridView1.AutoResizeColumns();
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
             dataGridView1.ReadOnly = true;
+
+
+            dataGridView2.Enabled = true;
+            dataGridView2.RowHeadersVisible = false;
+            //dataGridView1.AutoResizeColumns();
+            dataGridView2.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+            dataGridView2.ReadOnly = true;
 
 
             empresa = Login.empresa;
@@ -122,28 +133,57 @@ namespace Sinconizacion_EXactus.CORECTX_APP.BODEGA.REGALIAS
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if (CargadataWorke.IsBusy)
+            {
+                MessageBox.Show("Actualmente se está ejecutando el proceso: Libro de inventario, no se podrá ejecutar otro proceso mientras este está activo.");
+            }
+            else
+                if (VentaWorker.IsBusy)
+            {
+                MessageBox.Show("Actualmente se está ejecutando el proceso: Libro de Ventas, no se podrá ejecutar otro proceso mientras este está activo.");
+            }
+
+            else
+            { 
             int Bodegain = Convert.ToInt32(comboBox1.Text.Substring(1,3));
             int Bodegafi = Convert.ToInt32(comboBox2.Text.Substring(1, 3));
 
-            if (Bodegafi < Bodegain)
-            {
-                MessageBox.Show("Bodega Final No puede ser Mayor que la Bodega Inicial");
-            }
-            else
-            {
+                if (Bodegafi < Bodegain)
+                {
+                    MessageBox.Show("Bodega Final No puede ser Mayor que la Bodega Inicial");
+                }
+                else
+                {
 
 
-                libro.Clear();
-                dataGridView1.DataSource = null;
-                dataGridView1.Refresh();
-                //dataGridView1.Refresh();
+
+                    //dataGridView1.Refresh();
 
 
-                fechaini = this.dateTimePicker1.Value.ToString("yyyy/MM/dd");
-                fechafin = this.dateTimePicker2.Value.ToString("yyyy/MM/dd");
-                Bodegaini = comboBox1.Text;
-                Bodegafin = comboBox2.Text;
-                CargadataWorke.RunWorkerAsync();
+                    fechaini = this.dateTimePicker1.Value.ToString("yyyy/MM/dd");
+                    fechafin = this.dateTimePicker2.Value.ToString("yyyy/MM/dd");
+                    Bodegaini = comboBox1.Text;
+                    Bodegafin = comboBox2.Text;
+
+                    if (tabControl1.SelectedTab.Text == "Libro Inventario")
+                    {
+                        libro.Clear();
+                        dataGridView1.DataSource = null;
+                        dataGridView1.Refresh();
+                        pictureBox1.Show();
+                        CargadataWorke.RunWorkerAsync();
+                    }
+                    else
+                    {
+
+                        libro_ven.Clear();
+                        dataGridView2.DataSource = null;
+                        dataGridView2.Refresh();
+                        pictureBox1.Show();
+                        VentaWorker.RunWorkerAsync();
+
+                    }
+                }
             }
         }
 
@@ -158,25 +198,50 @@ namespace Sinconizacion_EXactus.CORECTX_APP.BODEGA.REGALIAS
 
         private void toolStripComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            libro.DefaultView.RowFilter = "Familia like '" + this.toolStripComboBox1.Text + "%'";
-            dataGridView1.DataSource = libro;
+            if (tabControl1.SelectedTab.Text == "Libro Inventario")
+            {
+                libro.DefaultView.RowFilter = "Familia like '" + this.toolStripComboBox1.Text + "%'";
+                dataGridView1.DataSource = libro;
+            }
+            else
+            {
+                libro_ven.DefaultView.RowFilter = "Familia like '" + this.toolStripComboBox1.Text + "%'";
+                dataGridView2.DataSource = libro_ven;
+            }
         }
 
         private void toolStripTextBox1_KeyUp(object sender, KeyEventArgs e)
         {
-            libro.DefaultView.RowFilter = "codigo like '" + this.toolStripTextBox1.Text + "%'";
-            dataGridView1.DataSource = libro;
+            if (tabControl1.SelectedTab.Text == "Libro Inventario")
+            {
+                libro.DefaultView.RowFilter = "codigo like '" + this.toolStripTextBox1.Text + "%'";
+                dataGridView1.DataSource = libro;
+            }
+            else
+            {
+                libro_ven.DefaultView.RowFilter = "codigo like '" + this.toolStripTextBox1.Text + "%'";
+                dataGridView2.DataSource = libro_ven;
+            }
         }
 
         private void toolStripComboBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
-            libro.DefaultView.RowFilter = "Familia like '" + this.toolStripComboBox1.Text + "%'";
-            dataGridView1.DataSource = libro;
+
+            if (tabControl1.SelectedTab.Text == "Libro Inventario")
+            {
+                libro.DefaultView.RowFilter = "Familia like '" + this.toolStripComboBox1.Text + "%'";
+                dataGridView1.DataSource = libro;
+            }
+            else
+            {
+                libro_ven.DefaultView.RowFilter = "Familia like '" + this.toolStripComboBox1.Text + "%'";
+                dataGridView2.DataSource = libro_ven;
+            }
         }
 
         private void CargadataWorke_DoWork(object sender, DoWorkEventArgs e)
         {
-
+           
            
             CargadataWorke.ReportProgress(0, "1");
             con.conectar("EX");
@@ -186,11 +251,12 @@ namespace Sinconizacion_EXactus.CORECTX_APP.BODEGA.REGALIAS
 
             cmd.Parameters.AddWithValue("@artini", DBNull.Value);
             cmd.Parameters.AddWithValue("@artfin", DBNull.Value);
-            cmd.Parameters.AddWithValue("@fechaini", fechaini+ " 01:00:00.000");
-            cmd.Parameters.AddWithValue("@fechafin", fechafin+ " 23:59:00.000");
+            cmd.Parameters.AddWithValue("@fechaini", fechaini+ " 00:00:00.000");
+            cmd.Parameters.AddWithValue("@fechafin", fechafin+ " 23:59:59.000");
             cmd.Parameters.AddWithValue("@BODEGAINI", Bodegaini);
             cmd.Parameters.AddWithValue("@BODEGAFIN", Bodegafin);
             cmd.Parameters.AddWithValue("@EMPRESA", empresa);
+            cmd.Parameters.AddWithValue("@tipo_fecha", tipo_fecha);
 
             cmd.CommandTimeout = 0;
 
@@ -214,39 +280,65 @@ namespace Sinconizacion_EXactus.CORECTX_APP.BODEGA.REGALIAS
         {
             if (e.UserState.ToString() == "1")
             {
-                pictureBox1.Show();
+               // pictureBox1.Show();
             }
         }
         private void dtfill(DataTable dt)
         {
-            
-            dataGridView1.DataSource = dt;
-            dataGridView1.Refresh();
-            combolist(libro);
+            if (tabControl1.SelectedTab.Text == "Libro Inventario")
+            {
+                dataGridView1.DataSource = dt;
+                dataGridView1.Refresh();
+                combolist(libro);
+            }
+            else
+            {
+                dataGridView2.DataSource = dt;
+                dataGridView2.Refresh();
+                
+            }
 
         }
 
         private void copyall()
         {
-            int cellfin;
-            cellfin = dataGridView1.ColumnCount;
-
-            dataGridView1.SelectAll();
-            DataObject dtobj = dataGridView1.GetClipboardContent();
-            if (dtobj != null)
+            if (tabControl1.SelectedTab.Text == "Libro Inventario")
             {
-                Clipboard.SetDataObject(dtobj);
-            }
 
+                int cellfin;
+                cellfin = dataGridView1.ColumnCount;
+
+
+                dataGridView1.SelectAll();
+                DataObject dtobj = dataGridView1.GetClipboardContent();
+                if (dtobj != null)
+                {
+                    Clipboard.SetDataObject(dtobj);
+                }
+            }
+            else
+            {
+                int cellfin;
+                cellfin = dataGridView2.ColumnCount;
+
+
+                dataGridView2.SelectAll();
+                DataObject dtobj = dataGridView2.GetClipboardContent();
+                if (dtobj != null)
+                {
+                    Clipboard.SetDataObject(dtobj);
+                }
+
+            }
         }
 
 
 
-        private void sendexcel(DataGridView drg)
+        private void sendexcel(DataGridView drg , DataTable dt )
         {
 
             int cellfin;
-            cellfin = dataGridView1.ColumnCount;
+            cellfin = drg.ColumnCount;
             copyall();
 
             Microsoft.Office.Interop.Excel.Application excell;
@@ -305,7 +397,7 @@ namespace Sinconizacion_EXactus.CORECTX_APP.BODEGA.REGALIAS
             for (int c = 0; c < drg.Columns.Count; c++)
             {
 
-                Sheet.Cells[4, c + 1] = String.Format("{0}", libro.Columns[c].Caption);
+                Sheet.Cells[4, c + 1] = String.Format("{0}", dt.Columns[c].Caption);
             }
 
 
@@ -381,7 +473,80 @@ namespace Sinconizacion_EXactus.CORECTX_APP.BODEGA.REGALIAS
         private void toolStripButton1_Click(object sender, EventArgs e)
         {
             copyall();
-            sendexcel(dataGridView1);
+            if (tabControl1.SelectedTab.Text == "Libro Inventario")
+            {
+
+                sendexcel(dataGridView1,libro);
+            }
+            else
+            {
+                sendexcel(dataGridView2,libro_ven);
+            }
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton2.Checked)
+            {
+                tipo_fecha = "A";
+            }
+            else
+            {
+                tipo_fecha = "D";
+            }
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton1.Checked)
+            {
+                tipo_fecha = "D";
+            }
+            else
+            {
+                tipo_fecha = "A";
+            }
+        }
+
+        private void VentaWorker_DoWork(object sender, DoWorkEventArgs e)
+        {
+            
+            CargadataWorke.ReportProgress(0, "1");
+            con.conectar("EX");
+            SqlCommand cmd = new SqlCommand("[dismo].[VENTAS_LIBRO]", con.conex);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            cmd.CommandType = CommandType.StoredProcedure;
+
+       
+            cmd.Parameters.AddWithValue("@fechaini", fechaini + " 00:00:00.000");
+            cmd.Parameters.AddWithValue("@fechafin", fechafin + " 23:59:59.000");
+            cmd.Parameters.AddWithValue("@BODEGAINI", Bodegaini);
+            cmd.Parameters.AddWithValue("@BODEGAFIN", Bodegafin);
+       
+
+            cmd.CommandTimeout = 0;
+
+
+            cmd.ExecuteNonQuery();
+
+
+            da.Fill(libro_ven);
+
+            con.conectar("EX");
+        }
+
+        private void VentaWorker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
+            dtfill(libro_ven);
+            pictureBox1.Hide();
+        }
+
+        private void VentaWorker_ProgressChanged(object sender, ProgressChangedEventArgs e)
+        {
+            if (e.UserState.ToString() == "1")
+            {
+             //   pictureBox1.Show();
+            }
         }
     }
 }

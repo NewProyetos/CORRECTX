@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Sinconizacion_EXactus</RootNamespace>
     <AssemblyName>CORRECTX</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ManifestCertificateThumbprint>7ECF858F7959BA0606798177ABE1F71C601DC780</ManifestCertificateThumbprint>
     <ManifestKeyFile>
@@ -32,6 +32,8 @@
     <SccLocalPath>SAK</SccLocalPath>
     <SccAuxPath>SAK</SccAuxPath>
     <SccProvider>SAK</SccProvider>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
     <PublishUrl>https://correctx.visualstudio.com/</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Web</InstallFrom>
@@ -90,20 +92,53 @@
     <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
+    <Reference Include="DevExpress.CodeParser.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Dashboard.v14.2.Core, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Dashboard.v14.2.Win, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Data.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.DataAccess.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v14.2.UI, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Docs.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.ExpressApp.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.ExpressApp.Win.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Map.v14.2.Core, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v14.2.Core, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.PivotGrid.v14.2.Core, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Printing.v14.2.Core, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v14.2.Core, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v14.2.Core, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Spreadsheet.v14.2.Core, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Utils.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v14.2.UI, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Xpo.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraBars.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v14.2.Extensions, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v14.2.UI, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v14.2.Wizard, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraEditors.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v14.2.Core, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v14.2.Win, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraGrid.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraLayout.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraMap.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraNavBar.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraPrinting.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v14.2.Extensions, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v14.2.Extensions, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraTreeList.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.0.0\lib\net40\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.0.0\lib\net40\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
       <SpecificVersion>False</SpecificVersion>
@@ -127,9 +162,7 @@
       <HintPath>packages\Microsoft.Report.Viewer.11.0.0.0\lib\net\Microsoft.ReportViewer.WebForms.DLL</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
-      <Private>True</Private>
-    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.SqlServer.Types, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
       <Private>True</Private>
     </Reference>
@@ -138,18 +171,52 @@
     <Reference Include="MySql.Data, Version=6.9.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <Private>False</Private>
     </Reference>
+    <Reference Include="Npgsql, Version=4.0.3.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
+      <HintPath>packages\Npgsql.4.0.3\lib\net45\Npgsql.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="RDLCReportRunner, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\RDLCReportRunner.1.0.0\lib\RDLCReportRunner.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Data.SQLite, Version=1.0.108.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>packages\System.Data.SQLite.Core.1.0.108.0\lib\net40\System.Data.SQLite.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.SQLite.EF6, Version=1.0.108.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>packages\System.Data.SQLite.EF6.1.0.108.0\lib\net40\System.Data.SQLite.EF6.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.SQLite.Linq, Version=1.0.108.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>packages\System.Data.SQLite.Linq.1.0.108.0\lib\net40\System.Data.SQLite.Linq.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.SqlServerCe, Version=3.5.1.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Runtime.CompilerServices.Unsafe.4.5.0\lib\netstandard1.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security">
       <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Threading.Tasks.Extensions.4.5.0\lib\portable-net45+win8+wp8+wpa81\System.Threading.Tasks.Extensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.ValueTuple.4.5.0\lib\netstandard1.0\System.ValueTuple.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
@@ -186,6 +253,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="compresor.cs" />
+    <Compile Include="CORECTX APP\BODEGA\COBROS\Cobro_bod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\BODEGA\COBROS\Cobro_bod.Designer.cs">
+      <DependentUpon>Cobro_bod.cs</DependentUpon>
+    </Compile>
     <Compile Include="CORECTX APP\BODEGA\costos_articulo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -216,6 +289,18 @@
     <Compile Include="CORECTX APP\BODEGA\PROMOCIONES\Articulos_Bonificar.Designer.cs">
       <DependentUpon>Articulos_Bonificar.cs</DependentUpon>
     </Compile>
+    <Compile Include="CORECTX APP\BODEGA\PROMOCIONES\Nueva_bon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\BODEGA\PROMOCIONES\Nueva_bon.Designer.cs">
+      <DependentUpon>Nueva_bon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\BODEGA\PROMOCIONES\Promociones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\BODEGA\PROMOCIONES\Promociones.Designer.cs">
+      <DependentUpon>Promociones.cs</DependentUpon>
+    </Compile>
     <Compile Include="CORECTX APP\BODEGA\PROMOCIONES\Promociones_pedidas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -240,23 +325,47 @@
     <Compile Include="CORECTX APP\BODEGA\REGALIAS\Traspasos.Designer.cs">
       <DependentUpon>Traspasos.cs</DependentUpon>
     </Compile>
-    <Compile Include="CORECTX APP\BODEGA\Reporte Regalia.cs">
+    <Compile Include="CORECTX APP\BODEGA\REPORTES\existencias.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CORECTX APP\BODEGA\Reporte Regalia.Designer.cs">
+    <Compile Include="CORECTX APP\BODEGA\REPORTES\existencias.Designer.cs">
+      <DependentUpon>existencias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\BODEGA\REPORTES\Reporte Regalia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\BODEGA\REPORTES\Reporte Regalia.Designer.cs">
       <DependentUpon>Reporte Regalia.cs</DependentUpon>
     </Compile>
-    <Compile Include="CORECTX APP\BODEGA\REportes.cs">
+    <Compile Include="CORECTX APP\BODEGA\REPORTES\REportes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CORECTX APP\BODEGA\REportes.Designer.cs">
+    <Compile Include="CORECTX APP\BODEGA\REPORTES\REportes.Designer.cs">
       <DependentUpon>REportes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\COMPRAS\Importador\odoo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\COMPRAS\Importador\odoo.Designer.cs">
+      <DependentUpon>odoo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\COMPRAS\Reportes\Reporte_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\COMPRAS\Reportes\Reporte_Form.Designer.cs">
+      <DependentUpon>Reporte_Form.cs</DependentUpon>
     </Compile>
     <Compile Include="CORECTX APP\COMPRAS\Solicitud_Compra.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="CORECTX APP\COMPRAS\Solicitud_Compra.Designer.cs">
       <DependentUpon>Solicitud_Compra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\CONTABILIDAD\Reporte_Diario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\CONTABILIDAD\Reporte_Diario.Designer.cs">
+      <DependentUpon>Reporte_Diario.cs</DependentUpon>
     </Compile>
     <Compile Include="CORECTX APP\ConvertDT.cs" />
     <Compile Include="CORECTX APP\CREDITOS\IMPUESTO_DISTRIB\Pago Impuesto Distribucion.cs">
@@ -362,12 +471,55 @@
     <Compile Include="CORECTX APP\Informatica\Proceso_Carga_HH.Designer.cs">
       <DependentUpon>Proceso_Carga_HH.cs</DependentUpon>
     </Compile>
+    <Compile Include="CORECTX APP\Informatica\Sincronizacion\ListViewColumnSorter.cs" />
+    <Compile Include="CORECTX APP\Informatica\Sincronizacion\PDA\Carga.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\Informatica\Sincronizacion\PDA\Carga.Designer.cs">
+      <DependentUpon>Carga.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\Informatica\Sincronizacion\PDA\nueva_tabla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\Informatica\Sincronizacion\PDA\nueva_tabla.Designer.cs">
+      <DependentUpon>nueva_tabla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\Informatica\Sincronizacion\PDA\servidor_sinc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\Informatica\Sincronizacion\PDA\servidor_sinc.Designer.cs">
+      <DependentUpon>servidor_sinc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\Informatica\Sincronizacion\Pendites de Procesar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\Informatica\Sincronizacion\Pendites de Procesar.Designer.cs">
+      <DependentUpon>Pendites de Procesar.cs</DependentUpon>
+    </Compile>
     <Compile Include="CORECTX APP\Informatica\Unilever\CargaUnileverFTP.cs" />
     <Compile Include="CORECTX APP\Informatica\Unilever\InterfaceDMS.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="CORECTX APP\Informatica\Unilever\InterfaceDMS.Designer.cs">
       <DependentUpon>InterfaceDMS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\Reports\analiview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\Reports\analiview.Designer.cs">
+      <DependentUpon>analiview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\Reports\Analytics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\Reports\Analytics.Designer.cs">
+      <DependentUpon>Analytics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\Reports\Dashboard_view.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\Reports\Dashboard_view.Designer.cs">
+      <DependentUpon>Dashboard_view.cs</DependentUpon>
     </Compile>
     <Compile Include="CORECTX APP\Reports\GeneralForms.cs">
       <SubType>Form</SubType>
@@ -545,6 +697,12 @@
     <Compile Include="CORECTX APP\VENTAS\FACTURACION\Ingreso_Facturas.Designer.cs">
       <DependentUpon>Ingreso_Facturas.cs</DependentUpon>
     </Compile>
+    <Compile Include="CORECTX APP\VENTAS\importador_objetivos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\VENTAS\importador_objetivos.Designer.cs">
+      <DependentUpon>importador_objetivos.cs</DependentUpon>
+    </Compile>
     <Compile Include="CORECTX APP\VENTAS\Muebles.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -557,25 +715,43 @@
     <Compile Include="CORECTX APP\VENTAS\muebles_imagenes.Designer.cs">
       <DependentUpon>muebles_imagenes.cs</DependentUpon>
     </Compile>
-    <Compile Include="CORECTX APP\VENTAS\RUTERO\Cambio.cs">
+    <Compile Include="CORECTX APP\VENTAS\OBJETIVOS.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CORECTX APP\VENTAS\RUTERO\Cambio.Designer.cs">
+    <Compile Include="CORECTX APP\VENTAS\OBJETIVOS.Designer.cs">
+      <DependentUpon>OBJETIVOS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\VENTAS\REPORTES\ReporteVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\VENTAS\REPORTES\ReporteVenta.Designer.cs">
+      <DependentUpon>ReporteVenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\VENTAS\REPORTES\RUTERO\Cambio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\VENTAS\REPORTES\RUTERO\Cambio.Designer.cs">
       <DependentUpon>Cambio.cs</DependentUpon>
     </Compile>
-    <Compile Include="CORECTX APP\VENTAS\RUTERO\Informacion_Cliente.cs">
+    <Compile Include="CORECTX APP\VENTAS\REPORTES\RUTERO\clienes_no_fr.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CORECTX APP\VENTAS\RUTERO\Informacion_Cliente.Designer.cs">
+    <Compile Include="CORECTX APP\VENTAS\REPORTES\RUTERO\clienes_no_fr.Designer.cs">
+      <DependentUpon>clienes_no_fr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CORECTX APP\VENTAS\REPORTES\RUTERO\Informacion_Cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CORECTX APP\VENTAS\REPORTES\RUTERO\Informacion_Cliente.Designer.cs">
       <DependentUpon>Informacion_Cliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="CORECTX APP\VENTAS\RUTERO\Restrura_Ruteros.cs">
+    <Compile Include="CORECTX APP\VENTAS\REPORTES\RUTERO\Restrura_Ruteros.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CORECTX APP\VENTAS\RUTERO\Restrura_Ruteros.Designer.cs">
+    <Compile Include="CORECTX APP\VENTAS\REPORTES\RUTERO\Restrura_Ruteros.Designer.cs">
       <DependentUpon>Restrura_Ruteros.cs</DependentUpon>
     </Compile>
-    <Compile Include="CORECTX APP\VENTAS\RUTERO\Update_Saldos_Dismoapp.cs" />
+    <Compile Include="CORECTX APP\VENTAS\REPORTES\RUTERO\Update_Saldos_Dismoapp.cs" />
     <Compile Include="CORECTX APP\VENTAS\Visitas_Comentarios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -748,10 +924,10 @@
     <Compile Include="CORECTX APP\CREDITOS\Reporte Carera XLS.Designer.cs">
       <DependentUpon>Reporte Carera XLS.cs</DependentUpon>
     </Compile>
-    <Compile Include="CORECTX APP\BODEGA\Reporte_Pedidos_facturas.cs">
+    <Compile Include="CORECTX APP\BODEGA\REPORTES\Reporte_Pedidos_facturas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CORECTX APP\BODEGA\Reporte_Pedidos_facturas.Designer.cs">
+    <Compile Include="CORECTX APP\BODEGA\REPORTES\Reporte_Pedidos_facturas.Designer.cs">
       <DependentUpon>Reporte_Pedidos_facturas.cs</DependentUpon>
     </Compile>
     <Compile Include="CORECTX APP\VENTAS\DISMOAPP\Reporte_Saldos_Reps.cs">
@@ -760,10 +936,10 @@
     <Compile Include="CORECTX APP\VENTAS\DISMOAPP\Reporte_Saldos_Reps.Designer.cs">
       <DependentUpon>Reporte_Saldos_Reps.cs</DependentUpon>
     </Compile>
-    <Compile Include="CORECTX APP\VENTAS\RUTERO\Rutas.cs">
+    <Compile Include="CORECTX APP\VENTAS\REPORTES\RUTERO\Rutas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CORECTX APP\VENTAS\RUTERO\Rutas.Designer.cs">
+    <Compile Include="CORECTX APP\VENTAS\REPORTES\RUTERO\Rutas.Designer.cs">
       <DependentUpon>Rutas.cs</DependentUpon>
     </Compile>
     <Compile Include="CORECTX APP\VENTAS\DISMOAPP\Rutas_Trade_Reps.cs">
@@ -772,10 +948,10 @@
     <Compile Include="CORECTX APP\VENTAS\DISMOAPP\Rutas_Trade_Reps.Designer.cs">
       <DependentUpon>Rutas_Trade_Reps.cs</DependentUpon>
     </Compile>
-    <Compile Include="CORECTX APP\VENTAS\RUTERO\Ruteroreporte.cs">
+    <Compile Include="CORECTX APP\VENTAS\REPORTES\RUTERO\Ruteroreporte.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CORECTX APP\VENTAS\RUTERO\Ruteroreporte.Designer.cs">
+    <Compile Include="CORECTX APP\VENTAS\REPORTES\RUTERO\Ruteroreporte.Designer.cs">
       <DependentUpon>Ruteroreporte.cs</DependentUpon>
     </Compile>
     <Compile Include="Recursos_HumanosDB.cs">
@@ -902,6 +1078,11 @@
     </Compile>
     <Compile Include="CORECTX APP\HOME\Validar_Acceso.cs" />
     <Compile Include="CORECTX APP\HOME\XMLRW.cs" />
+    <EmbeddedResource Include="CORECTX APP\BODEGA\COBROS\Cobro_bod.resx">
+      <DependentUpon>Cobro_bod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\BODEGA\COBROS\RECIBOS.rdlc" />
+    <EmbeddedResource Include="CORECTX APP\BODEGA\COBROS\Report1.rdlc" />
     <EmbeddedResource Include="CORECTX APP\BODEGA\costos_articulo.resx">
       <DependentUpon>costos_articulo.cs</DependentUpon>
     </EmbeddedResource>
@@ -917,9 +1098,16 @@
     <EmbeddedResource Include="CORECTX APP\BODEGA\PROMOCIONES\Articulos_Bonificar.resx">
       <DependentUpon>Articulos_Bonificar.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\BODEGA\PROMOCIONES\Nueva_bon.resx">
+      <DependentUpon>Nueva_bon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\BODEGA\PROMOCIONES\Promociones.resx">
+      <DependentUpon>Promociones.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CORECTX APP\BODEGA\PROMOCIONES\Promociones_pedidas.resx">
       <DependentUpon>Promociones_pedidas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\BODEGA\Recibos.rdlc" />
     <EmbeddedResource Include="CORECTX APP\BODEGA\REGALIAS\Regalias.resx">
       <DependentUpon>Regalias.cs</DependentUpon>
     </EmbeddedResource>
@@ -929,14 +1117,26 @@
     <EmbeddedResource Include="CORECTX APP\BODEGA\REGALIAS\Traspasos.resx">
       <DependentUpon>Traspasos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CORECTX APP\BODEGA\Reporte Regalia.resx">
+    <EmbeddedResource Include="CORECTX APP\BODEGA\REPORTES\existencias.resx">
+      <DependentUpon>existencias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\BODEGA\REPORTES\Reporte Regalia.resx">
       <DependentUpon>Reporte Regalia.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CORECTX APP\BODEGA\REportes.resx">
+    <EmbeddedResource Include="CORECTX APP\BODEGA\REPORTES\REportes.resx">
       <DependentUpon>REportes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\COMPRAS\Importador\odoo.resx">
+      <DependentUpon>odoo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\COMPRAS\Reportes\Reporte_Form.resx">
+      <DependentUpon>Reporte_Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CORECTX APP\COMPRAS\Solicitud_Compra.resx">
       <DependentUpon>Solicitud_Compra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\CONTABILIDAD\Reporte_Diario.resx">
+      <DependentUpon>Reporte_Diario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CORECTX APP\CREDITOS\IMPUESTO_DISTRIB\Pago Impuesto Distribucion.resx">
       <DependentUpon>Pago Impuesto Distribucion.cs</DependentUpon>
@@ -990,8 +1190,29 @@
     <EmbeddedResource Include="CORECTX APP\Informatica\Proceso_Carga_HH.resx">
       <DependentUpon>Proceso_Carga_HH.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\Informatica\Sincronizacion\PDA\Carga.resx">
+      <DependentUpon>Carga.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\Informatica\Sincronizacion\PDA\nueva_tabla.resx">
+      <DependentUpon>nueva_tabla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\Informatica\Sincronizacion\PDA\servidor_sinc.resx">
+      <DependentUpon>servidor_sinc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\Informatica\Sincronizacion\Pendites de Procesar.resx">
+      <DependentUpon>Pendites de Procesar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CORECTX APP\Informatica\Unilever\InterfaceDMS.resx">
       <DependentUpon>InterfaceDMS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\Reports\analiview.resx">
+      <DependentUpon>analiview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\Reports\Analytics.resx">
+      <DependentUpon>Analytics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\Reports\Dashboard_view.resx">
+      <DependentUpon>Dashboard_view.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CORECTX APP\Reports\GeneralForms.resx">
       <DependentUpon>GeneralForms.cs</DependentUpon>
@@ -1013,6 +1234,7 @@
     <EmbeddedResource Include="CORECTX APP\RRHH\CARGA_BAC.resx">
       <DependentUpon>CARGA_BAC.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\RRHH\Carta_Laboral.rdlc" />
     <EmbeddedResource Include="CORECTX APP\RRHH\Constancia.rdlc" />
     <EmbeddedResource Include="CORECTX APP\RRHH\Constancias.resx">
       <DependentUpon>Constancias.cs</DependentUpon>
@@ -1080,6 +1302,9 @@
     <EmbeddedResource Include="CORECTX APP\VENTAS\FACTURACION\Ingreso_Facturas.resx">
       <DependentUpon>Ingreso_Facturas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\VENTAS\importador_objetivos.resx">
+      <DependentUpon>importador_objetivos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CORECTX APP\VENTAS\muebles.rdlc" />
     <EmbeddedResource Include="CORECTX APP\VENTAS\Muebles.resx">
       <DependentUpon>Muebles.cs</DependentUpon>
@@ -1087,13 +1312,22 @@
     <EmbeddedResource Include="CORECTX APP\VENTAS\muebles_imagenes.resx">
       <DependentUpon>muebles_imagenes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CORECTX APP\VENTAS\RUTERO\Cambio.resx">
+    <EmbeddedResource Include="CORECTX APP\VENTAS\OBJETIVOS.resx">
+      <DependentUpon>OBJETIVOS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\VENTAS\REPORTES\ReporteVenta.resx">
+      <DependentUpon>ReporteVenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\VENTAS\REPORTES\RUTERO\Cambio.resx">
       <DependentUpon>Cambio.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CORECTX APP\VENTAS\RUTERO\Informacion_Cliente.resx">
+    <EmbeddedResource Include="CORECTX APP\VENTAS\REPORTES\RUTERO\clienes_no_fr.resx">
+      <DependentUpon>clienes_no_fr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CORECTX APP\VENTAS\REPORTES\RUTERO\Informacion_Cliente.resx">
       <DependentUpon>Informacion_Cliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CORECTX APP\VENTAS\RUTERO\Restrura_Ruteros.resx">
+    <EmbeddedResource Include="CORECTX APP\VENTAS\REPORTES\RUTERO\Restrura_Ruteros.resx">
       <DependentUpon>Restrura_Ruteros.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CORECTX APP\VENTAS\Visitas_Comentarios.resx">
@@ -1175,19 +1409,19 @@
     <EmbeddedResource Include="CORECTX APP\CREDITOS\Reporte Carera XLS.resx">
       <DependentUpon>Reporte Carera XLS.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CORECTX APP\BODEGA\Reporte_Pedidos_facturas.resx">
+    <EmbeddedResource Include="CORECTX APP\BODEGA\REPORTES\Reporte_Pedidos_facturas.resx">
       <DependentUpon>Reporte_Pedidos_facturas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CORECTX APP\VENTAS\DISMOAPP\Reporte_Saldos_Reps.resx">
       <DependentUpon>Reporte_Saldos_Reps.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CORECTX APP\VENTAS\RUTERO\Rutas.resx">
+    <EmbeddedResource Include="CORECTX APP\VENTAS\REPORTES\RUTERO\Rutas.resx">
       <DependentUpon>Rutas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CORECTX APP\VENTAS\DISMOAPP\Rutas_Trade_Reps.resx">
       <DependentUpon>Rutas_Trade_Reps.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CORECTX APP\VENTAS\RUTERO\Ruteroreporte.resx">
+    <EmbeddedResource Include="CORECTX APP\VENTAS\REPORTES\RUTERO\Ruteroreporte.resx">
       <DependentUpon>Ruteroreporte.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CORECTX APP\Informatica\Sincronizacion\Sincronizacion.resx">
@@ -1411,6 +1645,14 @@
     <None Include="Resources\currency_32x321.png" />
     <None Include="Resources\currency_32x322.png" />
     <None Include="Resources\currency_16x16.png" />
+    <None Include="Resources\analytics.png" />
+    <None Include="Resources\objetivos.jpg" />
+    <None Include="Resources\recibo.png" />
+    <None Include="Resources\addfile_32x32.png" />
+    <None Include="Resources\edit_32x32.png" />
+    <None Include="Resources\delete_32x32.png" />
+    <None Include="Resources\customer_32x32.png" />
+    <None Include="Resources\odito.png" />
     <Content Include="WinSCP.exe">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -1549,8 +1791,25 @@
       <Isolated>False</Isolated>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
+    <COMReference Include="SSCE">
+      <Guid>{59A471FD-3205-4EA6-8971-30EFFB1FEE22}</Guid>
+      <VersionMajor>3</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="packages\System.Data.SQLite.Core.1.0.108.0\build\net40\System.Data.SQLite.Core.targets" Condition="Exists('packages\System.Data.SQLite.Core.1.0.108.0\build\net40\System.Data.SQLite.Core.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\System.Data.SQLite.Core.1.0.108.0\build\net40\System.Data.SQLite.Core.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\System.Data.SQLite.Core.1.0.108.0\build\net40\System.Data.SQLite.Core.targets'))" />
+  </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

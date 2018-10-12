@@ -25,6 +25,7 @@ namespace Sinconizacion_EXactus
         DataSet ds = new DataSet();
         String cmdruta;
         String cmdsup;
+        String superv;
         String Puesto;
         // Int32 idx;
         String CODCLIE;
@@ -96,10 +97,13 @@ namespace Sinconizacion_EXactus
 
                     break;
                 case "ADMIN":
+                   
                     cmdsup = "SELECT usuario FROM dismodb.dmUsuarios;";
                     cargaSupervALL(cmdsup);
                     comboBox1.Text = "Todos";
                     comboBox2.Text = "Todos";
+                    Usuario_selected = "Todos";
+
                     break;
                 case "SUPBAT":
                    
@@ -257,10 +261,19 @@ namespace Sinconizacion_EXactus
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
             // ROID();
-            clie_ruta.DefaultView.RowFilter = "dia = '" + this.comboBox2.Text + "'";
-            dataGridView1.DataSource = clie_ruta;
-            label7.Text = comboBox2.Text;
-            label8.Text = Convert.ToString(dataGridView1.RowCount);
+            DataColumnCollection columns = clie_ruta.Columns;
+            if (columns.Contains("dia"))
+            {
+                clie_ruta.DefaultView.RowFilter = "dia = '" + this.comboBox2.Text + "'";
+                dataGridView1.DataSource = clie_ruta;
+                label7.Text = comboBox2.Text;
+                label8.Text = Convert.ToString(dataGridView1.RowCount);
+            }
+            else
+            {
+                Cargaclientesruta();
+            }
+
 
         }
 
@@ -274,6 +287,7 @@ namespace Sinconizacion_EXactus
             cmd.Parameters.AddWithValue("@ruta", ruta);
             cmd.Parameters.AddWithValue("@semana", semana);
             cmd.Parameters.AddWithValue("@dia", dia);
+            cmd.Parameters.AddWithValue("@empresa", Login.empresa);
 
             cmd.ExecuteNonQuery();
             SqlDataAdapter da = new SqlDataAdapter(cmd);
@@ -396,70 +410,79 @@ namespace Sinconizacion_EXactus
         private void Cargaclientesruta()
         {
             // clie_ruta.Clear();
+            bool carg = true;
 
-
-            if (comboBox1.Text == "Todos")
+            if (Usuario_selected == "Todos")
             {
                 if (Puesto == "ADMIN")
                 {
-                    if (radioButton1.Checked)
-                    {
-                        query = "SELECT rut.codcli as CLIENTE,clie.nombre as NOMBRE,clie.nomnegocio,clie.direccion,rut.ruta,clie.entrega,rut.dia,rut.orden,rut.equipo FROM dismodb.dmRutero as rut left join dismodb.dmClientes as clie on rut.codcli = clie.codigo LEFT JOIN dismodb.dmUsuarios us on rut.equipo = us.usuario where us.categoria = 'TMR'";
-                    }
-                    else if (radioButton2.Checked)
-                    {
-                        query = "SELECT rut.codcli as CLIENTE,clie.nombre as NOMBRE,clie.nomnegocio,clie.direccion,rut.ruta,clie.entrega,rut.dia,rut.orden,rut.equipo FROM dismodb.dmRutero as rut left join dismodb.dmClientes as clie on rut.codcli = clie.codigo LEFT JOIN dismodb.dmUsuarios us on rut.equipo = us.usuario where us.categoria = 'Supervisor'";
-                    }
-                    else
-                    {
+                    carg = false;
+                    //radioButton2.Checked = true;
 
-                    }
+                    //if (radioButton1.Checked)
+                    //{
+                    //    query = "SELECT rut.codcli as CLIENTE,clie.nombre as NOMBRE,clie.nomnegocio,clie.direccion,rut.ruta,clie.entrega,rut.dia,rut.orden,rut.equipo FROM dismodb.dmRutero as rut left join dismodb.dmClientes as clie on rut.codcli = clie.codigo LEFT JOIN dismodb.dmUsuarios us on rut.equipo = us.usuario where us.categoria = 'TMR'";
+                    //}
+                    //else if (radioButton2.Checked)
+                    //{
+                    //    query = "SELECT rut.codcli as CLIENTE,clie.nombre as NOMBRE,clie.nomnegocio,clie.direccion,rut.ruta,clie.entrega,rut.dia,rut.orden,rut.equipo FROM dismodb.dmRutero as rut left join dismodb.dmClientes as clie on rut.codcli = clie.codigo LEFT JOIN dismodb.dmUsuarios us on rut.equipo = us.usuario where us.categoria = 'Supervisor'";
+                    //}
+                    //else
+                    //{
+                    //  //  query = "SELECT rut.codcli as CLIENTE,clie.nombre as NOMBRE,clie.nomnegocio,clie.direccion,rut.ruta,clie.entrega,rut.dia,rut.orden,rut.equipo FROM dismodb.dmRutero as rut left join dismodb.dmClientes as clie on rut.codcli = clie.codigo LEFT JOIN dismodb.dmUsuarios us on rut.equipo = us.usuario";
+                    //}
                 }
                 else if (Puesto == "SUPBAT")
                 {
                     query = "SELECT rut.codcli as CLIENTE,clie.nombre as NOMBRE,clie.nomnegocio,clie.direccion,rut.ruta,clie.entrega,rut.dia,rut.orden,rut.equipo FROM dismodb.dmRutero as rut left join dismodb.dmClientes as clie on rut.codcli = clie.codigo LEFT JOIN dismodb.dmUsuarios us on rut.equipo = us.usuario where us.categoria = 'TMR'";
-
+                    carg = true;
                 }
 
                 else if (Puesto == "SUPDM")
                 {
+                    carg = true;
                     query = "SELECT rut.codcli as CLIENTE,clie.nombre as NOMBRE,clie.nomnegocio,clie.direccion,rut.ruta,clie.entrega,rut.dia,rut.orden,rut.equipo FROM dismodb.dmRutero as rut left join dismodb.dmClientes as clie on rut.codcli = clie.codigo LEFT JOIN dismodb.dmUsuarios us on rut.equipo = us.usuario where us.categoria = 'supervisor'";
 
                 }
             }
             else
             {
-
+                carg = true;
                 query = "SELECT rut.codcli as CLIENTE,clie.nombre as NOMBRE,clie.nomnegocio,clie.direccion,rut.ruta,clie.entrega,rut.dia,rut.orden,rut.equipo FROM dismodb.dmRutero as rut left join dismodb.dmClientes as clie on rut.codcli = clie.codigo where rut.equipo = '" + comboBox1.Text + "';";
 
             }
 
 
-            if (backgroundRutero.IsBusy != true)
+
+
+            if (carg)
             {
-                // wt = new CORECTX_APP.VENTAS.wait();
-                //wt.ShowDialog();
-                //clie_ruta.Clear();
 
-                groupBox5.Show();
-                if (dataGridView1.Rows.Count >= 0)
+                if (backgroundRutero.IsBusy != true)
                 {
-                    dgclean();
-                }
-                backgroundRutero.RunWorkerAsync();
+                    // wt = new CORECTX_APP.VENTAS.wait();
+                    //wt.ShowDialog();
+                    //clie_ruta.Clear();
 
+                    groupBox5.Show();
+                    if (dataGridView1.Rows.Count >= 0)
+                    {
+                        dgclean();
+                    }
+                    backgroundRutero.RunWorkerAsync();
+
+
+                }
+                else
+                {
+                    if (dataGridView1.Rows.Count >= 0)
+                    {
+                        dgclean();
+                    }
+                }
 
             }
-            else
-            {
-                if (dataGridView1.Rows.Count >= 0)
-                {
-                    dgclean();
-                }
-            }
-
-
-
+         
 
 
 
@@ -777,36 +800,56 @@ namespace Sinconizacion_EXactus
 
                     if (toolStripComboBox3.Text != "")
                     {
-                        MessageBoxButtons bt1 = MessageBoxButtons.YesNo;
-                        DialogResult result = MessageBox.Show("SE CARGARAN TODOS LOS CLIENTES DE LA RUTA DE VENTA : " + toolStripComboBox1.Text + " \n DIA : " + toolStripComboBox3.Text + " \n SEMANA: " + toolStripComboBox2.Text + "  \n CONTINUAR CON LA CARGA?", "CARGAR RUTA", bt1, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1);
-                        if (result == DialogResult.Yes)
+
+                        if (toolStripComboBox4.Text != "")
                         {
+                            int tipo = 0;
 
-                            for (int i = 0; i < dataGridView2.RowCount; i++)
+                            if (toolStripComboBox4.Text == "Crear Dia")
                             {
-                                int idxt = i;
-                                agregar_clientedgv(idxt, 2);
-
+                                tipo = 3;
+                            }
+                            else if (toolStripComboBox4.Text == "Dias de Ruta")
+                            {
+                                tipo = 2;
                             }
 
+                            MessageBoxButtons bt1 = MessageBoxButtons.YesNo;
+                            DialogResult result = MessageBox.Show("SE CARGARAN TODOS LOS CLIENTES DE LA RUTA DE VENTA : " + toolStripComboBox1.Text + " \n DIA : " + toolStripComboBox3.Text + " \n SEMANA: " + toolStripComboBox2.Text + "  \n CONTINUAR CON LA CARGA?", "CARGAR RUTA", bt1, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1);
+                            if (result == DialogResult.Yes)
+                            {
+                                con.conectar("WEB");
+                                for (int i = 0; i < dataGridView2.RowCount; i++)
+                                {
+                                    int idxt = i;
+                                    agregar_clientedgv(idxt, tipo);
 
+                                }
+                                con.Desconectar("WEB");
+
+                            }
+                          
+
+
+                        }
+                        else
+                        {
+                            MessageBox.Show("Seleccione tipo de carga");
+                            toolStripComboBox4.Focus();
                         }
 
                     }
 
 
                 }
+                else
+                {
+                    MessageBox.Show("Seleccione un Vendedor");
+                    toolStripComboBox1.Focus();
 
+                }
 
             }
-            else
-            {
-                MessageBox.Show("Seleccione un Vendedor");
-                toolStripComboBox1.Focus();
-
-            }
-
-
 
         }
 
@@ -869,6 +912,10 @@ namespace Sinconizacion_EXactus
             {
                 DIA = Convert.ToString(dataGridView2.Rows[idx].Cells[3].Value);
             }
+            else if (tipoing == 3)
+            {
+                DIA = RUTA;
+            }
 
             string NOMBRE = Convert.ToString(dataGridView2.Rows[idx].Cells[4].Value);
             string ALIAS = Convert.ToString(dataGridView2.Rows[idx].Cells[5].Value);
@@ -898,13 +945,13 @@ namespace Sinconizacion_EXactus
             // ID = ID + 1;
 
 
-            if (Exite_cliente((CODCLIE), comboBox1.Text))
-            {
-                MessageBox.Show("CLIENTE YA ESTA ASIGNADO EN OTRA RUTA");
+            //if (Exite_cliente((CODCLIE), comboBox1.Text))
+            //{
+            //    MessageBox.Show("CLIENTE YA ESTA ASIGNADO EN OTRA RUTA");
 
-            }
-            else
-            {
+            //}
+            //else
+            //{
 
 
                 con.conectar("WEB");
@@ -919,7 +966,7 @@ namespace Sinconizacion_EXactus
                 cmd.ExecuteNonQuery();
                 con.Desconectar("WEB");
 
-            }
+            //}
         }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)

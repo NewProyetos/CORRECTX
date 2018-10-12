@@ -41,6 +41,7 @@
             this.listView1.Size = new System.Drawing.Size(185, 140);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.listView1_ColumnClick);
             // 
             // No_Sinc
             // 

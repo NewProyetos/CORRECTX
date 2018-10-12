@@ -163,8 +163,8 @@
   <data name="loguin2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\loguin2.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="KC" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\KC.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="analytics" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\analytics.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="guardar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\guardar.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -217,6 +217,9 @@
   <data name="refreshpeq1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\refreshpeq1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="customer_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\customer_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Import_Precios" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Import_Precios.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -237,6 +240,9 @@
   </data>
   <data name="jira-logo-scaled" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\jira-logo-scaled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edit_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edit_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="check" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\check.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -304,6 +310,9 @@
   <data name="cobrospeque" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cobrospeque.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="KC" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KC.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="avanzar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\avanzar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -312,6 +321,9 @@
   </data>
   <data name="loguin" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\loguin.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="objetivos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\objetivos.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="escala1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\escala1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -324,6 +336,9 @@
   </data>
   <data name="pagemargins_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pagemargins_32x321.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flota1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\flota1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="consumibles" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\consumibles.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -406,8 +421,8 @@
   <data name="Gas1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Gas1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="flota1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\flota1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="currency_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\currency_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="informatica2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\informatica.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -424,11 +439,20 @@
   <data name="menos" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\menos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="addfile_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\addfile_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="loguin1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\loguin1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="recibo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\recibo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="nuevo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\nuevo.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="delete_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\delete_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="franja azul" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\franja azul.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -484,7 +508,7 @@
   <data name="empresas" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\empresas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="currency_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\currency_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="odito" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\odito.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
